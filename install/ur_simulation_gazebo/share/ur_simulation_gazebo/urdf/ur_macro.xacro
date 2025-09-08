@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro">
+  <!--
+    Macro for Universal Robot Arm
+  -->
+  <xacro:macro name="ur_robot" params="name tf_prefix parent *origin
+    joint_limits_parameters_file
+    kinematics_parameters_file
+    physical_parameters_file
+    visual_parameters_file
+    safety_limits:=false
+    safety_pos_margin:=0.15
+    safety_k_position:=20
+    force_abs_paths:=false
+    controller_config_file:=''"><!-- controller_config_file 추가됨 -->
+
+    <!-- Original robot mounting and link setup -->
+    <xacro:include filename="$(find ur_simulation_gazebo)/urdf/common.gazebo.xacro"/>
+    <xacro:include filename="$(find ur_simulation_gazebo)/urdf/ur_description.xacro"/>
+
+    <xacro:ur_description 
+      name="${name}"
+      tf_prefix="${tf_prefix}"
+      parent="${parent}"
+      joint_limits_parameters_file="${joint_limits_parameters_file}"
+      kinematics_parameters_file="${kinematics_parameters_file}"
+      physical_parameters_file="${physical_parameters_file}"
+      visual_parameters_file="${visual_parameters_file}"
+      safety_limits="${safety_limits}"
+      safety_pos_margin="${safety_pos_margin}"
+      safety_k_position="${safety_k_position}"
+      force_abs_paths="${force_abs_paths}"
+    >
+      <xacro:insert_block name="origin"/>
+    </xacro:ur_description>
+
+    <!-- ros2_control integration -->
+    <ros2_control name="${name}_system" type="system">
+      <hardware>
+        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>
+
+      <param name="parameters_file">${controller_config_file}</param>
+
+      <joint name="shoulder_pan_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="shoulder_lift_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="elbow_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="wrist_1_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="wrist_2_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+
+      <joint name="wrist_3_joint">
+        <command_interfaces>
+          <command_interface name="position"/>
+        </command_interfaces>
+        <state_interfaces>
+          <state_interface name="position"/>
+          <state_interface name="velocity"/>
+        </state_interfaces>
+      </joint>
+    </ros2_control>
+
+  </xacro:macro>
+</robot>
