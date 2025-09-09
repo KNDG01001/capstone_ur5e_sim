@@ -197,6 +197,43 @@ ur_simulation_gazebo_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ur_simulation_gazebo_uninstall.dir/build.make CMakeFiles/ur_simulation_gazebo_uninstall.dir/build
 .PHONY : ur_simulation_gazebo_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named elevator_button_plugin
+
+# Build rule for target.
+elevator_button_plugin: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 elevator_button_plugin
+.PHONY : elevator_button_plugin
+
+# fast build rule for target.
+elevator_button_plugin/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elevator_button_plugin.dir/build.make CMakeFiles/elevator_button_plugin.dir/build
+.PHONY : elevator_button_plugin/fast
+
+plugins/elevator_button_plugin.o: plugins/elevator_button_plugin.cpp.o
+.PHONY : plugins/elevator_button_plugin.o
+
+# target to build an object file
+plugins/elevator_button_plugin.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elevator_button_plugin.dir/build.make CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.o
+.PHONY : plugins/elevator_button_plugin.cpp.o
+
+plugins/elevator_button_plugin.i: plugins/elevator_button_plugin.cpp.i
+.PHONY : plugins/elevator_button_plugin.i
+
+# target to preprocess a source file
+plugins/elevator_button_plugin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elevator_button_plugin.dir/build.make CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.i
+.PHONY : plugins/elevator_button_plugin.cpp.i
+
+plugins/elevator_button_plugin.s: plugins/elevator_button_plugin.cpp.s
+.PHONY : plugins/elevator_button_plugin.s
+
+# target to generate assembly for a file
+plugins/elevator_button_plugin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/elevator_button_plugin.dir/build.make CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.s
+.PHONY : plugins/elevator_button_plugin.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... uninstall"
 	@echo "... ur_simulation_gazebo_uninstall"
+	@echo "... elevator_button_plugin"
+	@echo "... plugins/elevator_button_plugin.o"
+	@echo "... plugins/elevator_button_plugin.i"
+	@echo "... plugins/elevator_button_plugin.s"
 .PHONY : help
 
 

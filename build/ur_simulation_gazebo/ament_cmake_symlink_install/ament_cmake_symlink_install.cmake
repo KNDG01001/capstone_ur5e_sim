@@ -313,6 +313,12 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "config" "launch" "DESTINATION" "share/ur_simulation_gazebo")
 ament_cmake_symlink_install_directory("/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" DIRECTORY "config" "launch" "DESTINATION" "share/ur_simulation_gazebo")
 
+# install(DIRECTORY "worlds" "DESTINATION" "share/ur_simulation_gazebo")
+ament_cmake_symlink_install_directory("/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" DIRECTORY "worlds" "DESTINATION" "share/ur_simulation_gazebo")
+
+# install("TARGETS" "elevator_button_plugin" "DESTINATION" "lib")
+include("/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

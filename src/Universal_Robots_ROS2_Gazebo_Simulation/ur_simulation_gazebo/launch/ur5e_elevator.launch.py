@@ -1,61 +1,75 @@
-# =======================
-# File: ur5e_elevator.launch.py
-# =======================
-
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import Command, PathJoinSubstitution, FindExecutable
 from launch_ros.actions import Node
-import os
 from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
-    # Package directories
-    ur_pkg = get_package_share_directory('ur_simulation_gazebo')
+    # 패키지 경로들
     gazebo_ros_pkg = get_package_share_directory('gazebo_ros')
-
-    # File paths
-    world_path = os.path.join(ur_pkg, 'worlds', 'elevator.world')
+    ur_pkg = get_package_share_directory('ur_simulation_gazebo')
     
-    # Launch Gazebo
+    try:
+        ur_description_pkg = get_package_share_directory('ur_description')
+        print(f"ur_description found at: {ur_description_pkg}")
+    except Exception as e:
+        print(f"ur_description package not found: {e}")
+        ur_description_pkg = ur_pkg
+
+    # 1. Gazebo 실행 (elevator.world 포함)
+    world_path = os.path.join(ur_pkg, 'worlds', 'elevator.world')
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(gazebo_ros_pkg, 'launch', 'gazebo.launch.py')
         ),
-        launch_arguments={'world': world_path}.items()
+        launch_arguments={
+            'world': world_path,
+            'verbose': 'true'
+        }.items()
     )
 
-    # Spawn robot
-    robot_description_path = os.path.join(ur_pkg, 'urdf', 'ur.urdf.xacro')
-    spawn_robot = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        arguments=[
-            '-entity', 'ur5e',
-            '-topic', 'robot_description',
-            '-x', '0.0', '-y', '0.0', '-z', '0.0'
-        ],
-        output='screen'
-    )
+    # 2. 로봇 URDF (xacro) 로딩
+    # 우선 ur_description/urdf/ur5e.urdf.xacro가 있는지 확인
+    ur5e_xacro_path = os.path.join(ur_description_pkg, 'urdf', 'ur5e.urdf.xacro')
+    if os.path.exists(ur5e_xacro_path):
+        xacro_path = ur5e_xacro_path
+    else:
+        # 기본 fallback
+        xacro_path = os.path.join(ur_description_pkg, 'urdf', 'ur.urdf.xacro')
 
-    # Robot state publisher
+    robot_description_content = Command([
+        'xacro', ' ',
+        xacro_path, ' ',
+        'name:=ur5e', ' ',
+        'ur_type:=ur5e', ' ',
+        'sim_gazebo:=true', ' ',
+        'use_fake_hardware:=true'
+    ])
+    
+    robot_description = {'robot_description': robot_description_content}
+
+    # 3. Robot State Publisher 실행
     robot_state_pub = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
-        parameters=[{
-            'robot_description': LaunchConfiguration('robot_description')
-        }]
+        parameters=[robot_description]
+    )
+
+    # 4. 스폰 엔티티 (약간의 지연 포함)
+    spawn_robot = ExecuteProcess(
+        cmd=[
+            'bash', '-c',
+            'sleep 3 && ros2 run gazebo_ros spawn_entity.py '
+            '-entity ur5e -topic robot_description -x 0.0 -y 0.0 -z 0.1'
+        ],
+        output='screen'
     )
 
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'robot_description',
-            default_value=os.path.join(ur_pkg, 'urdf', 'ur.urdf.xacro'),
-            description='URDF/Xacro file'
-        ),
         gazebo,
         robot_state_pub,
         spawn_robot

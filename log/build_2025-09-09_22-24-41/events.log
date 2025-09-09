@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000241] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.000367] (ur_simulation_gazebo) JobQueued: {'identifier': 'ur_simulation_gazebo', 'dependencies': OrderedDict([('ur_description', '/home/sunbi/ros2_ws/install/ur_description')])}
+[0.000402] (ur_simulation_gazebo) JobStarted: {'identifier': 'ur_simulation_gazebo'}
+[0.024371] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'cmake'}
+[0.026024] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros2_ws/install/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros2_ws/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1765'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1731,unix/sunbi:/tmp/.ICE-unix/1731'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/154c66e1_89d6_4890_84cb_30aef9127da2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.WP8XC3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros2_ws/install/ur_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros2_ws/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros2_ws/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[0.098599] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098949] (-) TimerEvent: {}
+[0.199672] (-) TimerEvent: {}
+[0.258627] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.300064] (-) TimerEvent: {}
+[0.306432] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.396873] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.400390] (-) TimerEvent: {}
+[0.406240] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.423393] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.450303] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.479198] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500921] (-) TimerEvent: {}
+[0.564970] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.571511] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601314] (-) TimerEvent: {}
+[0.701823] (-) TimerEvent: {}
+[0.745067] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.776946] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.803585] (-) TimerEvent: {}
+[0.818016] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.837115] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.903821] (-) TimerEvent: {}
+[1.004347] (-) TimerEvent: {}
+[1.030481] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.030645] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.104753] (-) TimerEvent: {}
+[1.130474] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.131081] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.204993] (-) TimerEvent: {}
+[1.221619] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.240830] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.242117] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.261131] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.305274] (-) TimerEvent: {}
+[1.406000] (-) TimerEvent: {}
+[1.413661] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.486465] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.506139] (-) TimerEvent: {}
+[1.523465] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.568533] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.598270] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.606528] (-) TimerEvent: {}
+[1.606897] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.623254] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.629165] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.629752] (ur_simulation_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.637663] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.660122] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.706940] (-) TimerEvent: {}
+[1.717139] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.725394] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.732289] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.738181] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.738426] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.742779] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.742945] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.747440] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.747637] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.752034] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.752219] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.756731] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.756904] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.761813] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.807317] (-) TimerEvent: {}
+[1.855373] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.859746] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.860154] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.879618] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.890754] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.896944] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.907939] (-) TimerEvent: {}
+[1.925816] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.988746] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[1.996736] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.008526] (-) TimerEvent: {}
+[2.019491] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.076363] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.080682] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.080993] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.101997] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.109129] (-) TimerEvent: {}
+[2.109721] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.131963] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.194942] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.200214] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.200725] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.201718] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.202888] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.204257] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.209694] (-) TimerEvent: {}
+[2.219110] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.220499] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.223375] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.223983] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.224434] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.229504] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.229999] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.310261] (-) TimerEvent: {}
+[2.335755] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.349433] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.368156] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.411635] (-) TimerEvent: {}
+[2.417399] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.429437] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.453963] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.511935] (-) TimerEvent: {}
+[2.515909] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.516278] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.516833] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.517202] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.525518] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.525805] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.552330] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.612213] (-) TimerEvent: {}
+[2.617859] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[2.702540] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[2.704565] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.712792] (-) TimerEvent: {}
+[2.731254] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.731503] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.731582] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.733248] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[2.806682] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.811551] (ur_simulation_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (add_library):\n'}
+[2.811770] (ur_simulation_gazebo) StderrLine: {'line': b'  Cannot find source file:\n'}
+[2.811848] (ur_simulation_gazebo) StderrLine: {'line': b'\n'}
+[2.811919] (ur_simulation_gazebo) StderrLine: {'line': b'    src/ur_simulation_gazebo/plugins/elevator_button_plugin.cpp\n'}
+[2.811981] (ur_simulation_gazebo) StderrLine: {'line': b'\n'}
+[2.812040] (ur_simulation_gazebo) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[2.812098] (ur_simulation_gazebo) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[2.812154] (ur_simulation_gazebo) StderrLine: {'line': b'\n'}
+[2.812210] (ur_simulation_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[2.813402] (-) TimerEvent: {}
+[2.813689] (ur_simulation_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (add_library):\n'}
+[2.813857] (ur_simulation_gazebo) StderrLine: {'line': b'  No SOURCES given to target: elevator_button_plugin\n'}
+[2.814005] (ur_simulation_gazebo) StderrLine: {'line': b'\n'}
+[2.814063] (ur_simulation_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[2.814110] (ur_simulation_gazebo) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.825317] (ur_simulation_gazebo) CommandEnded: {'returncode': 1}
+[2.859137] (ur_simulation_gazebo) JobEnded: {'identifier': 'ur_simulation_gazebo', 'rc': 1}
+[2.870545] (-) EventReactorShutdown: {}
