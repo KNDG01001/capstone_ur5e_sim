@@ -40,8 +40,8 @@ sudo apt update && sudo apt install -y \
 
 🧱 패키지 구조
 ```
-ros2_ws/ \n
-└── src/ \n
+ros2_ws/ 
+└── src/ 
     ├── capstone_ur5e_sim/                    # 본 프로젝트 루트
     ├── Universal_Robots_ROS2_Description/    # URDF/Xacro 구성
     └── Universal_Robots_ROS2_Gazebo_Simulation/ # Gazebo launch 및 ros2_control 설정
