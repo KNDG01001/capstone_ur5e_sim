@@ -1,4 +1,4 @@
-가능 : 로봇팔 스폰 및 움직여보기
+가능 : 로봇팔 스폰 및 움직여보기 \n
 불가능 : 로봇팔 명령 기반 제어, 엘레베이터 버튼 월드 스폰, 버튼 상호작용
 
 # 🤖 capstone_ur5e_sim
@@ -39,10 +39,10 @@ sudo apt update && sudo apt install -y \
 ```
 
 🧱 패키지 구조
-ros2_ws/
-└── src/
-    ├── capstone_ur5e_sim/                    # 본 프로젝트 루트
-    ├── Universal_Robots_ROS2_Description/    # URDF/Xacro 구성
+ros2_ws/ \n
+└── src/ \n
+    ├── capstone_ur5e_sim/                    # 본 프로젝트 루트\n
+    ├── Universal_Robots_ROS2_Description/    # URDF/Xacro 구성\n
     └── Universal_Robots_ROS2_Gazebo_Simulation/ # Gazebo launch 및 ros2_control 설정
 
 ⚙️ 빌드 및 실행
