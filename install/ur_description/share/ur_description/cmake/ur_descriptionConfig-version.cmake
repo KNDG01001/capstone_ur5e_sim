@@ -1,1 +1,0 @@
-/home/sunbi/ros2_ws/build/ur_description/ament_cmake_core/ur_descriptionConfig-version.cmake

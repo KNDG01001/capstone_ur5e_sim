@@ -139,6 +139,7 @@
         trajectory_port="${trajectory_port}"
         non_blocking_read="${non_blocking_read}"
         keep_alive_count="${keep_alive_count}"
+        controller_config_file="${controller_config_file}"
         />
     </xacro:if>
 
@@ -468,4 +469,5 @@
     </joint>
 
   </xacro:macro>
+
 </robot>

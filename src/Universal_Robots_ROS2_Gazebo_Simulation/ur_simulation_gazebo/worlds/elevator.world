@@ -23,17 +23,18 @@
     <model name="elevator_walls">
       <static>true</static>
       <link name="walls_link">
+        <pose>0 0.55 0 0 0 0</pose>
         <collision name="collision">
           <geometry>
             <box>
-              <size>2 2 2</size>
+              <size>2 0.1 2</size>
             </box>
           </geometry>
         </collision>
         <visual name="visual">
           <geometry>
             <box>
-              <size>2 2 2</size>
+              <size>2 0.1 2</size>
             </box>
           </geometry>
           <material>
@@ -43,13 +44,13 @@
         </visual>
       </link>
       <pose>0 0 1 0 0 0</pose>
-    </model>
+    </model> 
 
     <!-- Elevator button -->
     <model name="elevator_button">
       <static>true</static>
       <link name="button_link">
-        <pose>0.8 0 1.0 0 0 0</pose>
+        <pose>0.8 0.5 1.0 0 1.57 1.57</pose>
         <collision name="collision">
           <geometry>
             <cylinder>

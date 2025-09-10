@@ -20,6 +20,9 @@ def generate_launch_description():
 
     # 1. Gazebo 실행 (elevator.world 포함)
     world_path = os.path.join(ur_pkg, 'worlds', 'elevator.world')
+
+    controller_config_file = os.path.join(ur_pkg, 'config', 'ur_controllers.yaml')
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(gazebo_ros_pkg, 'launch', 'gazebo.launch.py')
@@ -45,7 +48,8 @@ def generate_launch_description():
         'name:=ur5e', ' ',
         'ur_type:=ur5e', ' ',
         'sim_gazebo:=true', ' ',
-        'use_fake_hardware:=true'
+        'use_fake_hardware:=true', ' ',
+        'controller_config_file:=/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/config/ur_controllers.yaml'
     ])
     
     robot_description = {'robot_description': robot_description_content}
@@ -68,6 +72,17 @@ def generate_launch_description():
         ],
         output='screen'
     )
+
+    load_controllers = [
+        ExecuteProcess(
+            cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'joint_state_broadcaster'],
+            output='screen'
+        ),
+        ExecuteProcess(
+            cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'scaled_joint_trajectory_controller'],
+            output='screen'
+        )
+    ]
 
     return LaunchDescription([
         gazebo,
