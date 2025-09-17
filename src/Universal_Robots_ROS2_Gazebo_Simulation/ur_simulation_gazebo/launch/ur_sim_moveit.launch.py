@@ -3,6 +3,7 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, Opaq
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.substitutions import FindPackageShare
+from launch_ros.actions import Node
 
 def launch_setup(context, *args, **kwargs):
     # 기존 설정
@@ -63,7 +64,23 @@ def launch_setup(context, *args, **kwargs):
         }.items(),
     )
 
-    return [gazebo_launch, ur_control_launch, ur_moveit_launch]  # ✅ world 먼저 로딩
+    # 객체 탐지 노드 실행
+    object_detection_node = Node(
+        package='ur_simulation_gazebo',
+        executable='object_detection_node.py',
+        name='object_detection_node',
+        output='screen'
+    )
+
+    # UR5e 컨트롤러 노드 실행
+    ur5e_controller_node = Node(
+        package='ur_simulation_gazebo',
+        executable='ur5e_controller_node.py',
+        name='ur5e_controller_node',
+        output='screen'
+    )
+
+    return [gazebo_launch, ur_control_launch, ur_moveit_launch, object_detection_node, ur5e_controller_node]  # world 먼저 로딩
 
 def generate_launch_description():
     declared_arguments = []
