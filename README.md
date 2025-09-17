@@ -1,5 +1,5 @@
-가능 : 로봇팔 스폰 및 움직여보기
-불가능 : 로봇팔 명령 기반 제어, 엘레베이터 버튼 월드 스폰, 버튼 상호작용
+가능 : 로봇팔 스폰 및 움직여보기  
+불가능 : 로봇팔 명령 기반 제어, 버튼 상호작용
 
 # 🤖 capstone_ur5e_sim
 
@@ -39,28 +39,41 @@ sudo apt update && sudo apt install -y \
 ```
 
 🧱 패키지 구조
-ros2_ws/
-└── src/
+```
+ros2_ws/ 
+└── src/ 
     ├── capstone_ur5e_sim/                    # 본 프로젝트 루트
     ├── Universal_Robots_ROS2_Description/    # URDF/Xacro 구성
     └── Universal_Robots_ROS2_Gazebo_Simulation/ # Gazebo launch 및 ros2_control 설정
-
+```
 ⚙️ 빌드 및 실행
+
 1. 워크스페이스 구성 및 빌드
+   
+```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
+```
 
 # 저장소 복제
+```bash
 git clone https://github.com/KNDG01001/capstone_ur5e_sim.git .
+```
 
 # 빌드
+
+```bash
 cd ~/ros2_ws
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install
+```
 
 2. Gazebo 시뮬레이션 실행
+
+```bash
 source ~/ros2_ws/install/setup.bash
 ros2 launch ur_simulation_gazebo ur5e.launch.py
+```
 
 🧩 주요 구성 요소 설명
 1. ur5e.launch.py
@@ -98,7 +111,7 @@ ros2 run xacro xacro ur.urdf.xacro > ur5e.urdf
 위치: Universal_Robots_ROS2_Gazebo_Simulation/config/controllers.yaml
 
 주요 컨트롤러:
-
+```
 joint_state_broadcaster
 
 scaled_joint_trajectory_controller
@@ -106,16 +119,21 @@ scaled_joint_trajectory_controller
 position_controllers/JointGroupPositionController
 
 velocity_controllers/JointGroupVelocityController
+```
 
 컨트롤러 수동 로드 예시:
-
+```bash
 ros2 control load_controller --set-state start joint_state_broadcaster
 ros2 control load_controller --set-state start scaled_joint_trajectory_controller
+```
 
 🖥️ RViz 시각화
+
+```bash
 # Launch 실행 후
 ros2 run rviz2 rviz2
 # 로봇 모델, TF, JointState 표시 추가
+```
 
 🔧 실물 로봇 전환 시 고려사항
 
