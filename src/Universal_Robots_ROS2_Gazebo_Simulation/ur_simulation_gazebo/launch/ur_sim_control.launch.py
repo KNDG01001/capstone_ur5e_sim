@@ -37,10 +37,12 @@ from launch.actions import (
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.event_handlers import OnProcessExit
+from launch.actions import TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
+import os
 
 
 def launch_setup(context, *args, **kwargs):
@@ -60,8 +62,11 @@ def launch_setup(context, *args, **kwargs):
     prefix = LaunchConfiguration("prefix")
     start_joint_controller = LaunchConfiguration("start_joint_controller")
     initial_joint_controller = LaunchConfiguration("initial_joint_controller")
+    controller_manager_ns = LaunchConfiguration("controller_manager_ns")
+    spawn_optional_broadcasters = LaunchConfiguration("spawn_optional_broadcasters")
     launch_rviz = LaunchConfiguration("launch_rviz")
     gazebo_gui = LaunchConfiguration("gazebo_gui")
+    world = LaunchConfiguration("world")
 
     initial_joint_controllers = PathJoinSubstitution(
         [FindPackageShare(runtime_config_package), "config", controllers_file]
@@ -131,7 +136,44 @@ def launch_setup(context, *args, **kwargs):
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        arguments=[
+            "joint_state_broadcaster",
+            "--controller-manager", controller_manager_ns,
+            "--param-file", initial_joint_controllers,
+        ],
+    )
+
+    speed_scaling_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "speed_scaling_state_broadcaster",
+            "--controller-manager", controller_manager_ns,
+            "--param-file", initial_joint_controllers,
+        ],
+        condition=IfCondition(spawn_optional_broadcasters),
+    )
+
+    force_torque_broadcaster_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "force_torque_sensor_broadcaster",
+            "--controller-manager", controller_manager_ns,
+            "--param-file", initial_joint_controllers,
+        ],
+        condition=IfCondition(spawn_optional_broadcasters),
+    )
+
+    io_and_status_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "io_and_status_controller",
+            "--controller-manager", controller_manager_ns,
+            "--param-file", initial_joint_controllers,
+        ],
+        condition=IfCondition(spawn_optional_broadcasters),
     )
 
     # Delay rviz start after `joint_state_broadcaster`
@@ -147,13 +189,22 @@ def launch_setup(context, *args, **kwargs):
     initial_joint_controller_spawner_started = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[initial_joint_controller, "-c", "/controller_manager"],
+        arguments=[
+            initial_joint_controller,
+            "-c", controller_manager_ns,
+            "--param-file", initial_joint_controllers,
+        ],
         condition=IfCondition(start_joint_controller),
     )
     initial_joint_controller_spawner_stopped = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=[initial_joint_controller, "-c", "/controller_manager", "--stopped"],
+        arguments=[
+            initial_joint_controller,
+            "-c", controller_manager_ns,
+            "--stopped",
+            "--param-file", initial_joint_controllers,
+        ],
         condition=UnlessCondition(start_joint_controller),
     )
 
@@ -164,6 +215,9 @@ def launch_setup(context, *args, **kwargs):
         ),
         launch_arguments={
             "gui": gazebo_gui,
+            "world": world,
+            # ensure launch exits if server dies early (keep true for clarity)
+            "server_required": "true",
         }.items(),
     )
 
@@ -176,14 +230,38 @@ def launch_setup(context, *args, **kwargs):
         output="screen",
     )
 
+    # Ensure Gazebo and world are up before spawning controllers
+    # Start Gazebo and spawn the robot first
+    # Then, after the robot is spawned (controller_manager is available), spawn controllers
+
+    # Delay controller spawners until after the robot entity is spawned in Gazebo
+    spawn_controllers_after_robot = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=gazebo_spawn_robot,
+            on_exit=[
+                # Add a small delay to ensure controller_manager is up
+                TimerAction(
+                    period=8.0,
+                    actions=[
+                        joint_state_broadcaster_spawner,
+                        speed_scaling_broadcaster_spawner,
+                        force_torque_broadcaster_spawner,
+                        io_and_status_controller_spawner,
+                        initial_joint_controller_spawner_stopped,
+                        initial_joint_controller_spawner_started,
+                        # RViz already delayed after joint_state_broadcaster via separate handler
+                        delay_rviz_after_joint_state_broadcaster_spawner,
+                    ],
+                ),
+            ],
+        )
+    )
+
     nodes_to_start = [
         robot_state_publisher_node,
-        joint_state_broadcaster_spawner,
-        delay_rviz_after_joint_state_broadcaster_spawner,
-        initial_joint_controller_spawner_stopped,
-        initial_joint_controller_spawner_started,
         gazebo,
         gazebo_spawn_robot,
+        spawn_controllers_after_robot,
     ]
 
     return nodes_to_start
@@ -306,6 +384,27 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "gazebo_gui", default_value="true", description="Start gazebo with GUI?"
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "controller_manager_ns",
+            default_value="/controller_manager",
+            description="Full name of the controller_manager node (with namespace)",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "spawn_optional_broadcasters",
+            default_value="false",
+            description="Spawn optional broadcasters (speed scaling, FT, IO) — disable for Gazebo sim",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "world",
+            default_value=PathJoinSubstitution([FindPackageShare("gazebo_ros"), "worlds", "empty.world"]),
+            description="Full path to the Gazebo world file",
         )
     )
 

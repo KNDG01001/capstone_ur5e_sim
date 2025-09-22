@@ -1,8 +1,8 @@
-# Install script for directory: /home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo
+# Install script for directory: /home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sunbi/ros2_ws/install/ur_simulation_gazebo")
+  set(CMAKE_INSTALL_PREFIX "/home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,13 +44,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE DIRECTORY FILES
-    "/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/config"
-    "/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/launch"
+    "/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/config"
+    "/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/launch"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE DIRECTORY FILES "/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/worlds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE DIRECTORY FILES "/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/worlds")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -60,7 +60,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libelevator_button_plugin.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/libelevator_button_plugin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/libelevator_button_plugin.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libelevator_button_plugin.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libelevator_button_plugin.so")
     file(RPATH_CHANGE
@@ -77,11 +77,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -89,7 +89,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo/environment" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo/environment" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -97,42 +97,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo/environment" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo/environment" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur_simulation_gazebo")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/ur_simulation_gazebo")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo/cmake" TYPE FILE FILES
-    "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_core/ur_simulation_gazeboConfig.cmake"
-    "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/ament_cmake_core/ur_simulation_gazeboConfig-version.cmake"
+    "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_core/ur_simulation_gazeboConfig.cmake"
+    "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_core/ur_simulation_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ur_simulation_gazebo" TYPE FILE FILES "/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -143,5 +143,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sunbi/ros2_ws/build/ur_simulation_gazebo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

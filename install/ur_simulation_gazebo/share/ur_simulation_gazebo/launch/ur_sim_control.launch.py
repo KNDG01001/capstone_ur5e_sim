@@ -62,6 +62,7 @@ def launch_setup(context, *args, **kwargs):
     initial_joint_controller = LaunchConfiguration("initial_joint_controller")
     launch_rviz = LaunchConfiguration("launch_rviz")
     gazebo_gui = LaunchConfiguration("gazebo_gui")
+    world = LaunchConfiguration("world")
 
     initial_joint_controllers = PathJoinSubstitution(
         [FindPackageShare(runtime_config_package), "config", controllers_file]
@@ -164,6 +165,7 @@ def launch_setup(context, *args, **kwargs):
         ),
         launch_arguments={
             "gui": gazebo_gui,
+            "world": world,
         }.items(),
     )
 
@@ -306,6 +308,13 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "gazebo_gui", default_value="true", description="Start gazebo with GUI?"
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "world",
+            default_value=PathJoinSubstitution([FindPackageShare("gazebo_ros"), "worlds", "empty.world"]),
+            description="Full path to the Gazebo world file",
         )
     )
 

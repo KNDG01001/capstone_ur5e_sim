@@ -1,0 +1,454 @@
+[0.000000] (-) TimerEvent: {}
+[0.000928] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.000993] (ur_simulation_gazebo) JobQueued: {'identifier': 'ur_simulation_gazebo', 'dependencies': OrderedDict([('ur_description', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description')])}
+[0.001017] (ur_simulation_gazebo) JobStarted: {'identifier': 'ur_simulation_gazebo'}
+[0.016541] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'cmake'}
+[0.026011] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/sunbi/ros'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sunbi/ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-409dd0de-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/tmp/.tmpOcdKfJ:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sunbi/.vscode/extensions/openai.chatgpt-0.4.12-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/86e899b2_ed36_4b27_984f_9ccc2591c0a3'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sunbi/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '2397'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[0.099599] (-) TimerEvent: {}
+[0.103387] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.178519] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.188026] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199862] (-) TimerEvent: {}
+[0.284695] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.292893] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.293198] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.294394] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.296235] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.301736] (-) TimerEvent: {}
+[0.402914] (-) TimerEvent: {}
+[0.414063] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.422019] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.422312] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.422363] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.426597] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.503396] (-) TimerEvent: {}
+[0.604206] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.604390] (-) TimerEvent: {}
+[0.704762] (-) TimerEvent: {}
+[0.707177] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.754850] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.760292] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.768627] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.780518] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.797124] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.805339] (-) TimerEvent: {}
+[0.845236] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.847520] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.906012] (-) TimerEvent: {}
+[0.972713] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.005880] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.006084] (-) TimerEvent: {}
+[1.054775] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.066794] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.106569] (-) TimerEvent: {}
+[1.168053] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.168477] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.207087] (-) TimerEvent: {}
+[1.272108] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.274200] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.307406] (-) TimerEvent: {}
+[1.331355] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.348015] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.349647] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.374120] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.407777] (-) TimerEvent: {}
+[1.508493] (-) TimerEvent: {}
+[1.546942] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.608850] (-) TimerEvent: {}
+[1.634164] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.652771] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.685650] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.701902] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.707735] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.709333] (-) TimerEvent: {}
+[1.714419] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.716009] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.716639] (ur_simulation_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.724333] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.746274] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.801356] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.809875] (-) TimerEvent: {}
+[1.810380] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.819684] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.825411] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.825648] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.829791] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.829981] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.834079] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.834316] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.838801] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.838993] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.843293] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.843866] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.850927] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.910479] (-) TimerEvent: {}
+[1.966728] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.970228] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.970393] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.990750] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.001850] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.008753] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.010772] (-) TimerEvent: {}
+[2.029654] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.087440] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.094750] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.111047] (-) TimerEvent: {}
+[2.115459] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.172222] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.174614] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.175221] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.197385] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.205397] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.212030] (-) TimerEvent: {}
+[2.226996] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.289106] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.291490] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.292716] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.292875] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.294107] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.294828] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.310374] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.310969] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.312415] (-) TimerEvent: {}
+[2.313583] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.314069] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.314344] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.317007] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.317352] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.413161] (-) TimerEvent: {}
+[2.444691] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.455702] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.475806] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.513371] (-) TimerEvent: {}
+[2.536117] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.545386] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.566896] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.613592] (-) TimerEvent: {}
+[2.625525] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.626172] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.626714] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.626912] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.630293] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.631104] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.652629] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.714054] (-) TimerEvent: {}
+[2.719839] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[2.775392] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[2.778044] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.801919] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.807607] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.807808] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.807862] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.807907] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.814427] (-) TimerEvent: {}
+[2.829786] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.832137] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[2.900881] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.914714] (-) TimerEvent: {}
+[2.934566] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[2.941878] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo\n'}
+[2.961856] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[2.963215] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'build'}
+[2.964191] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/sunbi/ros'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sunbi/ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-409dd0de-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/tmp/.tmpOcdKfJ:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sunbi/.vscode/extensions/openai.chatgpt-0.4.12-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/86e899b2_ed36_4b27_984f_9ccc2591c0a3'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sunbi/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '2397'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[3.015022] (-) TimerEvent: {}
+[3.048406] (ur_simulation_gazebo) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.o\n'}
+[3.115368] (-) TimerEvent: {}
+[3.215762] (-) TimerEvent: {}
+[3.316602] (-) TimerEvent: {}
+[3.416905] (-) TimerEvent: {}
+[3.517423] (-) TimerEvent: {}
+[3.618064] (-) TimerEvent: {}
+[3.718949] (-) TimerEvent: {}
+[3.820043] (-) TimerEvent: {}
+[3.921252] (-) TimerEvent: {}
+[4.021640] (-) TimerEvent: {}
+[4.122599] (-) TimerEvent: {}
+[4.224875] (-) TimerEvent: {}
+[4.325308] (-) TimerEvent: {}
+[4.425657] (-) TimerEvent: {}
+[4.526345] (-) TimerEvent: {}
+[4.626810] (-) TimerEvent: {}
+[4.727867] (-) TimerEvent: {}
+[4.828424] (-) TimerEvent: {}
+[4.929159] (-) TimerEvent: {}
+[5.029536] (-) TimerEvent: {}
+[5.129897] (-) TimerEvent: {}
+[5.230328] (-) TimerEvent: {}
+[5.330718] (-) TimerEvent: {}
+[5.431138] (-) TimerEvent: {}
+[5.531803] (-) TimerEvent: {}
+[5.632250] (-) TimerEvent: {}
+[5.732774] (-) TimerEvent: {}
+[5.833856] (-) TimerEvent: {}
+[5.935209] (-) TimerEvent: {}
+[6.035681] (-) TimerEvent: {}
+[6.136224] (-) TimerEvent: {}
+[6.236500] (-) TimerEvent: {}
+[6.337231] (-) TimerEvent: {}
+[6.437681] (-) TimerEvent: {}
+[6.538709] (-) TimerEvent: {}
+[6.639365] (-) TimerEvent: {}
+[6.740015] (-) TimerEvent: {}
+[6.840927] (-) TimerEvent: {}
+[6.941388] (-) TimerEvent: {}
+[7.041742] (-) TimerEvent: {}
+[7.142125] (-) TimerEvent: {}
+[7.245374] (-) TimerEvent: {}
+[7.346347] (-) TimerEvent: {}
+[7.447107] (-) TimerEvent: {}
+[7.548403] (-) TimerEvent: {}
+[7.648805] (-) TimerEvent: {}
+[7.750573] (-) TimerEvent: {}
+[7.851439] (-) TimerEvent: {}
+[7.952710] (-) TimerEvent: {}
+[8.052956] (-) TimerEvent: {}
+[8.153787] (-) TimerEvent: {}
+[8.254070] (-) TimerEvent: {}
+[8.354677] (-) TimerEvent: {}
+[8.455137] (-) TimerEvent: {}
+[8.555544] (-) TimerEvent: {}
+[8.655941] (-) TimerEvent: {}
+[8.756489] (-) TimerEvent: {}
+[8.856722] (-) TimerEvent: {}
+[8.957668] (-) TimerEvent: {}
+[9.058386] (-) TimerEvent: {}
+[9.158999] (-) TimerEvent: {}
+[9.259558] (-) TimerEvent: {}
+[9.359858] (-) TimerEvent: {}
+[9.460352] (-) TimerEvent: {}
+[9.561340] (-) TimerEvent: {}
+[9.661910] (-) TimerEvent: {}
+[9.763793] (-) TimerEvent: {}
+[9.865073] (-) TimerEvent: {}
+[9.966309] (-) TimerEvent: {}
+[10.066692] (-) TimerEvent: {}
+[10.167102] (-) TimerEvent: {}
+[10.267506] (-) TimerEvent: {}
+[10.368206] (-) TimerEvent: {}
+[10.469018] (-) TimerEvent: {}
+[10.569790] (-) TimerEvent: {}
+[10.670854] (-) TimerEvent: {}
+[10.771506] (-) TimerEvent: {}
+[10.871930] (-) TimerEvent: {}
+[10.972462] (-) TimerEvent: {}
+[11.072850] (-) TimerEvent: {}
+[11.173691] (-) TimerEvent: {}
+[11.274287] (-) TimerEvent: {}
+[11.375371] (-) TimerEvent: {}
+[11.475831] (-) TimerEvent: {}
+[11.576441] (-) TimerEvent: {}
+[11.676878] (-) TimerEvent: {}
+[11.777297] (-) TimerEvent: {}
+[11.877796] (-) TimerEvent: {}
+[11.978355] (-) TimerEvent: {}
+[12.079908] (-) TimerEvent: {}
+[12.183037] (-) TimerEvent: {}
+[12.283243] (-) TimerEvent: {}
+[12.383730] (-) TimerEvent: {}
+[12.484767] (-) TimerEvent: {}
+[12.585121] (-) TimerEvent: {}
+[12.685441] (-) TimerEvent: {}
+[12.785972] (-) TimerEvent: {}
+[12.886786] (-) TimerEvent: {}
+[12.987889] (-) TimerEvent: {}
+[13.089059] (-) TimerEvent: {}
+[13.189627] (-) TimerEvent: {}
+[13.290491] (-) TimerEvent: {}
+[13.391462] (-) TimerEvent: {}
+[13.492083] (-) TimerEvent: {}
+[13.592649] (-) TimerEvent: {}
+[13.693237] (-) TimerEvent: {}
+[13.793548] (-) TimerEvent: {}
+[13.893962] (-) TimerEvent: {}
+[13.994487] (-) TimerEvent: {}
+[14.095010] (-) TimerEvent: {}
+[14.195411] (-) TimerEvent: {}
+[14.295806] (-) TimerEvent: {}
+[14.396638] (-) TimerEvent: {}
+[14.497229] (-) TimerEvent: {}
+[14.597681] (-) TimerEvent: {}
+[14.698213] (-) TimerEvent: {}
+[14.798815] (-) TimerEvent: {}
+[14.899597] (-) TimerEvent: {}
+[15.000120] (-) TimerEvent: {}
+[15.102370] (-) TimerEvent: {}
+[15.203055] (-) TimerEvent: {}
+[15.304860] (-) TimerEvent: {}
+[15.405416] (-) TimerEvent: {}
+[15.505852] (-) TimerEvent: {}
+[15.606332] (-) TimerEvent: {}
+[15.706827] (-) TimerEvent: {}
+[15.807199] (-) TimerEvent: {}
+[15.907558] (-) TimerEvent: {}
+[16.008174] (-) TimerEvent: {}
+[16.108425] (-) TimerEvent: {}
+[16.208943] (-) TimerEvent: {}
+[16.309748] (-) TimerEvent: {}
+[16.410074] (-) TimerEvent: {}
+[16.510868] (-) TimerEvent: {}
+[16.611615] (-) TimerEvent: {}
+[16.711998] (-) TimerEvent: {}
+[16.812633] (-) TimerEvent: {}
+[16.913392] (-) TimerEvent: {}
+[17.013715] (-) TimerEvent: {}
+[17.114297] (-) TimerEvent: {}
+[17.215320] (-) TimerEvent: {}
+[17.315815] (-) TimerEvent: {}
+[17.416267] (-) TimerEvent: {}
+[17.516700] (-) TimerEvent: {}
+[17.616979] (-) TimerEvent: {}
+[17.717552] (-) TimerEvent: {}
+[17.817833] (-) TimerEvent: {}
+[17.918436] (-) TimerEvent: {}
+[18.018768] (-) TimerEvent: {}
+[18.119232] (-) TimerEvent: {}
+[18.220542] (-) TimerEvent: {}
+[18.321222] (-) TimerEvent: {}
+[18.422006] (-) TimerEvent: {}
+[18.522645] (-) TimerEvent: {}
+[18.624224] (-) TimerEvent: {}
+[18.725055] (-) TimerEvent: {}
+[18.825335] (-) TimerEvent: {}
+[18.926042] (-) TimerEvent: {}
+[19.026766] (-) TimerEvent: {}
+[19.127500] (-) TimerEvent: {}
+[19.227981] (-) TimerEvent: {}
+[19.329113] (-) TimerEvent: {}
+[19.429832] (-) TimerEvent: {}
+[19.530166] (-) TimerEvent: {}
+[19.631127] (-) TimerEvent: {}
+[19.731927] (-) TimerEvent: {}
+[19.832605] (-) TimerEvent: {}
+[19.932905] (-) TimerEvent: {}
+[20.033324] (-) TimerEvent: {}
+[20.133754] (-) TimerEvent: {}
+[20.234358] (-) TimerEvent: {}
+[20.334844] (-) TimerEvent: {}
+[20.435664] (-) TimerEvent: {}
+[20.536173] (-) TimerEvent: {}
+[20.637169] (-) TimerEvent: {}
+[20.737754] (-) TimerEvent: {}
+[20.838904] (-) TimerEvent: {}
+[20.939795] (-) TimerEvent: {}
+[21.040868] (-) TimerEvent: {}
+[21.141323] (-) TimerEvent: {}
+[21.242385] (-) TimerEvent: {}
+[21.343386] (-) TimerEvent: {}
+[21.444084] (-) TimerEvent: {}
+[21.544759] (-) TimerEvent: {}
+[21.645462] (-) TimerEvent: {}
+[21.745873] (-) TimerEvent: {}
+[21.846550] (-) TimerEvent: {}
+[21.947112] (-) TimerEvent: {}
+[22.047505] (-) TimerEvent: {}
+[22.147922] (-) TimerEvent: {}
+[22.248753] (-) TimerEvent: {}
+[22.349552] (-) TimerEvent: {}
+[22.450578] (-) TimerEvent: {}
+[22.551237] (-) TimerEvent: {}
+[22.652834] (-) TimerEvent: {}
+[22.753314] (-) TimerEvent: {}
+[22.853761] (-) TimerEvent: {}
+[22.954709] (-) TimerEvent: {}
+[23.055511] (-) TimerEvent: {}
+[23.155851] (-) TimerEvent: {}
+[23.256869] (-) TimerEvent: {}
+[23.357872] (-) TimerEvent: {}
+[23.459869] (-) TimerEvent: {}
+[23.560540] (-) TimerEvent: {}
+[23.661100] (-) TimerEvent: {}
+[23.762312] (-) TimerEvent: {}
+[23.862584] (-) TimerEvent: {}
+[23.963678] (-) TimerEvent: {}
+[24.064422] (-) TimerEvent: {}
+[24.165391] (-) TimerEvent: {}
+[24.266193] (-) TimerEvent: {}
+[24.367187] (-) TimerEvent: {}
+[24.467852] (-) TimerEvent: {}
+[24.568158] (-) TimerEvent: {}
+[24.669218] (-) TimerEvent: {}
+[24.769778] (-) TimerEvent: {}
+[24.870627] (-) TimerEvent: {}
+[24.970904] (-) TimerEvent: {}
+[25.071549] (-) TimerEvent: {}
+[25.172061] (-) TimerEvent: {}
+[25.272671] (-) TimerEvent: {}
+[25.373563] (-) TimerEvent: {}
+[25.474416] (-) TimerEvent: {}
+[25.574747] (-) TimerEvent: {}
+[25.675372] (-) TimerEvent: {}
+[25.776063] (-) TimerEvent: {}
+[25.876580] (-) TimerEvent: {}
+[25.976962] (-) TimerEvent: {}
+[26.078146] (-) TimerEvent: {}
+[26.179373] (-) TimerEvent: {}
+[26.279747] (-) TimerEvent: {}
+[26.380271] (-) TimerEvent: {}
+[26.480766] (-) TimerEvent: {}
+[26.581377] (-) TimerEvent: {}
+[26.681673] (-) TimerEvent: {}
+[26.782250] (-) TimerEvent: {}
+[26.882773] (-) TimerEvent: {}
+[26.983596] (-) TimerEvent: {}
+[27.084733] (-) TimerEvent: {}
+[27.185033] (-) TimerEvent: {}
+[27.285361] (-) TimerEvent: {}
+[27.385585] (-) TimerEvent: {}
+[27.485971] (-) TimerEvent: {}
+[27.586578] (-) TimerEvent: {}
+[27.687051] (-) TimerEvent: {}
+[27.787682] (-) TimerEvent: {}
+[27.888717] (-) TimerEvent: {}
+[27.989295] (-) TimerEvent: {}
+[28.089534] (-) TimerEvent: {}
+[28.190025] (-) TimerEvent: {}
+[28.290372] (-) TimerEvent: {}
+[28.391847] (-) TimerEvent: {}
+[28.492369] (-) TimerEvent: {}
+[28.592842] (-) TimerEvent: {}
+[28.693536] (-) TimerEvent: {}
+[28.794451] (-) TimerEvent: {}
+[28.895012] (-) TimerEvent: {}
+[28.995586] (-) TimerEvent: {}
+[29.096139] (-) TimerEvent: {}
+[29.196740] (-) TimerEvent: {}
+[29.273911] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] Linking CXX shared library libelevator_button_plugin.so\n'}
+[29.296875] (-) TimerEvent: {}
+[29.397555] (-) TimerEvent: {}
+[29.499235] (-) TimerEvent: {}
+[29.599464] (-) TimerEvent: {}
+[29.700000] (-) TimerEvent: {}
+[29.726798] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] Built target elevator_button_plugin\n'}
+[29.744035] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[29.746046] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'install'}
+[29.757616] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/sunbi/ros'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/sunbi/ros'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-409dd0de-1.10-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/tmp/.tmpOcdKfJ:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sunbi/.vscode/extensions/openai.chatgpt-0.4.12-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/86e899b2_ed36_4b27_984f_9ccc2591c0a3'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.101'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('VSCODE_CLI', '1'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sunbi/.config/Code/CachedData/6f17636121051a53c88d3e605c491d22af2ba755'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '2397'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[29.768479] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.768949] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config\n'}
+[29.769404] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml\n'}
+[29.769462] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch\n'}
+[29.769579] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py\n'}
+[29.769638] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur5e_elevator.launch.py\n'}
+[29.769907] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py\n'}
+[29.769975] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds\n'}
+[29.770022] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/elevator.world\n'}
+[29.770065] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so\n'}
+[29.774968] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so" to ""\n'}
+[29.775530] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo\n'}
+[29.775668] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo\n'}
+[29.775784] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh\n'}
+[29.776793] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv\n'}
+[29.777136] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh\n'}
+[29.777196] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv\n'}
+[29.777328] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash\n'}
+[29.777396] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh\n'}
+[29.777442] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh\n'}
+[29.777484] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv\n'}
+[29.777677] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv\n'}
+[29.777859] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo\n'}
+[29.777924] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake\n'}
+[29.777974] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake\n'}
+[29.778360] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml\n'}
+[29.780592] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[29.800990] (-) TimerEvent: {}
+[29.802929] (ur_simulation_gazebo) JobEnded: {'identifier': 'ur_simulation_gazebo', 'rc': 0}
+[29.803224] (-) EventReactorShutdown: {}

@@ -50,7 +50,8 @@
   <xacro:arg name="fake_sensor_commands" default="false" />
   <xacro:arg name="sim_gazebo" default="true" />
   <xacro:arg name="sim_ignition" default="false" />
-  <xacro:arg name="simulation_controllers" default="$(find ur_description)/config/ur5e_controllers.yaml" />
+  <!-- Default controllers yaml for Gazebo (package-provided) -->
+  <xacro:arg name="simulation_controllers" default="$(find ur_simulation_gazebo)/config/ur_controllers.yaml" />
 
   <!-- initial position -->
   <xacro:arg name="initial_positions_file" default="$(find ur_description)/config/initial_positions.yaml"/>
@@ -131,6 +132,7 @@
   <xacro:if value="$(arg sim_gazebo)">
     <gazebo>
       <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        <parameters>$(arg simulation_controllers)</parameters>
         <ros2_control>
           <parameters>$(arg simulation_controllers)</parameters>
         </ros2_control>

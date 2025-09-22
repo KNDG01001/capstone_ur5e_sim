@@ -3,6 +3,7 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, Opaq
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.substitutions import FindPackageShare
+from launch_ros.actions import Node
 
 def launch_setup(context, *args, **kwargs):
     # 기존 설정
@@ -31,6 +32,7 @@ def launch_setup(context, *args, **kwargs):
             "description_file": description_file,
             "prefix": prefix,
             "launch_rviz": "false",
+            "world": world_file,
         }.items(),
     )
 
@@ -53,17 +55,7 @@ def launch_setup(context, *args, **kwargs):
         }.items(),
     )
 
-    # ✅ Gazebo world 로딩 런치
-    gazebo_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [FindPackageShare("gazebo_ros"), "/launch", "/gazebo.launch.py"]
-        ),
-        launch_arguments={
-            "world": world_file,
-        }.items(),
-    )
-
-    return [gazebo_launch, ur_control_launch, ur_moveit_launch]  # ✅ world 먼저 로딩
+    return [ur_control_launch, ur_moveit_launch]
 
 def generate_launch_description():
     declared_arguments = []

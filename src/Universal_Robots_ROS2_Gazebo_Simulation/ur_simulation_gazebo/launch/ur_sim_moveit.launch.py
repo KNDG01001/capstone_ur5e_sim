@@ -1,7 +1,7 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
 from launch_ros.actions import Node
 
@@ -32,6 +32,12 @@ def launch_setup(context, *args, **kwargs):
             "description_file": description_file,
             "prefix": prefix,
             "launch_rviz": "false",
+            # Gazebo 시뮬레이션에서는 MoveIt(use_sim_time=true)과 매칭되도록
+            # 기본 컨트롤러를 joint_trajectory_controller로 사용
+            "initial_joint_controller": "joint_trajectory_controller",
+            # Controller manager namespace (plugin logs show namespace: /)
+            "controller_manager_ns": "/controller_manager",
+            "world": world_file,
         }.items(),
     )
 
@@ -48,39 +54,14 @@ def launch_setup(context, *args, **kwargs):
             "moveit_config_package": moveit_config_package,
             "moveit_config_file": moveit_config_file,
             "prefix": prefix,
+            # Gazebo 시간과 일치시키기 위해 MoveIt도 sim time 사용
             "use_sim_time": "true",
             "launch_rviz": "true",
             "use_fake_hardware": "true",
         }.items(),
     )
 
-    # ✅ Gazebo world 로딩 런치
-    gazebo_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            [FindPackageShare("gazebo_ros"), "/launch", "/gazebo.launch.py"]
-        ),
-        launch_arguments={
-            "world": world_file,
-        }.items(),
-    )
-
-    # 객체 탐지 노드 실행
-    object_detection_node = Node(
-        package='ur_simulation_gazebo',
-        executable='object_detection_node.py',
-        name='object_detection_node',
-        output='screen'
-    )
-
-    # UR5e 컨트롤러 노드 실행
-    ur5e_controller_node = Node(
-        package='ur_simulation_gazebo',
-        executable='ur5e_controller_node.py',
-        name='ur5e_controller_node',
-        output='screen'
-    )
-
-    return [gazebo_launch, ur_control_launch, ur_moveit_launch, object_detection_node, ur5e_controller_node]  # world 먼저 로딩
+    return [ur_control_launch, ur_moveit_launch]
 
 def generate_launch_description():
     declared_arguments = []
@@ -147,10 +128,11 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "world",
-            default_value=[
+            default_value=PathJoinSubstitution([
                 FindPackageShare("ur_simulation_gazebo"),
-                "/worlds/elevator.world"
-            ],
+                "worlds",
+                "elevator.world",
+            ]),
             description="Full path to the world model file to load",
         )
     )
