@@ -33,14 +33,12 @@ def generate_launch_description():
         }.items()
     )
 
-    # 2. 로봇 URDF (xacro) 로딩
-    # 우선 ur_description/urdf/ur5e.urdf.xacro가 있는지 확인
-    ur5e_xacro_path = os.path.join(ur_description_pkg, 'urdf', 'ur5e.urdf.xacro')
-    if os.path.exists(ur5e_xacro_path):
-        xacro_path = ur5e_xacro_path
-    else:
-        # 기본 fallback
-        xacro_path = os.path.join(ur_description_pkg, 'urdf', 'ur.urdf.xacro')
+    # 2. 로봇 URDF (xacro) 로딩: 손목 카메라가 포함된 커스텀 모델 사용
+    xacro_path = os.path.join(ur_pkg, 'urdf', 'ur_with_camera.urdf.xacro')
+    if not os.path.exists(xacro_path):
+        # fallback to 기본 ur_description if our custom file is missing
+        alt_path = os.path.join(ur_description_pkg, 'urdf', 'ur5e.urdf.xacro')
+        xacro_path = alt_path if os.path.exists(alt_path) else os.path.join(ur_description_pkg, 'urdf', 'ur.urdf.xacro')
 
     robot_description_content = Command([
         'xacro', ' ',
@@ -68,7 +66,7 @@ def generate_launch_description():
         cmd=[
             'bash', '-c',
             'sleep 3 && ros2 run gazebo_ros spawn_entity.py '
-            '-entity ur5e -topic robot_description -x 0.0 -y 0.0 -z 0.1'
+            '-entity ur5e -topic robot_description -x 0.20 -y 0.18 -z 0.1 -Y 1.57'
         ],
         output='screen'
     )

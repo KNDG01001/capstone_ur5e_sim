@@ -35,6 +35,7 @@ from launch.actions import (
     OpaqueFunction,
     RegisterEventHandler,
 )
+from launch.actions import SetEnvironmentVariable
 from launch.conditions import IfCondition, UnlessCondition
 from launch.event_handlers import OnProcessExit
 from launch.actions import TimerAction
@@ -67,6 +68,7 @@ def launch_setup(context, *args, **kwargs):
     launch_rviz = LaunchConfiguration("launch_rviz")
     gazebo_gui = LaunchConfiguration("gazebo_gui")
     world = LaunchConfiguration("world")
+    gazebo_master_uri = LaunchConfiguration("gazebo_master_uri")
 
     initial_joint_controllers = PathJoinSubstitution(
         [FindPackageShare(runtime_config_package), "config", controllers_file]
@@ -87,6 +89,39 @@ def launch_setup(context, *args, **kwargs):
             PathJoinSubstitution(
                 [FindPackageShare(description_package), "urdf", description_file]
             ),
+            " ",
+            # Explicitly pass parameter files from ur_description to avoid wrong package resolution
+            "joint_limit_params:=",
+            PathJoinSubstitution([
+                FindPackageShare("ur_description"),
+                "config",
+                ur_type,
+                "joint_limits.yaml",
+            ]),
+            " ",
+            "kinematics_params:=",
+            PathJoinSubstitution([
+                FindPackageShare("ur_description"),
+                "config",
+                ur_type,
+                "default_kinematics.yaml",
+            ]),
+            " ",
+            "physical_params:=",
+            PathJoinSubstitution([
+                FindPackageShare("ur_description"),
+                "config",
+                ur_type,
+                "physical_parameters.yaml",
+            ]),
+            " ",
+            "visual_params:=",
+            PathJoinSubstitution([
+                FindPackageShare("ur_description"),
+                "config",
+                ur_type,
+                "visual_parameters.yaml",
+            ]),
             " ",
             "safety_limits:=",
             safety_limits,
@@ -209,12 +244,18 @@ def launch_setup(context, *args, **kwargs):
     )
 
     # Gazebo nodes
+    set_gazebo_env = SetEnvironmentVariable(
+        name='GAZEBO_MASTER_URI',
+        value=gazebo_master_uri,
+    )
+
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             [FindPackageShare("gazebo_ros"), "/launch", "/gazebo.launch.py"]
         ),
         launch_arguments={
             "gui": gazebo_gui,
+            "verbose": "true",
             "world": world,
             # ensure launch exits if server dies early (keep true for clarity)
             "server_required": "true",
@@ -258,6 +299,7 @@ def launch_setup(context, *args, **kwargs):
     )
 
     nodes_to_start = [
+        set_gazebo_env,
         robot_state_publisher_node,
         gazebo,
         gazebo_spawn_robot,
@@ -384,6 +426,13 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "gazebo_gui", default_value="true", description="Start gazebo with GUI?"
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "gazebo_master_uri",
+            default_value='http://127.0.0.1:11345',
+            description="GAZEBO_MASTER_URI to use (change to avoid port conflicts)",
         )
     )
     declared_arguments.append(

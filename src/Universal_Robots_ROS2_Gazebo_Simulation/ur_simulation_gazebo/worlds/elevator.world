@@ -23,7 +23,8 @@
     <model name="elevator_walls">
       <static>true</static>
       <link name="walls_link">
-        <pose>0 0.55 0 0 0 0</pose>
+        <!-- Shifted slightly forward to give arm more clearance to extend -->
+        <pose>0.80 0 0 0 0 1.5708</pose>
         <collision name="collision">
           <geometry>
             <box>
@@ -50,7 +51,8 @@
     <model name="elevator_button">
       <static>true</static>
       <link name="button_link">
-        <pose>0.8 0.5 1.0 0 1.57 1.57</pose>
+        <!-- Mount button farther from the base (≈0.7 m) to leave space for the wrist -->
+        <pose>0.72 0.12 0.68 1.5708 1.57 1.57</pose>
         <collision name="collision">
           <geometry>
             <cylinder>

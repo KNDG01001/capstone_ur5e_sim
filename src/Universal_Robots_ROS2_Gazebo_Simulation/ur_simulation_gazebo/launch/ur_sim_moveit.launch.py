@@ -17,6 +17,17 @@ def launch_setup(context, *args, **kwargs):
     moveit_config_file = LaunchConfiguration("moveit_config_file")
     prefix = LaunchConfiguration("prefix")
     world_file = LaunchConfiguration("world")  # ✅ 추가됨
+    use_wrist_camera = LaunchConfiguration("use_wrist_camera")
+
+    # Select description based on camera toggle
+    use_cam = use_wrist_camera.perform(context).lower() in ["1", "true", "yes"]
+    if use_cam:
+        desc_pkg_val = description_package
+        desc_file_val = description_file
+    else:
+        # fallback to upstream ur_description URDF without camera
+        desc_pkg_val = LaunchConfiguration("fallback_description_package")
+        desc_file_val = LaunchConfiguration("fallback_description_file")
 
     # ur + ros2_control
     ur_control_launch = IncludeLaunchDescription(
@@ -28,8 +39,8 @@ def launch_setup(context, *args, **kwargs):
             "safety_limits": safety_limits,
             "runtime_config_package": runtime_config_package,
             "controllers_file": controllers_file,
-            "description_package": description_package,
-            "description_file": description_file,
+            "description_package": desc_pkg_val,
+            "description_file": desc_file_val,
             "prefix": prefix,
             "launch_rviz": "false",
             # Gazebo 시뮬레이션에서는 MoveIt(use_sim_time=true)과 매칭되도록
@@ -49,19 +60,32 @@ def launch_setup(context, *args, **kwargs):
         launch_arguments={
             "ur_type": ur_type,
             "safety_limits": safety_limits,
-            "description_package": description_package,
-            "description_file": description_file,
+            "description_package": desc_pkg_val,
+            "description_file": desc_file_val,
             "moveit_config_package": moveit_config_package,
             "moveit_config_file": moveit_config_file,
             "prefix": prefix,
             # Gazebo 시간과 일치시키기 위해 MoveIt도 sim time 사용
             "use_sim_time": "true",
             "launch_rviz": "true",
-            "use_fake_hardware": "true",
+            "use_fake_hardware": "false",
         }.items(),
     )
 
-    return [ur_control_launch, ur_moveit_launch]
+    # CV + MoveIt node (detect red button and move)
+    nodes = [ur_control_launch, ur_moveit_launch]
+    if use_cam:
+        nodes.append(
+            Node(
+                package="ur_cv_moveit",
+                executable="button_detect_and_move",
+                name="button_detect_and_move",
+                output="screen",
+                parameters=[{"base_frame": "base_link"}],
+            )
+        )
+
+    return nodes
 
 def generate_launch_description():
     declared_arguments = []
@@ -96,12 +120,25 @@ def generate_launch_description():
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_package",
-            default_value="ur_description",
+            default_value="ur_simulation_gazebo",
         )
     )
     declared_arguments.append(
         DeclareLaunchArgument(
             "description_file",
+            default_value="ur_with_camera.urdf.xacro",
+        )
+    )
+    # Fallback description (no camera)
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "fallback_description_package",
+            default_value="ur_description",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "fallback_description_file",
             default_value="ur.urdf.xacro",
         )
     )
@@ -134,6 +171,15 @@ def generate_launch_description():
                 "elevator.world",
             ]),
             description="Full path to the world model file to load",
+        )
+    )
+
+    # Toggle wrist camera URDF
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "use_wrist_camera",
+            default_value="true",
+            description="Use URDF with wrist-mounted depth camera and launch CV node",
         )
     )
 

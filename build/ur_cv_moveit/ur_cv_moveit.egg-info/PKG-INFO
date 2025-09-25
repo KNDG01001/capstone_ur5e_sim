@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ur-cv-moveit
+Version: 0.0.1
+Summary: Detect a button with CV and use MoveIt to move the UR5e.
+Home-page: UNKNOWN
+Maintainer: you
+Maintainer-email: you@example.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+
+UNKNOWN
+

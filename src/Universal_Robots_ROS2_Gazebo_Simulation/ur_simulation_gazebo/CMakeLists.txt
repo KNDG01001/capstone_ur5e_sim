@@ -21,7 +21,7 @@ ament_target_dependencies(elevator_button_plugin
 # ===== 2. 설치 =====
 
 # config, launch 디렉토리 설치
-install(DIRECTORY config launch
+install(DIRECTORY config launch urdf
   DESTINATION share/${PROJECT_NAME}
 )
 
