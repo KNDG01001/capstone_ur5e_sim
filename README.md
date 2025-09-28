@@ -2,9 +2,9 @@
 불가능 : 로봇팔 명령 기반 제어
 
 명령어 예제
-'''bash
+```bash
 ros2 topic pub --once /button_request std_msgs/msg/String "{data: '3'}"
-'''
+```
 # 🤖 capstone_ur5e_sim
 
 UR5e 로봇팔의 Gazebo 시뮬레이션 및 ROS 2 Humble 기반 제어 패키지입니다.  
