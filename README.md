@@ -5,6 +5,15 @@
 ```bash
 ros2 topic pub --once /button_request std_msgs/msg/String "{data: '3'}"
 ```
+Yolo 학습
+```bash
+cd ~/ros
+yolo detect train model=yolov8n.pt \
+    data=datasets/elevator_buttons/dataset.yaml \
+    epochs=100 imgsz=640 \
+    project=runs/elevator_buttons \
+    name=yolov8n_v1
+```
 # 🤖 capstone_ur5e_sim
 
 UR5e 로봇팔의 Gazebo 시뮬레이션 및 ROS 2 Humble 기반 제어 패키지입니다.  
