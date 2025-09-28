@@ -14,6 +14,14 @@ yolo detect train model=yolov8n.pt \
     project=runs/elevator_buttons \
     name=yolov8n_v1
 ```
+가중치 설정
+```bash
+sunbi@sunbi:~/ros$ ros2 param set /button_detect_and_move yolo_weights /home/sunbi/ros/runs/elevator_buttons/yolov8n_v1/weights/best.pt
+Set parameter successful
+sunbi@sunbi:~/ros$ ros2 param set /button_detect_and_move detector_type yolo
+Set parameter successful
+```
+
 # 🤖 capstone_ur5e_sim
 
 UR5e 로봇팔의 Gazebo 시뮬레이션 및 ROS 2 Humble 기반 제어 패키지입니다.  
