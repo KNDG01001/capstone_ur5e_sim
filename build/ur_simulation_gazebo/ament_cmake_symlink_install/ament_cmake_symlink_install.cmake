@@ -316,8 +316,14 @@ ament_cmake_symlink_install_directory("/home/sunbi/ros/capstone_ur5e_sim/src/Uni
 # install(DIRECTORY "worlds" "DESTINATION" "share/ur_simulation_gazebo")
 ament_cmake_symlink_install_directory("/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" DIRECTORY "worlds" "DESTINATION" "share/ur_simulation_gazebo")
 
+# install(DIRECTORY "materials" "DESTINATION" "share/ur_simulation_gazebo")
+ament_cmake_symlink_install_directory("/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" DIRECTORY "materials" "DESTINATION" "share/ur_simulation_gazebo")
+
 # install("TARGETS" "elevator_button_plugin" "DESTINATION" "lib")
 include("/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "env_hooks/aaa_ur_simulation_gazebo_env.sh" "DESTINATION" "share/ur_simulation_gazebo/environment")
+ament_cmake_symlink_install_files("/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" FILES "env_hooks/aaa_ur_simulation_gazebo_env.sh" "DESTINATION" "share/ur_simulation_gazebo/environment")
 
 # install(FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo" FILES "/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

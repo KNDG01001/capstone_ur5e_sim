@@ -1,5 +1,7 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction
+import os
+
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
@@ -18,6 +20,32 @@ def launch_setup(context, *args, **kwargs):
     prefix = LaunchConfiguration("prefix")
     world_file = LaunchConfiguration("world")  # ✅ 추가됨
     use_wrist_camera = LaunchConfiguration("use_wrist_camera")
+    detector_type = LaunchConfiguration("detector_type")
+    yolo_weights = LaunchConfiguration("yolo_weights")
+
+    # Ensure Gazebo shader libs and custom resources are discoverable
+    # Mirror the effect of `source /usr/share/gazebo/setup.sh` by appending resource path entries
+    default_resource_paths = [
+        "/usr/share/gazebo-11",
+        "/usr/share/gazebo-11/media",
+    ]
+    custom_world_path = "/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo/worlds"
+    extra_resource_paths = [custom_world_path]
+    current_resource = os.environ.get("GAZEBO_RESOURCE_PATH", "")
+    resource_paths = [p for p in current_resource.split(":") if p]
+    for p in default_resource_paths + extra_resource_paths:
+        if p not in resource_paths:
+            resource_paths.append(p)
+
+    current_model = os.environ.get("GAZEBO_MODEL_PATH", "")
+    model_paths = [p for p in current_model.split(":") if p]
+    if custom_world_path not in model_paths:
+        model_paths.append(custom_world_path)
+
+    env_setup_actions = [
+        SetEnvironmentVariable("GAZEBO_RESOURCE_PATH", ":".join(resource_paths)),
+        SetEnvironmentVariable("GAZEBO_MODEL_PATH", ":".join(model_paths)),
+    ]
 
     # Select description based on camera toggle
     use_cam = use_wrist_camera.perform(context).lower() in ["1", "true", "yes"]
@@ -73,7 +101,7 @@ def launch_setup(context, *args, **kwargs):
     )
 
     # CV + MoveIt node (detect red button and move)
-    nodes = [ur_control_launch, ur_moveit_launch]
+    nodes = env_setup_actions + [ur_control_launch, ur_moveit_launch]
     if use_cam:
         nodes.append(
             Node(
@@ -81,7 +109,13 @@ def launch_setup(context, *args, **kwargs):
                 executable="button_detect_and_move",
                 name="button_detect_and_move",
                 output="screen",
-                parameters=[{"base_frame": "base_link"}],
+                parameters=[
+                    {
+                        "base_frame": "base_link",
+                        "detector_type": detector_type.perform(context) or "yolo",
+                        "yolo_weights": yolo_weights.perform(context) or "",
+                    }
+                ],
             )
         )
 
@@ -180,6 +214,22 @@ def generate_launch_description():
             "use_wrist_camera",
             default_value="true",
             description="Use URDF with wrist-mounted depth camera and launch CV node",
+        )
+    )
+
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "detector_type",
+            default_value="yolo",
+            description="Detector type for button detection node (yolo/hsv)",
+        )
+    )
+
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "yolo_weights",
+            default_value="/home/sunbi/ros/runs/train_log/weights/best.pt",
+            description="Path to YOLO weights file",
         )
     )
 

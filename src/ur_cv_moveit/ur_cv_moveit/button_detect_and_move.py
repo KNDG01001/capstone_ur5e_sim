@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import math
 import time
+from dataclasses import dataclass
 from typing import Optional, Tuple, List, Any
 
 import rclpy
@@ -10,11 +11,12 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.parameter import Parameter
 from rcl_interfaces.msg import ParameterDescriptor
+from rcl_interfaces.msg import SetParametersResult
 from action_msgs.msg import GoalStatus
 
 from sensor_msgs.msg import Image, CameraInfo, JointState
 from geometry_msgs.msg import PoseStamped, PointStamped, Quaternion
-from std_msgs.msg import Header
+from std_msgs.msg import Header, String
 
 import tf2_ros
 from tf2_ros import Buffer, TransformListener
@@ -31,11 +33,24 @@ try:
 except Exception:
     HAVE_MOVEIT_COMMANDER = False
 
+try:
+    from ultralytics import YOLO
+    HAVE_ULTRALYTICS = True
+except Exception:
+    HAVE_ULTRALYTICS = False
+
 from rclpy.action import ActionClient
 from control_msgs.action import FollowJointTrajectory
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from moveit_msgs.srv import GetPositionIK
 from builtin_interfaces.msg import Duration as RosDuration
+
+
+@dataclass
+class DetectedButton:
+    label: str
+    pixel: Tuple[int, int]
+    confidence: float
 
 
 class ButtonDetectAndMove(Node):
@@ -57,6 +72,10 @@ class ButtonDetectAndMove(Node):
         self.declare_parameter('replan_attempts', 5)
         self.declare_parameter('vel_scale', 0.1)
         self.declare_parameter('acc_scale', 0.1)
+        self.declare_parameter('detector_type', 'hsv')
+        self.declare_parameter('yolo_weights', '')
+        self.declare_parameter('button_request_topic', '/button_request')
+        self.declare_parameter('label_case_insensitive', True)
         self.declare_parameter(
             'status_waiting_for',
             '',
@@ -81,6 +100,15 @@ class ButtonDetectAndMove(Node):
         self.replan_attempts = self.get_parameter('replan_attempts').get_parameter_value().integer_value
         self.vel_scale = self.get_parameter('vel_scale').get_parameter_value().double_value
         self.acc_scale = self.get_parameter('acc_scale').get_parameter_value().double_value
+        self.detector_type = self.get_parameter('detector_type').get_parameter_value().string_value or 'hsv'
+        self.yolo_weights = self.get_parameter('yolo_weights').get_parameter_value().string_value
+        self.button_request_topic = (
+            self.get_parameter('button_request_topic').get_parameter_value().string_value or '/button_request'
+        )
+        self.label_case_insensitive = (
+            self.get_parameter('label_case_insensitive').get_parameter_value().bool_value
+        )
+        self.valid_labels: List[str] = ['1', '2', '3', '4', '5', '6', 'O', 'C']
 
         # --- buffers / subs ---
         self.bridge = CvBridge()
@@ -105,6 +133,8 @@ class ButtonDetectAndMove(Node):
         self.group_name = 'ur_manipulator'
         self.last_joint_state: Optional[JointState] = None
         self.waiting_reason: Optional[str] = 'startup'
+        self.pending_label: Optional[str] = None
+        self._warned_labelless_detector = False
 
         if HAVE_MOVEIT_COMMANDER:
             self.robot = RobotCommander()
@@ -133,8 +163,149 @@ class ButtonDetectAndMove(Node):
             self._wait_for_ftj_server()
 
         self.already_moved = False
+        self.yolo_model = None
+        self._label_aliases = self._build_label_aliases()
+        self._allowed_label_cmp: set[str] = set()
+        self._refresh_label_sets()
+
+        self.button_req_sub = self.create_subscription(
+            String,
+            self.button_request_topic,
+            self.on_button_request,
+            10,
+            callback_group=self.cb_group,
+        )
+
+        self._setup_detector()
+        self._param_callback = self.add_on_set_parameters_callback(self._on_parameters_set)
 
     # -------- util ----------
+    def _setup_detector(self, force_reload: bool = False) -> None:
+        detector = self.detector_type.lower().strip()
+        if detector == 'yolo' and not HAVE_ULTRALYTICS:
+            self.get_logger().warn("Requested YOLO detector but ultralytics is not installed. Falling back to HSV detector.")
+            detector = 'hsv'
+            self.detector_type = 'hsv'
+
+        if detector == 'yolo':
+            weights = self.yolo_weights.strip()
+            if not weights:
+                self.get_logger().warn("YOLO detector selected but 'yolo_weights' parameter is empty. Detection will wait until weights are provided.")
+                return
+            if self.yolo_model is not None and not force_reload:
+                return
+            try:
+                self.yolo_model = YOLO(weights)
+                names = getattr(self.yolo_model, 'names', None)
+                self.get_logger().info(
+                    f"Loaded YOLO model ({weights}) with {len(names) if names else 'unknown'} classes."
+                )
+            except Exception as exc:
+                self.get_logger().error(f"Failed to load YOLO model from '{weights}': {exc}")
+                self.yolo_model = None
+                self.detector_type = 'hsv'
+        else:
+            self.yolo_model = None
+
+    def on_button_request(self, msg: String) -> None:
+        label = msg.data.strip()
+        if not label:
+            self.get_logger().warn("Received empty button request; ignoring.")
+            return
+        canonical = self._normalize_button_request(label)
+        if canonical is None:
+            allowed = ', '.join(self.valid_labels)
+            self.get_logger().warn(
+                f"Received unsupported button request '{label}'. Valid options: {allowed}"
+            )
+            return
+        self.pending_label = canonical
+        self.already_moved = False
+        self.get_logger().info(f"Received button request for label '{canonical}'.")
+
+    def _labels_match(self, detected: str, requested: str) -> bool:
+        if self.label_case_insensitive:
+            detected = detected.lower()
+            requested = requested.lower()
+        return detected == requested
+
+    def _refresh_label_sets(self) -> None:
+        if self.label_case_insensitive:
+            self._allowed_label_cmp = {lab.lower() for lab in self.valid_labels}
+        else:
+            self._allowed_label_cmp = set(self.valid_labels)
+
+    def _build_label_aliases(self) -> dict:
+        aliases = {}
+        for label in self.valid_labels:
+            aliases[label.lower()] = label
+        # Floor aliases
+        for num in range(1, 7):
+            label = str(num)
+            aliases[f'{num}층'] = label
+            aliases[f'floor{num}'] = label
+            aliases[f'f{num}'] = label
+            aliases[f'{num}f'] = label
+            aliases[f'{num}th'] = label
+        # Door control aliases
+        aliases.update({
+            'o': 'O',
+            'open': 'O',
+            'dooropen': 'O',
+            'open door': 'O',
+            '열림': 'O',
+            '열어': 'O',
+            'c': 'C',
+            'close': 'C',
+            'doorclose': 'C',
+            'close door': 'C',
+            '닫힘': 'C',
+            '닫아': 'C',
+        })
+        return aliases
+
+    def _normalize_button_request(self, raw: str) -> Optional[str]:
+        key = raw.strip()
+        if not key:
+            return None
+        lowered = key.lower()
+        collapsed = lowered.replace(' ', '')
+        if collapsed in self._label_aliases:
+            return self._label_aliases[collapsed]
+        if lowered in self._label_aliases:
+            return self._label_aliases[lowered]
+        if key in self.valid_labels:
+            return key
+        if self.label_case_insensitive and lowered in self._label_aliases:
+            return self._label_aliases[lowered]
+        return None
+
+    def _on_parameters_set(self, params: List[Parameter]):
+        detector_changed = False
+        reload_detector = False
+        for param in params:
+            if param.name == 'detector_type':
+                new_type = str(param.value).strip() or 'hsv'
+                if new_type != self.detector_type:
+                    self.detector_type = new_type
+                    detector_changed = True
+            elif param.name == 'yolo_weights':
+                new_weights = str(param.value)
+                if new_weights != self.yolo_weights:
+                    self.yolo_weights = new_weights
+                    reload_detector = True
+            elif param.name == 'label_case_insensitive':
+                new_val = bool(param.value)
+                if new_val != self.label_case_insensitive:
+                    self.label_case_insensitive = new_val
+                    self._refresh_label_sets()
+        if detector_changed:
+            self.yolo_model = None
+            self._setup_detector(force_reload=True)
+        elif reload_detector and self.detector_type.lower().strip() == 'yolo':
+            self._setup_detector(force_reload=True)
+        return SetParametersResult(successful=True)
+
     def _pick_group_name(self, requested: str) -> str:
         if requested:
             try:
@@ -232,12 +403,84 @@ class ButtonDetectAndMove(Node):
         cx = int(M['m10'] / M['m00']); cy = int(M['m01'] / M['m00'])
         return cx, cy
 
+    def _detect_buttons(self, img: np.ndarray) -> List[DetectedButton]:
+        detector = self.detector_type.lower()
+        if detector == 'yolo' and self.yolo_model is not None:
+            return self._detect_buttons_yolo(img)
+        return self._detect_buttons_hsv(img)
+
+    def _detect_buttons_yolo(self, img: np.ndarray) -> List[DetectedButton]:
+        if self.yolo_model is None:
+            return []
+        try:
+            results = self.yolo_model(img, verbose=False)
+        except Exception as exc:
+            self.get_logger().error(f"YOLO inference failed: {exc}")
+            return []
+        if not results:
+            return []
+        res0 = results[0]
+        boxes = getattr(res0, 'boxes', None)
+        if boxes is None or len(boxes) == 0:
+            return []
+        names = getattr(res0, 'names', None) or getattr(self.yolo_model, 'names', None)
+        try:
+            xyxy = boxes.xyxy.detach().cpu().numpy()
+            confs = boxes.conf.detach().cpu().numpy()
+            classes = boxes.cls.detach().cpu().numpy()
+        except Exception as exc:
+            self.get_logger().error(f"Failed to parse YOLO boxes: {exc}")
+            return []
+        detections: List[DetectedButton] = []
+        for idx in range(len(xyxy)):
+            x1, y1, x2, y2 = xyxy[idx]
+            cx = int(round((x1 + x2) / 2.0))
+            cy = int(round((y1 + y2) / 2.0))
+            class_id = int(classes[idx])
+            label = str(class_id)
+            if names is not None:
+                if isinstance(names, dict):
+                    label = str(names.get(class_id, label))
+                elif isinstance(names, (list, tuple)) and 0 <= class_id < len(names):
+                    label = str(names[class_id])
+            label_cmp = label.lower() if self.label_case_insensitive else label
+            if self._allowed_label_cmp and label_cmp not in self._allowed_label_cmp:
+                continue
+            detections.append(
+                DetectedButton(
+                    label=label,
+                    pixel=(cx, cy),
+                    confidence=float(confs[idx]),
+                )
+            )
+        return detections
+
+    def _detect_buttons_hsv(self, img: np.ndarray) -> List[DetectedButton]:
+        px = self.detect_button_pixel(img)
+        if px is None:
+            return []
+        return [DetectedButton(label='__default__', pixel=px, confidence=1.0)]
+
+    def _select_detection(self, detections: List[DetectedButton], requested: str) -> Optional[DetectedButton]:
+        for det in detections:
+            if self._labels_match(det.label, requested):
+                return det
+        if self.detector_type.lower() != 'yolo' and not self._warned_labelless_detector:
+            self.get_logger().warn(
+                f"Current detector '{self.detector_type}' does not support labelled buttons; requested '{requested}'."
+            )
+            self._warned_labelless_detector = True
+        return None
+
     # -------- main loop ----------
     def process(self):
         if self.processing:
             return
         self.processing = True
         try:
+            if self.pending_label is None:
+                self._update_waiting_reason('button_command')
+                return
             if self.already_moved:
                 return
             if self.latest_rgb is None:
@@ -254,15 +497,33 @@ class ButtonDetectAndMove(Node):
                 return
             self._update_waiting_reason(None)
 
-            px = self.detect_button_pixel(self.latest_rgb)
-            if px is None:
-                self.get_logger().info("Button not found in image.")
+            detections = self._detect_buttons(self.latest_rgb)
+            if not detections:
+                self.get_logger().info("No buttons detected in image.")
                 return
-            u, v = px
+            target_detection = self._select_detection(detections, self.pending_label)
+            if target_detection is None:
+                labels_str = ', '.join(det.label for det in detections)
+                self.get_logger().info(
+                    f"Detected {len(detections)} button(s) with labels [{labels_str}], but none match request '{self.pending_label}'."
+                )
+                return
+
+            img_h, img_w = self.latest_depth.shape[:2]
+            u = max(0, min(img_w - 1, target_detection.pixel[0]))
+            v = max(0, min(img_h - 1, target_detection.pixel[1]))
             depth = float(self.latest_depth[v, u])
             if not math.isfinite(depth) or depth <= 0.05:
                 self.get_logger().warn("Invalid depth at detection point.")
                 return
+
+            self.get_logger().info(
+                "Selected button '%s' (confidence %.2f) at pixel (%d, %d).",
+                target_detection.label,
+                target_detection.confidence,
+                u,
+                v,
+            )
 
             # camera -> base transform
             fx, fy, cx, cy = self.K[0, 0], self.K[1, 1], self.K[0, 2], self.K[1, 2]
@@ -405,6 +666,7 @@ class ButtonDetectAndMove(Node):
                     return
 
             self.already_moved = True
+            self.pending_label = None
             self.get_logger().info("Motion executed towards detected button.")
         finally:
             self.processing = False
@@ -429,6 +691,10 @@ class ButtonDetectAndMove(Node):
             self.get_logger().info("Waiting for camera info on %s" % self.camera_info_topic)
         elif reason == 'joint_state':
             self.get_logger().info("Waiting for /joint_states update")
+        elif reason == 'button_command':
+            self.get_logger().info(
+                "Waiting for button selection request on %s" % self.button_request_topic
+            )
         else:
             self.get_logger().info(f"Waiting for required data: {reason}")
 
