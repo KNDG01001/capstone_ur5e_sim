@@ -1,5 +1,5 @@
-가능 : 로봇팔 스폰 및 움직여보기, rviz에서 motion planning -> gazebo 연동 성공    
-불가능 : 로봇팔 명령 기반 제어, 버튼 상호작용
+가능 : 로봇팔 스폰 및 움직여보기, rviz에서 motion planning -> gazebo 연동 성공, 버튼 텍스쳐 추가        
+불가능 : 로봇팔 명령 기반 제어
 
 # 🤖 capstone_ur5e_sim
 
