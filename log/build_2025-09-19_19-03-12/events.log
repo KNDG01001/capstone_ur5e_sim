@@ -1,0 +1,724 @@
+[0.000000] (-) TimerEvent: {}
+[0.000227] (ur_description) JobQueued: {'identifier': 'ur_description', 'dependencies': OrderedDict()}
+[0.000304] (ur_simulation_gazebo) JobQueued: {'identifier': 'ur_simulation_gazebo', 'dependencies': OrderedDict([('ur_description', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description')])}
+[0.000358] (ur_description) JobStarted: {'identifier': 'ur_description'}
+[0.008948] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'cmake'}
+[0.009466] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Description', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/capstone_ur5e_sim/install/ur_description'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.078054] (ur_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.098743] (-) TimerEvent: {}
+[0.140170] (ur_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.147816] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.198954] (-) TimerEvent: {}
+[0.236951] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.244375] (ur_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.245009] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.245095] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.248780] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299252] (-) TimerEvent: {}
+[0.346350] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.352369] (ur_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.352591] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.352675] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.354854] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399858] (-) TimerEvent: {}
+[0.496716] (ur_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500128] (-) TimerEvent: {}
+[0.580343] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[0.600445] (-) TimerEvent: {}
+[0.701240] (-) TimerEvent: {}
+[0.802021] (-) TimerEvent: {}
+[0.902559] (-) TimerEvent: {}
+[1.003929] (-) TimerEvent: {}
+[1.105226] (-) TimerEvent: {}
+[1.205809] (-) TimerEvent: {}
+[1.226191] (ur_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.229126] (ur_description) StdoutLine: {'line': b'-- Generating done\n'}
+[1.233206] (ur_description) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/capstone_ur5e_sim/build/ur_description\n'}
+[1.238609] (ur_description) CommandEnded: {'returncode': 0}
+[1.239112] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'build'}
+[1.239172] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.288866] (ur_description) CommandEnded: {'returncode': 0}
+[1.289539] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'install'}
+[1.301141] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.305969] (-) TimerEvent: {}
+[1.310644] (ur_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.310787] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config\n'}
+[1.310853] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3\n'}
+[1.312075] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml\n'}
+[1.312168] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml\n'}
+[1.312284] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml\n'}
+[1.312339] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml\n'}
+[1.312386] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3e\n'}
+[1.312428] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml\n'}
+[1.312468] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml\n'}
+[1.312509] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml\n'}
+[1.312548] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml\n'}
+[1.312589] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur15\n'}
+[1.312627] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur15/physical_parameters.yaml\n'}
+[1.312667] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur15/default_kinematics.yaml\n'}
+[1.312714] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur15/joint_limits.yaml\n'}
+[1.312857] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur15/visual_parameters.yaml\n'}
+[1.312958] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur30\n'}
+[1.313061] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml\n'}
+[1.313124] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml\n'}
+[1.313173] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml\n'}
+[1.313217] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml\n'}
+[1.313290] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur20\n'}
+[1.313340] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml\n'}
+[1.313386] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml\n'}
+[1.313533] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml\n'}
+[1.313659] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml\n'}
+[1.313793] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur7e\n'}
+[1.313955] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml\n'}
+[1.314090] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml\n'}
+[1.314224] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml\n'}
+[1.314403] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml\n'}
+[1.314535] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10e\n'}
+[1.314676] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml\n'}
+[1.314858] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml\n'}
+[1.315076] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml\n'}
+[1.315262] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml\n'}
+[1.315396] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/initial_positions.yaml\n'}
+[1.316212] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur16e\n'}
+[1.316331] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml\n'}
+[1.316469] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml\n'}
+[1.316550] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml\n'}
+[1.316619] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml\n'}
+[1.316751] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5e\n'}
+[1.316827] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml\n'}
+[1.317126] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml\n'}
+[1.317190] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml\n'}
+[1.317489] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml\n'}
+[1.317677] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur12e\n'}
+[1.317729] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml\n'}
+[1.317775] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml\n'}
+[1.317819] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml\n'}
+[1.318173] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml\n'}
+[1.318247] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5\n'}
+[1.318295] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml\n'}
+[1.318417] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml\n'}
+[1.318469] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml\n'}
+[1.318723] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml\n'}
+[1.319911] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10\n'}
+[1.319993] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml\n'}
+[1.320047] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml\n'}
+[1.320106] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml\n'}
+[1.320148] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml\n'}
+[1.320341] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/launch\n'}
+[1.320400] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/launch/view_ur.launch.py\n'}
+[1.320448] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes\n'}
+[1.320495] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3\n'}
+[1.320570] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual\n'}
+[1.320621] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae\n'}
+[1.321947] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae\n'}
+[1.323887] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae\n'}
+[1.324003] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae\n'}
+[1.325206] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae\n'}
+[1.328213] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae\n'}
+[1.328426] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae\n'}
+[1.331059] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision\n'}
+[1.331175] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl\n'}
+[1.331730] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl\n'}
+[1.332291] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl\n'}
+[1.332799] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl\n'}
+[1.333475] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl\n'}
+[1.334028] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl\n'}
+[1.334754] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl\n'}
+[1.334921] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e\n'}
+[1.335123] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual\n'}
+[1.335213] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae\n'}
+[1.337302] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae\n'}
+[1.337605] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae\n'}
+[1.340195] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae\n'}
+[1.342143] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae\n'}
+[1.347617] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae\n'}
+[1.347938] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae\n'}
+[1.350977] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision\n'}
+[1.351421] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl\n'}
+[1.351621] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl\n'}
+[1.352028] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl\n'}
+[1.352117] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl\n'}
+[1.352263] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl\n'}
+[1.352507] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl\n'}
+[1.352628] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl\n'}
+[1.352765] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15\n'}
+[1.353093] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/LICENSE.txt\n'}
+[1.353251] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual\n'}
+[1.353388] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/forearm.dae\n'}
+[1.354367] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/base.dae\n'}
+[1.354909] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/UR15_DIFF_8bit_2K.jpg\n'}
+[1.355539] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/wrist2.dae\n'}
+[1.355989] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/wrist1.dae\n'}
+[1.356371] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/upperarm.dae\n'}
+[1.357114] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/wrist3.dae\n'}
+[1.357602] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/visual/shoulder.dae\n'}
+[1.358103] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision\n'}
+[1.358286] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/shoulder.stl\n'}
+[1.358454] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/forearm.stl\n'}
+[1.358599] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/wrist1.stl\n'}
+[1.358755] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/wrist2.stl\n'}
+[1.358898] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/upperarm.stl\n'}
+[1.359254] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/base.stl\n'}
+[1.359518] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur15/collision/wrist3.stl\n'}
+[1.359825] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30\n'}
+[1.360127] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt\n'}
+[1.360249] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/visual\n'}
+[1.360351] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae\n'}
+[1.361437] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae\n'}
+[1.362673] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png\n'}
+[1.364837] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/collision\n'}
+[1.365101] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl\n'}
+[1.365300] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl\n'}
+[1.365618] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20\n'}
+[1.365832] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt\n'}
+[1.366624] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual\n'}
+[1.366739] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae\n'}
+[1.368128] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae\n'}
+[1.368284] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae\n'}
+[1.369093] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae\n'}
+[1.370252] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae\n'}
+[1.370922] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae\n'}
+[1.371746] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png\n'}
+[1.373864] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae\n'}
+[1.374702] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision\n'}
+[1.374856] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl\n'}
+[1.375131] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl\n'}
+[1.375210] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl\n'}
+[1.375356] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl\n'}
+[1.375525] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl\n'}
+[1.375600] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl\n'}
+[1.375710] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl\n'}
+[1.375888] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e\n'}
+[1.376009] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual\n'}
+[1.376084] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae\n'}
+[1.377820] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae\n'}
+[1.378448] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae\n'}
+[1.380915] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae\n'}
+[1.382401] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae\n'}
+[1.386669] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae\n'}
+[1.386906] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae\n'}
+[1.390055] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision\n'}
+[1.390301] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl\n'}
+[1.390567] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl\n'}
+[1.390886] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl\n'}
+[1.391099] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl\n'}
+[1.392156] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl\n'}
+[1.392290] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl\n'}
+[1.392347] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl\n'}
+[1.392466] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e\n'}
+[1.392524] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/visual\n'}
+[1.392599] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae\n'}
+[1.394609] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae\n'}
+[1.398748] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/collision\n'}
+[1.399150] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl\n'}
+[1.399278] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl\n'}
+[1.400106] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e\n'}
+[1.400272] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual\n'}
+[1.400350] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae\n'}
+[1.401223] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae\n'}
+[1.403330] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae\n'}
+[1.403909] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae\n'}
+[1.405999] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae\n'}
+[1.406113] (-) TimerEvent: {}
+[1.409979] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae\n'}
+[1.411208] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae\n'}
+[1.413981] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision\n'}
+[1.414141] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl\n'}
+[1.414268] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl\n'}
+[1.414327] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl\n'}
+[1.414459] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl\n'}
+[1.414561] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl\n'}
+[1.414664] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl\n'}
+[1.414726] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl\n'}
+[1.414771] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5\n'}
+[1.414814] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual\n'}
+[1.414965] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae\n'}
+[1.417656] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae\n'}
+[1.417778] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae\n'}
+[1.419151] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae\n'}
+[1.419722] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae\n'}
+[1.422798] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae\n'}
+[1.423077] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae\n'}
+[1.424531] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision\n'}
+[1.424720] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl\n'}
+[1.424814] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl\n'}
+[1.425169] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl\n'}
+[1.425369] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl\n'}
+[1.425577] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl\n'}
+[1.425808] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl\n'}
+[1.425986] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl\n'}
+[1.426244] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10\n'}
+[1.426417] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual\n'}
+[1.426563] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae\n'}
+[1.429306] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae\n'}
+[1.429697] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae\n'}
+[1.432853] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae\n'}
+[1.434698] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae\n'}
+[1.437560] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae\n'}
+[1.437957] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae\n'}
+[1.439639] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision\n'}
+[1.440047] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl\n'}
+[1.440134] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl\n'}
+[1.440418] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl\n'}
+[1.440646] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl\n'}
+[1.440749] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl\n'}
+[1.440943] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl\n'}
+[1.441235] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl\n'}
+[1.441424] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/rviz\n'}
+[1.441675] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/rviz/view_robot.rviz\n'}
+[1.441831] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf\n'}
+[1.441978] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/ur.urdf.xacro\n'}
+[1.442068] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro\n'}
+[1.443319] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/inc\n'}
+[1.443494] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro\n'}
+[1.443555] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro\n'}
+[1.443620] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/urdf/ur_macro.xacro\n'}
+[1.443666] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/test\n'}
+[1.443709] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/test/test_view_ur_launch.py\n'}
+[1.443751] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py\n'}
+[1.443939] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description\n'}
+[1.444071] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description\n'}
+[1.444161] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/environment/ament_prefix_path.sh\n'}
+[1.444299] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv\n'}
+[1.444519] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/environment/path.sh\n'}
+[1.444682] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/environment/path.dsv\n'}
+[1.444838] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/local_setup.bash\n'}
+[1.445139] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/local_setup.sh\n'}
+[1.445341] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/local_setup.zsh\n'}
+[1.445531] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/local_setup.dsv\n'}
+[1.445732] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/package.dsv\n'}
+[1.446875] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ament_index/resource_index/packages/ur_description\n'}
+[1.446979] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake\n'}
+[1.447058] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake\n'}
+[1.447112] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_description/share/ur_description/package.xml\n'}
+[1.450380] (ur_description) CommandEnded: {'returncode': 0}
+[1.467491] (ur_description) JobEnded: {'identifier': 'ur_description', 'rc': 0}
+[1.468824] (ur_simulation_gazebo) JobStarted: {'identifier': 'ur_simulation_gazebo'}
+[1.476753] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'cmake'}
+[1.478165] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[1.506540] (-) TimerEvent: {}
+[1.547043] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.607021] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.607264] (-) TimerEvent: {}
+[1.614278] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.705276] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.708130] (-) TimerEvent: {}
+[1.710633] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.711236] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.711354] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.713965] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.808929] (-) TimerEvent: {}
+[1.819934] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.825267] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.825635] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.826119] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.828844] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.909505] (-) TimerEvent: {}
+[1.975367] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.010198] (-) TimerEvent: {}
+[2.100160] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.110420] (-) TimerEvent: {}
+[2.143662] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.149638] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.157911] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.170004] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.186185] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.210962] (-) TimerEvent: {}
+[2.230465] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.232416] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.311248] (-) TimerEvent: {}
+[2.341912] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.372085] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.411606] (-) TimerEvent: {}
+[2.414623] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.426109] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.511825] (-) TimerEvent: {}
+[2.537009] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.537220] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.612095] (-) TimerEvent: {}
+[2.635448] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.636732] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.683321] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.696750] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.698068] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[2.712448] (-) TimerEvent: {}
+[2.717769] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[2.813035] (-) TimerEvent: {}
+[2.872026] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[2.913362] (-) TimerEvent: {}
+[2.945560] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[2.970321] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[2.998535] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[3.013509] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[3.013711] (-) TimerEvent: {}
+[3.021370] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.027085] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.027721] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[3.028303] (ur_simulation_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[3.035525] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[3.053460] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[3.101688] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[3.108586] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[3.114327] (-) TimerEvent: {}
+[3.117075] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[3.124484] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[3.124645] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[3.129130] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[3.129287] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[3.133650] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[3.133778] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[3.138544] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[3.139288] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[3.144409] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[3.144640] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[3.150031] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[3.214649] (-) TimerEvent: {}
+[3.247522] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.252081] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[3.252643] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[3.272276] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[3.282980] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[3.289857] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[3.307489] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[3.314932] (-) TimerEvent: {}
+[3.359416] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[3.367490] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[3.385836] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[3.415051] (-) TimerEvent: {}
+[3.435044] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[3.439514] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.440266] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[3.460603] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.467015] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[3.485695] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[3.515261] (-) TimerEvent: {}
+[3.532250] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.544271] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.544999] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[3.545705] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.546547] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.549052] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[3.561643] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[3.561932] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[3.564596] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[3.565052] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[3.565171] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.567702] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[3.568070] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[3.615877] (-) TimerEvent: {}
+[3.677942] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.688865] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.707584] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.716228] (-) TimerEvent: {}
+[3.762766] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.770267] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.789806] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.816718] (-) TimerEvent: {}
+[3.846579] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.846836] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[3.847310] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.847807] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[3.851207] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[3.851462] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[3.876770] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[3.917198] (-) TimerEvent: {}
+[3.938547] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[3.990730] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[3.991186] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.017105] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.017432] (-) TimerEvent: {}
+[4.026989] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.027499] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.027580] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.027632] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.054060] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.056644] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[4.117664] (-) TimerEvent: {}
+[4.128876] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.153227] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[4.159875] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo\n'}
+[4.176224] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[4.180284] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'build'}
+[4.180331] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[4.218088] (-) TimerEvent: {}
+[4.255760] (ur_simulation_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.o\x1b[0m\n'}
+[4.318546] (-) TimerEvent: {}
+[4.419716] (-) TimerEvent: {}
+[4.520952] (-) TimerEvent: {}
+[4.621917] (-) TimerEvent: {}
+[4.722414] (-) TimerEvent: {}
+[4.823084] (-) TimerEvent: {}
+[4.923841] (-) TimerEvent: {}
+[5.024692] (-) TimerEvent: {}
+[5.125479] (-) TimerEvent: {}
+[5.226169] (-) TimerEvent: {}
+[5.327415] (-) TimerEvent: {}
+[5.427864] (-) TimerEvent: {}
+[5.529079] (-) TimerEvent: {}
+[5.629792] (-) TimerEvent: {}
+[5.730602] (-) TimerEvent: {}
+[5.833085] (-) TimerEvent: {}
+[5.934075] (-) TimerEvent: {}
+[6.035201] (-) TimerEvent: {}
+[6.136265] (-) TimerEvent: {}
+[6.236722] (-) TimerEvent: {}
+[6.337391] (-) TimerEvent: {}
+[6.437841] (-) TimerEvent: {}
+[6.538167] (-) TimerEvent: {}
+[6.638963] (-) TimerEvent: {}
+[6.740659] (-) TimerEvent: {}
+[6.842326] (-) TimerEvent: {}
+[6.943277] (-) TimerEvent: {}
+[7.044555] (-) TimerEvent: {}
+[7.145614] (-) TimerEvent: {}
+[7.246511] (-) TimerEvent: {}
+[7.347579] (-) TimerEvent: {}
+[7.448382] (-) TimerEvent: {}
+[7.549310] (-) TimerEvent: {}
+[7.649935] (-) TimerEvent: {}
+[7.751108] (-) TimerEvent: {}
+[7.851773] (-) TimerEvent: {}
+[7.952590] (-) TimerEvent: {}
+[8.053218] (-) TimerEvent: {}
+[8.154506] (-) TimerEvent: {}
+[8.256026] (-) TimerEvent: {}
+[8.357455] (-) TimerEvent: {}
+[8.458274] (-) TimerEvent: {}
+[8.559281] (-) TimerEvent: {}
+[8.659980] (-) TimerEvent: {}
+[8.760608] (-) TimerEvent: {}
+[8.861236] (-) TimerEvent: {}
+[8.962224] (-) TimerEvent: {}
+[9.063955] (-) TimerEvent: {}
+[9.164960] (-) TimerEvent: {}
+[9.265569] (-) TimerEvent: {}
+[9.366218] (-) TimerEvent: {}
+[9.467022] (-) TimerEvent: {}
+[9.568051] (-) TimerEvent: {}
+[9.669141] (-) TimerEvent: {}
+[9.770156] (-) TimerEvent: {}
+[9.871146] (-) TimerEvent: {}
+[9.972322] (-) TimerEvent: {}
+[10.073413] (-) TimerEvent: {}
+[10.174844] (-) TimerEvent: {}
+[10.275486] (-) TimerEvent: {}
+[10.376591] (-) TimerEvent: {}
+[10.477067] (-) TimerEvent: {}
+[10.577682] (-) TimerEvent: {}
+[10.678264] (-) TimerEvent: {}
+[10.778968] (-) TimerEvent: {}
+[10.880078] (-) TimerEvent: {}
+[10.980670] (-) TimerEvent: {}
+[11.081339] (-) TimerEvent: {}
+[11.181807] (-) TimerEvent: {}
+[11.282356] (-) TimerEvent: {}
+[11.383129] (-) TimerEvent: {}
+[11.484023] (-) TimerEvent: {}
+[11.584881] (-) TimerEvent: {}
+[11.686012] (-) TimerEvent: {}
+[11.787173] (-) TimerEvent: {}
+[11.887981] (-) TimerEvent: {}
+[11.988818] (-) TimerEvent: {}
+[12.089525] (-) TimerEvent: {}
+[12.190320] (-) TimerEvent: {}
+[12.290972] (-) TimerEvent: {}
+[12.391793] (-) TimerEvent: {}
+[12.492191] (-) TimerEvent: {}
+[12.593128] (-) TimerEvent: {}
+[12.694046] (-) TimerEvent: {}
+[12.794871] (-) TimerEvent: {}
+[12.895649] (-) TimerEvent: {}
+[12.996737] (-) TimerEvent: {}
+[13.097513] (-) TimerEvent: {}
+[13.198091] (-) TimerEvent: {}
+[13.299221] (-) TimerEvent: {}
+[13.400174] (-) TimerEvent: {}
+[13.500715] (-) TimerEvent: {}
+[13.601197] (-) TimerEvent: {}
+[13.702033] (-) TimerEvent: {}
+[13.802833] (-) TimerEvent: {}
+[13.903851] (-) TimerEvent: {}
+[14.004903] (-) TimerEvent: {}
+[14.105649] (-) TimerEvent: {}
+[14.206713] (-) TimerEvent: {}
+[14.307779] (-) TimerEvent: {}
+[14.408223] (-) TimerEvent: {}
+[14.508708] (-) TimerEvent: {}
+[14.609487] (-) TimerEvent: {}
+[14.709809] (-) TimerEvent: {}
+[14.811378] (-) TimerEvent: {}
+[14.911868] (-) TimerEvent: {}
+[15.012727] (-) TimerEvent: {}
+[15.113500] (-) TimerEvent: {}
+[15.214390] (-) TimerEvent: {}
+[15.315275] (-) TimerEvent: {}
+[15.415881] (-) TimerEvent: {}
+[15.516583] (-) TimerEvent: {}
+[15.617326] (-) TimerEvent: {}
+[15.718015] (-) TimerEvent: {}
+[15.818533] (-) TimerEvent: {}
+[15.919324] (-) TimerEvent: {}
+[16.019924] (-) TimerEvent: {}
+[16.121240] (-) TimerEvent: {}
+[16.222096] (-) TimerEvent: {}
+[16.322882] (-) TimerEvent: {}
+[16.424452] (-) TimerEvent: {}
+[16.526076] (-) TimerEvent: {}
+[16.627129] (-) TimerEvent: {}
+[16.727966] (-) TimerEvent: {}
+[16.828654] (-) TimerEvent: {}
+[16.929184] (-) TimerEvent: {}
+[17.030162] (-) TimerEvent: {}
+[17.130841] (-) TimerEvent: {}
+[17.232130] (-) TimerEvent: {}
+[17.332541] (-) TimerEvent: {}
+[17.432931] (-) TimerEvent: {}
+[17.533645] (-) TimerEvent: {}
+[17.634206] (-) TimerEvent: {}
+[17.734971] (-) TimerEvent: {}
+[17.835685] (-) TimerEvent: {}
+[17.936542] (-) TimerEvent: {}
+[18.037077] (-) TimerEvent: {}
+[18.137517] (-) TimerEvent: {}
+[18.238137] (-) TimerEvent: {}
+[18.339741] (-) TimerEvent: {}
+[18.440625] (-) TimerEvent: {}
+[18.541260] (-) TimerEvent: {}
+[18.642033] (-) TimerEvent: {}
+[18.742808] (-) TimerEvent: {}
+[18.843483] (-) TimerEvent: {}
+[18.944092] (-) TimerEvent: {}
+[19.044881] (-) TimerEvent: {}
+[19.146614] (-) TimerEvent: {}
+[19.247255] (-) TimerEvent: {}
+[19.348086] (-) TimerEvent: {}
+[19.448724] (-) TimerEvent: {}
+[19.549926] (-) TimerEvent: {}
+[19.650961] (-) TimerEvent: {}
+[19.751551] (-) TimerEvent: {}
+[19.852000] (-) TimerEvent: {}
+[19.952779] (-) TimerEvent: {}
+[20.053690] (-) TimerEvent: {}
+[20.154330] (-) TimerEvent: {}
+[20.255048] (-) TimerEvent: {}
+[20.355581] (-) TimerEvent: {}
+[20.456513] (-) TimerEvent: {}
+[20.557070] (-) TimerEvent: {}
+[20.657899] (-) TimerEvent: {}
+[20.758581] (-) TimerEvent: {}
+[20.859187] (-) TimerEvent: {}
+[20.959820] (-) TimerEvent: {}
+[21.060600] (-) TimerEvent: {}
+[21.161390] (-) TimerEvent: {}
+[21.262435] (-) TimerEvent: {}
+[21.363437] (-) TimerEvent: {}
+[21.464487] (-) TimerEvent: {}
+[21.565067] (-) TimerEvent: {}
+[21.665657] (-) TimerEvent: {}
+[21.766558] (-) TimerEvent: {}
+[21.867332] (-) TimerEvent: {}
+[21.967723] (-) TimerEvent: {}
+[22.068930] (-) TimerEvent: {}
+[22.169519] (-) TimerEvent: {}
+[22.270359] (-) TimerEvent: {}
+[22.370787] (-) TimerEvent: {}
+[22.471939] (-) TimerEvent: {}
+[22.573125] (-) TimerEvent: {}
+[22.673862] (-) TimerEvent: {}
+[22.774485] (-) TimerEvent: {}
+[22.875239] (-) TimerEvent: {}
+[22.976158] (-) TimerEvent: {}
+[23.076870] (-) TimerEvent: {}
+[23.178448] (-) TimerEvent: {}
+[23.279146] (-) TimerEvent: {}
+[23.380248] (-) TimerEvent: {}
+[23.480751] (-) TimerEvent: {}
+[23.581846] (-) TimerEvent: {}
+[23.682838] (-) TimerEvent: {}
+[23.783469] (-) TimerEvent: {}
+[23.884375] (-) TimerEvent: {}
+[23.984802] (-) TimerEvent: {}
+[24.085498] (-) TimerEvent: {}
+[24.186046] (-) TimerEvent: {}
+[24.286772] (-) TimerEvent: {}
+[24.388047] (-) TimerEvent: {}
+[24.489404] (-) TimerEvent: {}
+[24.590557] (-) TimerEvent: {}
+[24.690980] (-) TimerEvent: {}
+[24.791481] (-) TimerEvent: {}
+[24.892560] (-) TimerEvent: {}
+[24.993482] (-) TimerEvent: {}
+[25.093947] (-) TimerEvent: {}
+[25.194699] (-) TimerEvent: {}
+[25.295031] (-) TimerEvent: {}
+[25.395848] (-) TimerEvent: {}
+[25.496798] (-) TimerEvent: {}
+[25.597744] (-) TimerEvent: {}
+[25.698480] (-) TimerEvent: {}
+[25.799291] (-) TimerEvent: {}
+[25.900845] (-) TimerEvent: {}
+[26.001738] (-) TimerEvent: {}
+[26.102439] (-) TimerEvent: {}
+[26.203152] (-) TimerEvent: {}
+[26.303973] (-) TimerEvent: {}
+[26.405044] (-) TimerEvent: {}
+[26.506028] (-) TimerEvent: {}
+[26.607112] (-) TimerEvent: {}
+[26.707970] (-) TimerEvent: {}
+[26.808766] (-) TimerEvent: {}
+[26.909818] (-) TimerEvent: {}
+[27.010872] (-) TimerEvent: {}
+[27.111736] (-) TimerEvent: {}
+[27.212480] (-) TimerEvent: {}
+[27.313165] (-) TimerEvent: {}
+[27.414209] (-) TimerEvent: {}
+[27.515145] (-) TimerEvent: {}
+[27.616045] (-) TimerEvent: {}
+[27.717244] (-) TimerEvent: {}
+[27.817991] (-) TimerEvent: {}
+[27.919190] (-) TimerEvent: {}
+[28.020052] (-) TimerEvent: {}
+[28.120973] (-) TimerEvent: {}
+[28.221405] (-) TimerEvent: {}
+[28.322051] (-) TimerEvent: {}
+[28.423001] (-) TimerEvent: {}
+[28.523772] (-) TimerEvent: {}
+[28.596230] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libelevator_button_plugin.so\x1b[0m\n'}
+[28.624072] (-) TimerEvent: {}
+[28.724740] (-) TimerEvent: {}
+[28.825197] (-) TimerEvent: {}
+[28.926186] (-) TimerEvent: {}
+[29.027039] (-) TimerEvent: {}
+[29.035436] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] Built target elevator_button_plugin\n'}
+[29.052678] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[29.054744] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'install'}
+[29.055275] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1736,unix/sunbi:/tmp/.ICE-unix/1736'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0b20533d_eb46_4f17_810c_85be97a87466'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.W032C3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/capstone_ur5e_sim/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[29.065033] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.065342] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config\n'}
+[29.065413] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml\n'}
+[29.067382] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch\n'}
+[29.067721] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py\n'}
+[29.067808] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur5e_elevator.launch.py\n'}
+[29.068792] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py\n'}
+[29.068992] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds\n'}
+[29.069054] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/elevator.world\n'}
+[29.069911] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so\n'}
+[29.074425] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so" to ""\n'}
+[29.074636] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo\n'}
+[29.075176] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo\n'}
+[29.075496] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh\n'}
+[29.075553] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv\n'}
+[29.075604] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh\n'}
+[29.076124] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv\n'}
+[29.076211] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash\n'}
+[29.076295] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh\n'}
+[29.076347] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh\n'}
+[29.076391] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv\n'}
+[29.076476] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv\n'}
+[29.076529] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo\n'}
+[29.076574] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake\n'}
+[29.076647] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake\n'}
+[29.076817] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/capstone_ur5e_sim/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml\n'}
+[29.079812] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[29.097561] (ur_simulation_gazebo) JobEnded: {'identifier': 'ur_simulation_gazebo', 'rc': 0}
+[29.098217] (-) EventReactorShutdown: {}

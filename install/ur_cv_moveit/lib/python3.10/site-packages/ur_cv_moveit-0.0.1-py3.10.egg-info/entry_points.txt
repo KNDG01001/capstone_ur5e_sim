@@ -1,0 +1,3 @@
+[console_scripts]
+button_detect_and_move = ur_cv_moveit.button_detect_and_move:main
+

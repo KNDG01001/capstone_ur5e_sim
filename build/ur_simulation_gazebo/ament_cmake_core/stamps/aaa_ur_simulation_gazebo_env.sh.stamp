@@ -1,0 +1,30 @@
+#!/bin/sh
+# Ensure Gazebo can locate the UR simulation resources installed with this package.
+
+prefix="$AMENT_CURRENT_PREFIX"
+if [ -z "$prefix" ] && [ -n "$COLCON_CURRENT_PREFIX" ]; then
+  prefix="$COLCON_CURRENT_PREFIX"
+fi
+if [ -z "$prefix" ]; then
+  # 환경이 비정상일 때는 조용히 빠져나간다
+  return 0 2>/dev/null || exit 0
+fi
+
+share_dir="$prefix/share/ur_simulation_gazebo"
+world_dir="$share_dir/worlds"
+material_dir="$share_dir/materials"
+script_dir="$material_dir/scripts"
+texture_dir="$material_dir/textures"
+
+# Gazebo resource path (월드/머티리얼/텍스처 등록)
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$world_dir"
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$material_dir"
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$script_dir"
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$texture_dir"
+ament_prepend_unique_value GAZEBO_RESOURCE_PATH "$share_dir"
+
+# Gazebo model path (모델 참조 가능하게)
+ament_prepend_unique_value GAZEBO_MODEL_PATH "$share_dir"
+
+# Gazebo plugin path (빌드한 .so 찾을 수 있게)
+ament_prepend_unique_value GAZEBO_PLUGIN_PATH "$prefix/lib"

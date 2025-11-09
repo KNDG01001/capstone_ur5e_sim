@@ -1,0 +1,37 @@
+[1.061s] Invoking command in '/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit': PYTHONPATH=/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build
+[1.348s] running develop
+[1.505s] Removing /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur-cv-moveit.egg-link (link to .)
+[1.537s] Invoked command in '/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit' returned '0': PYTHONPATH=/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build
+[1.538s] Invoking command in '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit': PYTHONPATH=/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_cv_moveit build --build-base /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build install --record /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/install.log --single-version-externally-managed install_data --force
+[1.752s] running egg_info
+[1.753s] writing ../../build/ur_cv_moveit/ur_cv_moveit.egg-info/PKG-INFO
+[1.753s] writing dependency_links to ../../build/ur_cv_moveit/ur_cv_moveit.egg-info/dependency_links.txt
+[1.753s] writing entry points to ../../build/ur_cv_moveit/ur_cv_moveit.egg-info/entry_points.txt
+[1.753s] writing requirements to ../../build/ur_cv_moveit/ur_cv_moveit.egg-info/requires.txt
+[1.753s] writing top-level names to ../../build/ur_cv_moveit/ur_cv_moveit.egg-info/top_level.txt
+[1.754s] reading manifest file '../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'
+[1.755s] writing manifest file '../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'
+[1.756s] running build
+[1.756s] running build_py
+[1.757s] creating /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build
+[1.757s] creating /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib
+[1.757s] creating /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[1.757s] copying ur_cv_moveit/__init__.py -> /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[1.759s] copying ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[1.761s] running install
+[1.761s] running install_lib
+[1.762s] creating /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[1.763s] copying /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib/ur_cv_moveit/__init__.py -> /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[1.763s] copying /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[1.764s] byte-compiling /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/__init__.py to __init__.cpython-310.pyc
+[1.764s] byte-compiling /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_detect_and_move.py to button_detect_and_move.cpython-310.pyc
+[1.769s] running install_data
+[1.769s] copying resource/ur_cv_moveit -> /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/share/ament_index/resource_index/packages
+[1.770s] copying package.xml -> /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/share/ur_cv_moveit
+[1.771s] copying launch/detect_and_move.launch.py -> /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/share/ur_cv_moveit/launch
+[1.774s] running install_egg_info
+[1.775s] Copying ../../build/ur_cv_moveit/ur_cv_moveit.egg-info to /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit-0.0.1-py3.10.egg-info
+[1.776s] running install_scripts
+[1.800s] Installing button_detect_and_move script to /home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/ur_cv_moveit
+[1.801s] writing list of installed files to '/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/install.log'
+[1.835s] Invoked command in '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit' returned '0': PYTHONPATH=/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/capstone_ur5e_sim/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ur_cv_moveit build --build-base /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/build install --record /home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_moveit/install.log --single-version-externally-managed install_data --force
