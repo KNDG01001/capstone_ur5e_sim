@@ -1,9 +1,7 @@
-가능 : 로봇팔 스폰 및 움직여보기, rviz에서 motion planning -> gazebo 연동 성공, 버튼 텍스쳐 추가        
-불가능 : 로봇팔 명령 기반 제어 -> 되긴하나 수정 필요    
-
 명령어 예제
 ```bash
-ros2 topic pub --once /button_request std_msgs/msg/String "{data: '3'}"
+ros2 action send_goal /press_button ur_cv_interfaces/action/PressButton "{button: '1'}"
+
 ```
 Yolo 학습
 ```bash
