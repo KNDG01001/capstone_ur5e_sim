@@ -1,0 +1,124 @@
+// generated from rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
+// with input from ur_cv_interfaces:action/PressButton.idl
+// generated code does not contain a copyright notice
+
+#ifndef UR_CV_INTERFACES__ACTION__DETAIL__PRESS_BUTTON__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#define UR_CV_INTERFACES__ACTION__DETAIL__PRESS_BUTTON__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_Goal)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_Result)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_Feedback)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_SendGoal_Request)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_SendGoal_Response)();
+
+#include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_SendGoal)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_GetResult_Request)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_GetResult_Response)();
+
+// already included above
+// #include "rosidl_runtime_c/service_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_GetResult)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+// already included above
+// #include "rosidl_typesupport_interface/macros.h"
+// already included above
+// #include "ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h"
+
+ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_ur_cv_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ur_cv_interfaces, action, PressButton_FeedbackMessage)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // UR_CV_INTERFACES__ACTION__DETAIL__PRESS_BUTTON__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_

@@ -1,0 +1,278 @@
+[0.022s] Invoking command in '/home/sunbi/ros/build/ur_cv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake /home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces -DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_cv_interfaces
+[0.181s] -- The C compiler identification is GNU 11.4.0
+[0.336s] -- The CXX compiler identification is GNU 11.4.0
+[0.355s] -- Detecting C compiler ABI info
+[0.446s] -- Detecting C compiler ABI info - done
+[0.450s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.452s] -- Detecting C compile features
+[0.453s] -- Detecting C compile features - done
+[0.457s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.560s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.561s] -- Detecting CXX compile features
+[0.561s] -- Detecting CXX compile features - done
+[0.571s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.731s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.861s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.879s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.954s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.015s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.388s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.614s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.896s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.923s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.925s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.955s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.956s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.956s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.956s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.978s] -- Found PythonExtra: .so  
+[2.040s] -- Configuring done
+[2.083s] -- Generating done
+[2.096s] -- Build files have been written to: /home/sunbi/ros/build/ur_cv_interfaces
+[2.104s] Invoked command in '/home/sunbi/ros/build/ur_cv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake /home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces -DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_cv_interfaces
+[2.106s] Invoking command in '/home/sunbi/ros/build/ur_cv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_cv_interfaces -- -j4 -l4
+[2.161s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.182s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.187s] [  5%] Built target ament_cmake_python_copy_ur_cv_interfaces
+[2.470s] running egg_info
+[2.471s] creating ur_cv_interfaces.egg-info
+[2.471s] writing ur_cv_interfaces.egg-info/PKG-INFO
+[2.471s] writing dependency_links to ur_cv_interfaces.egg-info/dependency_links.txt
+[2.472s] writing top-level names to ur_cv_interfaces.egg-info/top_level.txt
+[2.472s] writing manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'
+[2.474s] reading manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'
+[2.475s] writing manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'
+[2.510s] [  5%] Built target ament_cmake_python_build_ur_cv_interfaces_egg
+[2.724s] [  5%] Built target ur_cv_interfaces__cpp
+[2.738s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.760s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.760s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.805s] [ 15%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ur_cv_interfaces/srv/detail/detect_button__functions.c.o[0m
+[2.998s] [ 17%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ur_cv_interfaces/action/detail/press_button__functions.c.o[0m
+[3.141s] [ 20%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur_cv_interfaces/srv/detect_button__type_support.cpp.o[0m
+[3.172s] [ 23%] [32m[1mLinking C shared library libur_cv_interfaces__rosidl_generator_c.so[0m
+[3.243s] [ 23%] Built target ur_cv_interfaces__rosidl_generator_c
+[3.254s] [ 25%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur_cv_interfaces/srv/detail/dds_fastrtps/detect_button__type_support.cpp.o[0m
+[3.256s] [ 28%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur_cv_interfaces/srv/detail/detect_button__type_support.cpp.o[0m
+[3.270s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.731s] [ 33%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur_cv_interfaces/action/press_button__type_support.cpp.o[0m
+[3.805s] [ 35%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur_cv_interfaces/action/detail/press_button__type_support.cpp.o[0m
+[3.863s] [ 38%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur_cv_interfaces/srv/detail/detect_button__type_support_c.cpp.o[0m
+[4.018s] [ 41%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur_cv_interfaces/action/detail/dds_fastrtps/press_button__type_support.cpp.o[0m
+[4.467s] [ 43%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur_cv_interfaces/action/detail/press_button__type_support_c.cpp.o[0m
+[4.518s] [ 46%] [32m[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_cpp.so[0m
+[4.626s] [ 46%] Built target ur_cv_interfaces__rosidl_typesupport_cpp
+[4.649s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.709s] [ 51%] [32m[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.791s] [ 53%] [32m[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.896s] [ 53%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_cpp
+[4.913s] [ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.916s] [ 56%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.962s] [ 58%] [32m[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.064s] [ 58%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_c
+[5.113s] [ 61%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__type_support.c.o[0m
+[5.113s] [ 64%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__type_support.c.o[0m
+[5.191s] [ 66%] [32m[1mLinking C shared library libur_cv_interfaces__rosidl_typesupport_introspection_c.so[0m
+[5.236s] [ 66%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_c
+[5.252s] [ 69%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur_cv_interfaces/srv/detect_button__type_support.cpp.o[0m
+[5.252s] [ 71%] [32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur_cv_interfaces/action/press_button__type_support.cpp.o[0m
+[5.314s] [ 74%] [32m[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_c.so[0m
+[5.373s] [ 74%] Built target ur_cv_interfaces__rosidl_typesupport_c
+[5.412s] [ 74%] Built target ur_cv_interfaces
+[5.444s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.217s] [ 76%] Built target ur_cv_interfaces__py
+[6.245s] [ 79%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ur_cv_interfaces/action/_press_button_s.c.o[0m
+[6.246s] [ 82%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ur_cv_interfaces/srv/_detect_button_s.c.o[0m
+[6.470s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/libur_cv_interfaces__rosidl_generator_py.so[0m
+[6.521s] [ 84%] Built target ur_cv_interfaces__rosidl_generator_py
+[6.549s] [ 87%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.555s] [ 89%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.568s] [ 92%] [32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[6.717s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.726s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.763s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.783s] [100%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[6.792s] [100%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext
+[6.822s] [100%] Built target ur_cv_interfaces__rosidl_typesupport_c__pyext
+[6.841s] Invoked command in '/home/sunbi/ros/build/ur_cv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_cv_interfaces -- -j4 -l4
+[6.843s] Invoking command in '/home/sunbi/ros/build/ur_cv_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_cv_interfaces
+[6.853s] -- Install configuration: ""
+[6.854s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/rosidl_interfaces/ur_cv_interfaces
+[6.854s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.856s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg
+[6.856s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.856s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.856s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.857s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__functions.c
+[6.857s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__functions.h
+[6.857s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__struct.h
+[6.857s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.h
+[6.857s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/press_button.h
+[6.858s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.859s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.860s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.h
+[6.860s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__struct.h
+[6.860s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__functions.c
+[6.861s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__functions.h
+[6.862s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detect_button.h
+[6.862s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/library_path.sh
+[6.863s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/library_path.dsv
+[6.863s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_c.so
+[6.864s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_c.so" to ""
+[6.864s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.865s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg
+[6.866s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.866s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.866s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.867s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_fastrtps_c.h
+[6.867s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.867s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.867s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_fastrtps_c.h
+[6.867s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so
+[6.867s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[6.867s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.867s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg
+[6.867s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.868s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.868s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.868s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.c
+[6.868s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_introspection_c.h
+[6.868s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.868s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.868s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_introspection_c.h
+[6.868s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.c
+[6.868s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_c.so
+[6.868s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[6.869s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_c.so
+[6.869s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_c.so" to ""
+[6.869s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.869s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg
+[6.869s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.869s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.869s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.869s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.hpp
+[6.869s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__builder.hpp
+[6.870s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__traits.hpp
+[6.870s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__struct.hpp
+[6.870s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/press_button.hpp
+[6.870s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.870s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.871s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__struct.hpp
+[6.871s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__traits.hpp
+[6.871s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.hpp
+[6.872s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__builder.hpp
+[6.872s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detect_button.hpp
+[6.872s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.872s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg
+[6.872s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.873s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.873s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.873s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/dds_fastrtps
+[6.873s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_fastrtps_cpp.hpp
+[6.873s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.873s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.873s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/dds_fastrtps
+[6.875s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_fastrtps_cpp.hpp
+[6.875s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[6.875s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[6.875s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces
+[6.875s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action
+[6.875s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail
+[6.876s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_introspection_cpp.hpp
+[6.876s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.cpp
+[6.876s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv
+[6.876s] -- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail
+[6.876s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_introspection_cpp.hpp
+[6.876s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.cpp
+[6.876s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so
+[6.877s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_cpp.so
+[6.877s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_cpp.so" to ""
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/pythonpath.sh
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/pythonpath.dsv
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[6.877s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[6.878s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces
+[6.878s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/__init__.py
+[6.878s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[6.878s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.878s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_c.c
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/__init__.py
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button_s.c
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button.py
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.879s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv
+[6.880s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/__init__.py
+[6.880s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button_s.c
+[6.880s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button.py
+[6.880s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/libur_cv_interfaces__rosidl_generator_py.so
+[6.880s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.924s] Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces'...
+[6.924s] Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/__init__.py'...
+[6.924s] Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action'...
+[6.924s] Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/__init__.py'...
+[6.924s] Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button.py'...
+[6.924s] Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv'...
+[6.924s] Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/__init__.py'...
+[6.925s] Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button.py'...
+[6.930s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[6.930s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.930s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[6.930s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.931s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[6.931s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[6.931s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_py.so
+[6.932s] -- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_py.so" to ""
+[6.932s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton.idl
+[6.933s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/action/PressButton.idl
+[6.933s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton.srv
+[6.934s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton_Request.msg
+[6.934s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton_Response.msg
+[6.934s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/action/PressButton.action
+[6.934s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/package_run_dependencies/ur_cv_interfaces
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/parent_prefix_path/ur_cv_interfaces
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/ament_prefix_path.sh
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/ament_prefix_path.dsv
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/path.sh
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/path.dsv
+[6.935s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.bash
+[6.936s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.sh
+[6.936s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.zsh
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.dsv
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/package.dsv
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/packages/ur_cv_interfaces
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cExport.cmake
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cExport-noconfig.cmake
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[6.937s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[6.938s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[6.938s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.938s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cExport.cmake
+[6.938s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[6.938s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cppExport.cmake
+[6.939s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[6.940s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[6.940s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[6.940s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.940s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cppExport.cmake
+[6.941s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[6.941s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_pyExport.cmake
+[6.941s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.942s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.943s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfacesConfig.cmake
+[6.943s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfacesConfig-version.cmake
+[6.943s] -- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/package.xml
+[6.947s] Invoked command in '/home/sunbi/ros/build/ur_cv_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_cv_interfaces

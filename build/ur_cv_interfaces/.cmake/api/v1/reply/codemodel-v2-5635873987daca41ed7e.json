@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-50b794907dbd98275c8a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "ur_cv_interfaces__py",
+					"jsonFile" : "directory-ur_cv_interfaces__py-d20f6ad48076551c9e23.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sunbi/ros/build/ur_cv_interfaces/ur_cv_interfaces__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ur_cv_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ur_cv_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ur_cv_interfaces_egg-dd73a75f00b546f1087b.json",
+					"name" : "ament_cmake_python_build_ur_cv_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ur_cv_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ur_cv_interfaces-9e8c3989db4e29e70846.json",
+					"name" : "ament_cmake_python_copy_ur_cv_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b77c2ec1c8c5f133403d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces-3a4792be3b0b9cc2d41d.json",
+					"name" : "ur_cv_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__cpp-3026ee920691db3a5360.json",
+					"name" : "ur_cv_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ur_cv_interfaces__py::@5201881afbb63ca8b5bb",
+					"jsonFile" : "target-ur_cv_interfaces__py-af3ad49aa477fd95e337.json",
+					"name" : "ur_cv_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_generator_c-695d3e17ab6da3bc8985.json",
+					"name" : "ur_cv_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_generator_py-9439291a444fa851c47d.json",
+					"name" : "ur_cv_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_c-226ec36bc2cc07043970.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_c__pyext-48ced600d37b47b4945a.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_cpp-269ec023c35a63793b6a.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_fastrtps_c-afb2e87659dc553f7fbd.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext-6bdbd4e5b5d2b901efd6.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp-09dfcf3c9476d4b9b9c4.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_introspection_c-fbd400c716a61e8b1588.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext-5668a69d82fad2a607fe.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces__rosidl_typesupport_introspection_cpp-b8e89adc94df695ac38a.json",
+					"name" : "ur_cv_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur_cv_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur_cv_interfaces_uninstall-433bee2fbec3e0ccf690.json",
+					"name" : "ur_cv_interfaces_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sunbi/ros/build/ur_cv_interfaces",
+		"source" : "/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

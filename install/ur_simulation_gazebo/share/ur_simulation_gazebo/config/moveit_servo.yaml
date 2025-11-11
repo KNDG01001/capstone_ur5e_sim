@@ -1,0 +1,18 @@
+# ~/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/moveit_servo.yaml
+moveit_servo:
+  servo_params:
+    planning_frame: base_link
+    command_out_type: trajectory_msgs/JointTrajectory
+    publish_joint_positions: false
+    publish_joint_velocities: true
+    publish_joint_accelerations: false
+    command_in_type: geometry_msgs/TwistStamped
+    scale:
+      linear: 0.3
+      rotational: 0.6
+    joint_topic: /joint_states
+    command_out_topic: /servo_node/delta_joint_cmds
+    move_group_name: ur_manipulator
+    use_gazebo: true
+    low_latency_mode: true
+    publish_period: 0.01

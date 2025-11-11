@@ -1,0 +1,126 @@
+material elevator/button_1
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_1.png
+			}
+		}
+	}
+}
+
+material elevator/button_2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_2.png
+			}
+		}
+	}
+}
+
+material elevator/button_3
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_3.png
+			}
+		}
+	}
+}
+
+material elevator/button_4
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_4.png
+			}
+		}
+	}
+}
+
+material elevator/button_5
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_5.png
+			}
+		}
+	}
+}
+
+material elevator/button_6
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_6.png
+			}
+		}
+	}
+}
+
+material elevator/button_o
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_o.png
+			}
+		}
+	}
+}
+
+material elevator/button_c
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture button_c.png
+			}
+		}
+	}
+}
+
+material elevator/pannel
+{
+  technique { pass {
+    lighting off
+    emissive 1 1 1        // 자체발광
+    scene_blend alpha_blend
+    texture_unit {
+      texture elv_pannel.png
+      colour_op_ex add src_texture src_manual 0.35 0.35 0.35  // +밝기
+      filtering none
+      tex_address_mode clamp
+    }
+  } }
+}

@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__type_support.c.o"
+  "CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__type_support.c.o.d"
+  "CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__type_support.c.o"
+  "CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__type_support.c.o.d"
+  "libur_cv_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libur_cv_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__type_support.c"
+  "rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

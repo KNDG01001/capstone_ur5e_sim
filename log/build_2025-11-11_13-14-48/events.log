@@ -1,0 +1,1077 @@
+[0.000000] (-) TimerEvent: {}
+[0.000655] (ur_cv_interfaces) JobQueued: {'identifier': 'ur_cv_interfaces', 'dependencies': OrderedDict()}
+[0.000707] (ur_description) JobQueued: {'identifier': 'ur_description', 'dependencies': OrderedDict()}
+[0.000725] (ur_cv_moveit) JobQueued: {'identifier': 'ur_cv_moveit', 'dependencies': OrderedDict([('ur_cv_interfaces', '/home/sunbi/ros/install/ur_cv_interfaces')])}
+[0.000774] (ur_simulation_gazebo) JobQueued: {'identifier': 'ur_simulation_gazebo', 'dependencies': OrderedDict([('ur_description', '/home/sunbi/ros/install/ur_description')])}
+[0.000820] (ur_cv_interfaces) JobStarted: {'identifier': 'ur_cv_interfaces'}
+[0.006948] (ur_description) JobStarted: {'identifier': 'ur_description'}
+[0.017545] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'cmake'}
+[0.017693] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Description', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_description'], 'cwd': '/home/sunbi/ros/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[0.020415] (ur_cv_interfaces) JobProgress: {'identifier': 'ur_cv_interfaces', 'progress': 'cmake'}
+[0.021979] (ur_cv_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_cv_interfaces'], 'cwd': '/home/sunbi/ros/build/ur_cv_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_cv_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[0.099498] (-) TimerEvent: {}
+[0.181868] (ur_cv_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.182128] (ur_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200169] (-) TimerEvent: {}
+[0.300610] (-) TimerEvent: {}
+[0.335932] (ur_cv_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.337854] (ur_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.355924] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.356221] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.401168] (-) TimerEvent: {}
+[0.446688] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.446883] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.451336] (ur_cv_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.451453] (ur_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.452465] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.452565] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.453774] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.453960] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.457493] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.458049] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.501978] (-) TimerEvent: {}
+[0.554967] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.558512] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.561081] (ur_cv_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.561531] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.562129] (ur_cv_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.563604] (ur_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.563840] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.564231] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.571640] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.571993] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.602195] (-) TimerEvent: {}
+[0.702870] (-) TimerEvent: {}
+[0.731598] (ur_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.731916] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.803327] (-) TimerEvent: {}
+[0.861261] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.861927] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[0.868963] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.880273] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.904063] (-) TimerEvent: {}
+[0.954737] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.004520] (-) TimerEvent: {}
+[1.015808] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.104847] (-) TimerEvent: {}
+[1.206154] (-) TimerEvent: {}
+[1.306901] (-) TimerEvent: {}
+[1.388471] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.407495] (-) TimerEvent: {}
+[1.508751] (-) TimerEvent: {}
+[1.609392] (-) TimerEvent: {}
+[1.614454] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.649571] (ur_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.653035] (ur_description) StdoutLine: {'line': b'-- Generating done\n'}
+[1.654439] (ur_description) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/build/ur_description\n'}
+[1.662545] (ur_description) CommandEnded: {'returncode': 0}
+[1.663253] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'build'}
+[1.663287] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/build/ur_description', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[1.709925] (-) TimerEvent: {}
+[1.712895] (ur_description) CommandEnded: {'returncode': 0}
+[1.713699] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'install'}
+[1.726140] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/build/ur_description'], 'cwd': '/home/sunbi/ros/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[1.734613] (ur_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.734765] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config\n'}
+[1.735009] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3\n'}
+[1.735325] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml\n'}
+[1.736168] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml\n'}
+[1.736830] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml\n'}
+[1.737459] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml\n'}
+[1.738248] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3e\n'}
+[1.738455] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml\n'}
+[1.739469] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml\n'}
+[1.740065] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml\n'}
+[1.740621] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml\n'}
+[1.741183] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur15\n'}
+[1.741336] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur15/physical_parameters.yaml\n'}
+[1.742105] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur15/default_kinematics.yaml\n'}
+[1.742684] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur15/joint_limits.yaml\n'}
+[1.743495] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur15/visual_parameters.yaml\n'}
+[1.744121] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur30\n'}
+[1.744471] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml\n'}
+[1.745848] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml\n'}
+[1.746671] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml\n'}
+[1.747417] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml\n'}
+[1.748175] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur20\n'}
+[1.748710] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml\n'}
+[1.749434] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml\n'}
+[1.750161] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml\n'}
+[1.750712] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml\n'}
+[1.751293] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur7e\n'}
+[1.751573] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml\n'}
+[1.752320] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml\n'}
+[1.753170] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml\n'}
+[1.753742] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml\n'}
+[1.754440] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10e\n'}
+[1.754507] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml\n'}
+[1.755066] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml\n'}
+[1.755579] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml\n'}
+[1.756141] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml\n'}
+[1.756697] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/initial_positions.yaml\n'}
+[1.757468] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur16e\n'}
+[1.757704] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml\n'}
+[1.758127] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml\n'}
+[1.758537] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml\n'}
+[1.759300] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml\n'}
+[1.759525] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5e\n'}
+[1.759910] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml\n'}
+[1.760234] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml\n'}
+[1.760924] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml\n'}
+[1.761211] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml\n'}
+[1.761992] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur12e\n'}
+[1.762067] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml\n'}
+[1.762540] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml\n'}
+[1.763288] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml\n'}
+[1.763588] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml\n'}
+[1.764255] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5\n'}
+[1.764464] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml\n'}
+[1.764901] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml\n'}
+[1.765645] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml\n'}
+[1.765949] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml\n'}
+[1.766640] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10\n'}
+[1.766802] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml\n'}
+[1.767270] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml\n'}
+[1.767939] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml\n'}
+[1.768442] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml\n'}
+[1.769392] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/launch\n'}
+[1.769468] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/launch/view_ur.launch.py\n'}
+[1.769927] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes\n'}
+[1.770015] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3\n'}
+[1.770074] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual\n'}
+[1.770221] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae\n'}
+[1.774833] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae\n'}
+[1.777837] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae\n'}
+[1.781411] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae\n'}
+[1.785646] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae\n'}
+[1.795088] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae\n'}
+[1.796230] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae\n'}
+[1.803745] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision\n'}
+[1.803969] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl\n'}
+[1.806426] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl\n'}
+[1.808294] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl\n'}
+[1.809894] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl\n'}
+[1.810028] (-) TimerEvent: {}
+[1.811601] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl\n'}
+[1.815049] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl\n'}
+[1.817625] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl\n'}
+[1.818920] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e\n'}
+[1.819055] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual\n'}
+[1.819131] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae\n'}
+[1.824870] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae\n'}
+[1.827283] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae\n'}
+[1.834038] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae\n'}
+[1.841699] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae\n'}
+[1.856831] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae\n'}
+[1.857981] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae\n'}
+[1.867587] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision\n'}
+[1.867900] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl\n'}
+[1.869066] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl\n'}
+[1.870380] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl\n'}
+[1.871589] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl\n'}
+[1.872900] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl\n'}
+[1.874105] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl\n'}
+[1.875529] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl\n'}
+[1.875906] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15\n'}
+[1.876259] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/LICENSE.txt\n'}
+[1.876676] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual\n'}
+[1.877021] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/forearm.dae\n'}
+[1.879812] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/base.dae\n'}
+[1.882561] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/UR15_DIFF_8bit_2K.jpg\n'}
+[1.884377] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/wrist2.dae\n'}
+[1.886178] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/wrist1.dae\n'}
+[1.888545] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/upperarm.dae\n'}
+[1.891437] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/wrist3.dae\n'}
+[1.893362] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/visual/shoulder.dae\n'}
+[1.895626] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision\n'}
+[1.895721] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/shoulder.stl\n'}
+[1.896513] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/forearm.stl\n'}
+[1.896687] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.897568] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/wrist1.stl\n'}
+[1.898653] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/wrist2.stl\n'}
+[1.899216] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/upperarm.stl\n'}
+[1.900260] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/base.stl\n'}
+[1.900923] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur15/collision/wrist3.stl\n'}
+[1.901492] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30\n'}
+[1.901738] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt\n'}
+[1.902214] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/visual\n'}
+[1.902605] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae\n'}
+[1.908099] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae\n'}
+[1.910476] (-) TimerEvent: {}
+[1.913623] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png\n'}
+[1.922385] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/collision\n'}
+[1.922748] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl\n'}
+[1.923260] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.923825] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl\n'}
+[1.925481] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.925879] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20\n'}
+[1.926194] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt\n'}
+[1.926301] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual\n'}
+[1.926354] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae\n'}
+[1.930962] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae\n'}
+[1.933332] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae\n'}
+[1.935304] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae\n'}
+[1.937789] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae\n'}
+[1.941810] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae\n'}
+[1.944006] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png\n'}
+[1.952061] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae\n'}
+[1.954059] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision\n'}
+[1.954764] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl\n'}
+[1.955733] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl\n'}
+[1.956285] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.956812] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.956973] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.957059] (ur_cv_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.957366] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl\n'}
+[1.958129] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl\n'}
+[1.959075] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl\n'}
+[1.960424] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl\n'}
+[1.961264] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl\n'}
+[1.962157] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e\n'}
+[1.962358] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual\n'}
+[1.962438] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae\n'}
+[1.968937] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae\n'}
+[1.971407] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae\n'}
+[1.977819] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae\n'}
+[1.978386] (ur_cv_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.983891] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae\n'}
+[1.996272] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae\n'}
+[1.998009] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae\n'}
+[2.007697] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision\n'}
+[2.008129] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl\n'}
+[2.009309] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl\n'}
+[2.010422] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl\n'}
+[2.010534] (-) TimerEvent: {}
+[2.011729] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl\n'}
+[2.013143] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl\n'}
+[2.014139] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl\n'}
+[2.015088] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl\n'}
+[2.015829] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e\n'}
+[2.015905] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/visual\n'}
+[2.015954] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae\n'}
+[2.021817] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae\n'}
+[2.034136] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/collision\n'}
+[2.034514] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl\n'}
+[2.035231] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl\n'}
+[2.036797] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e\n'}
+[2.037036] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual\n'}
+[2.037891] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae\n'}
+[2.041147] (ur_cv_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.043419] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae\n'}
+[2.045656] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae\n'}
+[2.052506] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae\n'}
+[2.059343] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae\n'}
+[2.072241] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae\n'}
+[2.073458] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae\n'}
+[2.081249] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision\n'}
+[2.081542] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl\n'}
+[2.082467] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl\n'}
+[2.083781] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl\n'}
+[2.083993] (ur_cv_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.084686] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl\n'}
+[2.085889] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl\n'}
+[2.087250] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl\n'}
+[2.088555] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl\n'}
+[2.088949] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5\n'}
+[2.089195] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual\n'}
+[2.089418] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae\n'}
+[2.095353] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae\n'}
+[2.096631] (ur_cv_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/build/ur_cv_interfaces\n'}
+[2.097339] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae\n'}
+[2.101944] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae\n'}
+[2.105165] (ur_cv_interfaces) CommandEnded: {'returncode': 0}
+[2.105697] (ur_cv_interfaces) JobProgress: {'identifier': 'ur_cv_interfaces', 'progress': 'build'}
+[2.106871] (ur_cv_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/build/ur_cv_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/build/ur_cv_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_cv_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[2.107866] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae\n'}
+[2.110740] (-) TimerEvent: {}
+[2.116182] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae\n'}
+[2.117704] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae\n'}
+[2.122450] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision\n'}
+[2.122624] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl\n'}
+[2.123158] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl\n'}
+[2.124420] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl\n'}
+[2.125353] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl\n'}
+[2.126557] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl\n'}
+[2.127948] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl\n'}
+[2.128564] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl\n'}
+[2.129393] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10\n'}
+[2.129697] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual\n'}
+[2.129935] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae\n'}
+[2.138520] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae\n'}
+[2.140169] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae\n'}
+[2.150671] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae\n'}
+[2.157982] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae\n'}
+[2.162000] (ur_cv_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.165897] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae\n'}
+[2.170470] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae\n'}
+[2.177026] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision\n'}
+[2.177211] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl\n'}
+[2.178426] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl\n'}
+[2.179799] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl\n'}
+[2.180861] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl\n'}
+[2.182254] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl\n'}
+[2.183043] (ur_cv_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.183910] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl\n'}
+[2.184996] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl\n'}
+[2.186783] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/rviz\n'}
+[2.186870] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/rviz/view_robot.rviz\n'}
+[2.186918] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf\n'}
+[2.187121] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/ur.urdf.xacro\n'}
+[2.187560] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro\n'}
+[2.188108] (ur_cv_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_ur_cv_interfaces\n'}
+[2.188775] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/inc\n'}
+[2.189150] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro\n'}
+[2.190026] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro\n'}
+[2.190966] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/urdf/ur_macro.xacro\n'}
+[2.193553] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/test\n'}
+[2.194034] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/test/test_view_ur_launch.py\n'}
+[2.194134] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py\n'}
+[2.195049] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description\n'}
+[2.197121] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description\n'}
+[2.197245] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/environment/ament_prefix_path.sh\n'}
+[2.197364] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv\n'}
+[2.197651] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/environment/path.sh\n'}
+[2.199368] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/environment/path.dsv\n'}
+[2.199596] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/local_setup.bash\n'}
+[2.200545] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/local_setup.sh\n'}
+[2.200624] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/local_setup.zsh\n'}
+[2.200871] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/local_setup.dsv\n'}
+[2.200924] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/package.dsv\n'}
+[2.202755] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ament_index/resource_index/packages/ur_description\n'}
+[2.202862] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake\n'}
+[2.202911] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake\n'}
+[2.202954] (ur_description) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_description/share/ur_description/package.xml\n'}
+[2.204409] (ur_description) CommandEnded: {'returncode': 0}
+[2.212320] (-) TimerEvent: {}
+[2.226732] (ur_description) JobEnded: {'identifier': 'ur_description', 'rc': 0}
+[2.232566] (ur_simulation_gazebo) JobStarted: {'identifier': 'ur_simulation_gazebo'}
+[2.235582] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'cmake'}
+[2.241581] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', '-DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[2.312598] (-) TimerEvent: {}
+[2.348585] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.416610] (-) TimerEvent: {}
+[2.418092] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.426403] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.471155] (ur_cv_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.471664] (ur_cv_interfaces) StdoutLine: {'line': b'creating ur_cv_interfaces.egg-info\n'}
+[2.471973] (ur_cv_interfaces) StdoutLine: {'line': b'writing ur_cv_interfaces.egg-info/PKG-INFO\n'}
+[2.472242] (ur_cv_interfaces) StdoutLine: {'line': b'writing dependency_links to ur_cv_interfaces.egg-info/dependency_links.txt\n'}
+[2.472488] (ur_cv_interfaces) StdoutLine: {'line': b'writing top-level names to ur_cv_interfaces.egg-info/top_level.txt\n'}
+[2.472773] (ur_cv_interfaces) StdoutLine: {'line': b"writing manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'\n"}
+[2.475295] (ur_cv_interfaces) StdoutLine: {'line': b"reading manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'\n"}
+[2.475927] (ur_cv_interfaces) StdoutLine: {'line': b"writing manifest file 'ur_cv_interfaces.egg-info/SOURCES.txt'\n"}
+[2.510552] (ur_cv_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_ur_cv_interfaces_egg\n'}
+[2.517816] (-) TimerEvent: {}
+[2.518860] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.525611] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.526300] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.526551] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.530054] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.618202] (-) TimerEvent: {}
+[2.642902] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.652158] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.652345] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.652410] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.655161] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.724416] (ur_cv_interfaces) StdoutLine: {'line': b'[  5%] Built target ur_cv_interfaces__cpp\n'}
+[2.724594] (-) TimerEvent: {}
+[2.738425] (ur_cv_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.760786] (ur_cv_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.761094] (ur_cv_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.805489] (ur_cv_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ur_cv_interfaces/srv/detail/detect_button__functions.c.o\x1b[0m\n'}
+[2.826847] (-) TimerEvent: {}
+[2.893000] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.926987] (-) TimerEvent: {}
+[2.998691] (ur_cv_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ur_cv_interfaces/action/detail/press_button__functions.c.o\x1b[0m\n'}
+[3.016163] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.029119] (-) TimerEvent: {}
+[3.117466] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.125113] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.129397] (-) TimerEvent: {}
+[3.131138] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.142038] (ur_cv_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur_cv_interfaces/srv/detect_button__type_support.cpp.o\x1b[0m\n'}
+[3.144309] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.160610] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.172563] (ur_cv_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library libur_cv_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.231011] (-) TimerEvent: {}
+[3.243697] (ur_cv_interfaces) StdoutLine: {'line': b'[ 23%] Built target ur_cv_interfaces__rosidl_generator_c\n'}
+[3.252747] (ur_cv_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur_cv_interfaces/srv/detail/dds_fastrtps/detect_button__type_support.cpp.o\x1b[0m\n'}
+[3.256593] (ur_cv_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur_cv_interfaces/srv/detail/detect_button__type_support.cpp.o\x1b[0m\n'}
+[3.256880] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.266036] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.271172] (ur_cv_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.331258] (-) TimerEvent: {}
+[3.436554] (-) TimerEvent: {}
+[3.458131] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.536792] (-) TimerEvent: {}
+[3.540465] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.607077] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.639913] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.640092] (-) TimerEvent: {}
+[3.732175] (ur_cv_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur_cv_interfaces/action/press_button__type_support.cpp.o\x1b[0m\n'}
+[3.741275] (-) TimerEvent: {}
+[3.806143] (ur_cv_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur_cv_interfaces/action/detail/press_button__type_support.cpp.o\x1b[0m\n'}
+[3.836893] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.839555] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.841782] (-) TimerEvent: {}
+[3.863715] (ur_cv_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur_cv_interfaces/srv/detail/detect_button__type_support_c.cpp.o\x1b[0m\n'}
+[3.942056] (-) TimerEvent: {}
+[4.001159] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.003319] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.018415] (ur_cv_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur_cv_interfaces/action/detail/dds_fastrtps/press_button__type_support.cpp.o\x1b[0m\n'}
+[4.042852] (-) TimerEvent: {}
+[4.144245] (-) TimerEvent: {}
+[4.223997] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[4.244687] (-) TimerEvent: {}
+[4.257199] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[4.259248] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[4.308104] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[4.345031] (-) TimerEvent: {}
+[4.445876] (-) TimerEvent: {}
+[4.468152] (ur_cv_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur_cv_interfaces/action/detail/press_button__type_support_c.cpp.o\x1b[0m\n'}
+[4.518598] (ur_cv_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.546474] (-) TimerEvent: {}
+[4.550542] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[4.626818] (ur_cv_interfaces) StdoutLine: {'line': b'[ 46%] Built target ur_cv_interfaces__rosidl_typesupport_cpp\n'}
+[4.647083] (-) TimerEvent: {}
+[4.650151] (ur_cv_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.666997] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[4.709520] (ur_cv_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.734828] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[4.748012] (-) TimerEvent: {}
+[4.791856] (ur_cv_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.821103] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[4.848435] (-) TimerEvent: {}
+[4.887083] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.896958] (ur_cv_interfaces) StdoutLine: {'line': b'[ 53%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.903386] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.913844] (ur_cv_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.916797] (ur_cv_interfaces) StdoutLine: {'line': b'[ 56%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.921583] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.925436] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.925968] (ur_simulation_gazebo) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[4.933790] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[4.948732] (-) TimerEvent: {}
+[4.958162] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[4.962765] (ur_cv_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.018545] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[5.032757] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[5.045549] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[5.049768] (-) TimerEvent: {}
+[5.055339] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[5.055514] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[5.061903] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[5.062066] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[5.064990] (ur_cv_interfaces) StdoutLine: {'line': b'[ 58%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[5.068332] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[5.068493] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[5.073220] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[5.073384] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[5.079353] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[5.079647] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[5.085404] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[5.113662] (ur_cv_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/action/detail/press_button__type_support.c.o\x1b[0m\n'}
+[5.113912] (ur_cv_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur_cv_interfaces/srv/detail/detect_button__type_support.c.o\x1b[0m\n'}
+[5.152788] (-) TimerEvent: {}
+[5.191901] (ur_cv_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libur_cv_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.232995] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.236346] (ur_cv_interfaces) StdoutLine: {'line': b'[ 66%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_c\n'}
+[5.237865] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[5.237979] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[5.252888] (ur_cv_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur_cv_interfaces/srv/detect_button__type_support.cpp.o\x1b[0m\n'}
+[5.253071] (-) TimerEvent: {}
+[5.253222] (ur_cv_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur_cv_interfaces/action/press_button__type_support.cpp.o\x1b[0m\n'}
+[5.262072] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[5.273827] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[5.281040] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[5.306403] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[5.314833] (ur_cv_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libur_cv_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.354308] (-) TimerEvent: {}
+[5.365000] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[5.373561] (ur_cv_interfaces) StdoutLine: {'line': b'[ 74%] Built target ur_cv_interfaces__rosidl_typesupport_c\n'}
+[5.377526] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[5.405263] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[5.412639] (ur_cv_interfaces) StdoutLine: {'line': b'[ 74%] Built target ur_cv_interfaces\n'}
+[5.444373] (ur_cv_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.455651] (-) TimerEvent: {}
+[5.457545] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[5.463051] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.463536] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[5.486944] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.494252] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[5.517156] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[5.558437] (-) TimerEvent: {}
+[5.577932] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.580834] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.581424] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[5.582330] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[5.583469] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[5.584761] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[5.600550] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[5.601934] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[5.605331] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[5.606246] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[5.606828] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.611570] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[5.611966] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[5.659008] (-) TimerEvent: {}
+[5.728120] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[5.744014] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[5.759398] (-) TimerEvent: {}
+[5.768061] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[5.832261] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[5.842826] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[5.860748] (-) TimerEvent: {}
+[5.865017] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[5.920489] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[5.921752] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.921920] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.922527] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.930562] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[5.932259] (ur_simulation_gazebo) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[5.952606] (ur_simulation_gazebo) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[5.960923] (-) TimerEvent: {}
+[6.003931] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[6.064158] (-) TimerEvent: {}
+[6.092860] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[6.095302] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.123679] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.140215] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[6.140404] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.140455] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.140497] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[6.162065] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.164616] (-) TimerEvent: {}
+[6.170000] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[6.217342] (ur_cv_interfaces) StdoutLine: {'line': b'[ 76%] Built target ur_cv_interfaces__py\n'}
+[6.234679] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.245910] (ur_cv_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ur_cv_interfaces/action/_press_button_s.c.o\x1b[0m\n'}
+[6.247089] (ur_cv_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ur_cv_interfaces/srv/_detect_button_s.c.o\x1b[0m\n'}
+[6.264949] (-) TimerEvent: {}
+[6.269159] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[6.272646] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /home/sunbi/ros/build/ur_simulation_gazebo\n'}
+[6.287762] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[6.288763] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'build'}
+[6.290805] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sunbi/ros/build/ur_simulation_gazebo', '--', '-j4', '-l4'], 'cwd': '/home/sunbi/ros/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[6.361301] (ur_simulation_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.o\x1b[0m\n'}
+[6.365476] (-) TimerEvent: {}
+[6.468744] (-) TimerEvent: {}
+[6.470304] (ur_cv_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/libur_cv_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[6.521574] (ur_cv_interfaces) StdoutLine: {'line': b'[ 84%] Built target ur_cv_interfaces__rosidl_generator_py\n'}
+[6.550129] (ur_cv_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.555881] (ur_cv_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.568944] (ur_cv_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ur_cv_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.569216] (-) TimerEvent: {}
+[6.671776] (-) TimerEvent: {}
+[6.718115] (ur_cv_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.727190] (ur_cv_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.763635] (ur_cv_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.773082] (-) TimerEvent: {}
+[6.783819] (ur_cv_interfaces) StdoutLine: {'line': b'[100%] Built target ur_cv_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.792460] (ur_cv_interfaces) StdoutLine: {'line': b'[100%] Built target ur_cv_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[6.823140] (ur_cv_interfaces) StdoutLine: {'line': b'[100%] Built target ur_cv_interfaces__rosidl_typesupport_c__pyext\n'}
+[6.841710] (ur_cv_interfaces) CommandEnded: {'returncode': 0}
+[6.843789] (ur_cv_interfaces) JobProgress: {'identifier': 'ur_cv_interfaces', 'progress': 'install'}
+[6.843827] (ur_cv_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/build/ur_cv_interfaces'], 'cwd': '/home/sunbi/ros/build/ur_cv_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_cv_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[6.853724] (ur_cv_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.854499] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/rosidl_interfaces/ur_cv_interfaces\n'}
+[6.854603] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.856469] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg\n'}
+[6.856608] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.856661] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.856707] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.857408] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__functions.c\n'}
+[6.857481] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__functions.h\n'}
+[6.857526] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__struct.h\n'}
+[6.857647] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.h\n'}
+[6.857791] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/press_button.h\n'}
+[6.859222] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.859528] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.860414] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.h\n'}
+[6.860492] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__struct.h\n'}
+[6.860541] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__functions.c\n'}
+[6.861417] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__functions.h\n'}
+[6.863039] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detect_button.h\n'}
+[6.863272] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/library_path.sh\n'}
+[6.863524] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/library_path.dsv\n'}
+[6.863858] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_c.so\n'}
+[6.864577] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_c.so" to ""\n'}
+[6.864961] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.865113] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg\n'}
+[6.866425] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.866488] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.866632] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.867740] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_fastrtps_c.h\n'}
+[6.867824] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.867872] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.867913] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_fastrtps_c.h\n'}
+[6.867954] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.867996] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.868036] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.868097] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg\n'}
+[6.868184] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.868862] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.868960] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.869009] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.c\n'}
+[6.869121] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_introspection_c.h\n'}
+[6.869172] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.869219] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.869259] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_introspection_c.h\n'}
+[6.869302] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.c\n'}
+[6.869341] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.869378] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.869415] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_c.so\n'}
+[6.869544] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[6.869691] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.870186] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg\n'}
+[6.870234] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.870276] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.870314] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.870351] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.hpp\n'}
+[6.870387] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__builder.hpp\n'}
+[6.870424] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__traits.hpp\n'}
+[6.870534] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__struct.hpp\n'}
+[6.870583] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/press_button.hpp\n'}
+[6.871046] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.871129] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.871762] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__struct.hpp\n'}
+[6.872132] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__traits.hpp\n'}
+[6.872338] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.hpp\n'}
+[6.872418] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__builder.hpp\n'}
+[6.872570] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detect_button.hpp\n'}
+[6.872728] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.872922] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg\n'}
+[6.873104] (-) TimerEvent: {}
+[6.873309] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.873392] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.873453] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.873512] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/dds_fastrtps\n'}
+[6.873570] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.873633] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.873691] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.873746] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/dds_fastrtps\n'}
+[6.875852] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.875961] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.876011] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.876053] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces\n'}
+[6.876145] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action\n'}
+[6.876348] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail\n'}
+[6.876403] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.876454] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/action/detail/press_button__type_support.cpp\n'}
+[6.876495] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv\n'}
+[6.876956] (ur_cv_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail\n'}
+[6.877058] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.877198] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/include/ur_cv_interfaces/ur_cv_interfaces/srv/detail/detect_button__type_support.cpp\n'}
+[6.877354] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.877417] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.877497] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.877593] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[6.877792] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/pythonpath.sh\n'}
+[6.877949] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/pythonpath.dsv\n'}
+[6.878041] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info\n'}
+[6.878211] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[6.878261] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[6.878304] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[6.878345] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[6.878424] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces\n'}
+[6.878531] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/__init__.py\n'}
+[6.878735] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.878791] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.878844] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.879727] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action\n'}
+[6.879820] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/__init__.py\n'}
+[6.879872] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button_s.c\n'}
+[6.879915] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button.py\n'}
+[6.879953] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/_ur_cv_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.880241] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.880308] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv\n'}
+[6.880357] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/__init__.py\n'}
+[6.880607] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button_s.c\n'}
+[6.880827] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button.py\n'}
+[6.880887] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/libur_cv_interfaces__rosidl_generator_py.so\n'}
+[6.881225] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.924352] (ur_cv_interfaces) StdoutLine: {'line': b"Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces'...\n"}
+[6.924557] (ur_cv_interfaces) StdoutLine: {'line': b"Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/__init__.py'...\n"}
+[6.924645] (ur_cv_interfaces) StdoutLine: {'line': b"Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action'...\n"}
+[6.924829] (ur_cv_interfaces) StdoutLine: {'line': b"Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/__init__.py'...\n"}
+[6.924886] (ur_cv_interfaces) StdoutLine: {'line': b"Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/action/_press_button.py'...\n"}
+[6.924931] (ur_cv_interfaces) StdoutLine: {'line': b"Listing '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv'...\n"}
+[6.924972] (ur_cv_interfaces) StdoutLine: {'line': b"Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/__init__.py'...\n"}
+[6.926299] (ur_cv_interfaces) StdoutLine: {'line': b"Compiling '/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/srv/_detect_button.py'...\n"}
+[6.930619] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.930872] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.931016] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.931364] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.931610] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.932129] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages/ur_cv_interfaces/ur_cv_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.932289] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_py.so\n'}
+[6.932740] (ur_cv_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_cv_interfaces/lib/libur_cv_interfaces__rosidl_generator_py.so" to ""\n'}
+[6.932839] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton.idl\n'}
+[6.933760] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/action/PressButton.idl\n'}
+[6.934249] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton.srv\n'}
+[6.934461] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton_Request.msg\n'}
+[6.934527] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/srv/DetectButton_Response.msg\n'}
+[6.934667] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/action/PressButton.action\n'}
+[6.935016] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/package_run_dependencies/ur_cv_interfaces\n'}
+[6.935615] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/parent_prefix_path/ur_cv_interfaces\n'}
+[6.935710] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/ament_prefix_path.sh\n'}
+[6.935758] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.936044] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/path.sh\n'}
+[6.936136] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/environment/path.dsv\n'}
+[6.936325] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.bash\n'}
+[6.936506] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.sh\n'}
+[6.936712] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.zsh\n'}
+[6.937592] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/local_setup.dsv\n'}
+[6.937670] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/package.dsv\n'}
+[6.937813] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ament_index/resource_index/packages/ur_cv_interfaces\n'}
+[6.937864] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.938083] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.938133] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.938264] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.938515] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.938670] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.938827] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.939074] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.939318] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.940297] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.940543] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.940861] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.941067] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.941200] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.941405] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.941738] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.941895] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/export_ur_cv_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.942395] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.942483] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.942711] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.942791] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.942933] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.943120] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.943333] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.943479] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfacesConfig.cmake\n'}
+[6.943613] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/cmake/ur_cv_interfacesConfig-version.cmake\n'}
+[6.943948] (ur_cv_interfaces) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_cv_interfaces/share/ur_cv_interfaces/package.xml\n'}
+[6.947980] (ur_cv_interfaces) CommandEnded: {'returncode': 0}
+[6.970476] (ur_cv_interfaces) JobEnded: {'identifier': 'ur_cv_interfaces', 'rc': 0}
+[6.971189] (ur_cv_moveit) JobStarted: {'identifier': 'ur_cv_moveit'}
+[6.973662] (-) TimerEvent: {}
+[7.074478] (-) TimerEvent: {}
+[7.175418] (-) TimerEvent: {}
+[7.275857] (-) TimerEvent: {}
+[7.377473] (-) TimerEvent: {}
+[7.477949] (-) TimerEvent: {}
+[7.578657] (-) TimerEvent: {}
+[7.588916] (ur_cv_moveit) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/ur_cv_moveit', 'build', '--build-base', '/home/sunbi/ros/build/ur_cv_moveit/build', 'install', '--record', '/home/sunbi/ros/build/ur_cv_moveit/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'sunbi', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/sunbi/ros/install/ur_cv_interfaces/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sunbi', 'OLDPWD': '/home/sunbi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'SYSTEMD_EXEC_PID': '1682', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sunbi/ros/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sunbi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sunbi', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1S8UF3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GAZEBO_RESOURCE_PATH': '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sunbi/ros/build/ur_cv_moveit', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sunbi/ros/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description'}, 'shell': False}
+[7.679078] (-) TimerEvent: {}
+[7.779822] (-) TimerEvent: {}
+[7.806408] (ur_cv_moveit) StdoutLine: {'line': b'running egg_info\n'}
+[7.808127] (ur_cv_moveit) StdoutLine: {'line': b'creating ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info\n'}
+[7.808211] (ur_cv_moveit) StdoutLine: {'line': b'writing ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/PKG-INFO\n'}
+[7.808434] (ur_cv_moveit) StdoutLine: {'line': b'writing dependency_links to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/dependency_links.txt\n'}
+[7.808489] (ur_cv_moveit) StdoutLine: {'line': b'writing entry points to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/entry_points.txt\n'}
+[7.808532] (ur_cv_moveit) StdoutLine: {'line': b'writing requirements to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/requires.txt\n'}
+[7.808571] (ur_cv_moveit) StdoutLine: {'line': b'writing top-level names to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/top_level.txt\n'}
+[7.808611] (ur_cv_moveit) StdoutLine: {'line': b"writing manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'\n"}
+[7.808648] (ur_cv_moveit) StdoutLine: {'line': b"reading manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'\n"}
+[7.808974] (ur_cv_moveit) StdoutLine: {'line': b"writing manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'\n"}
+[7.809350] (ur_cv_moveit) StdoutLine: {'line': b'running build\n'}
+[7.809502] (ur_cv_moveit) StdoutLine: {'line': b'running build_py\n'}
+[7.809925] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/build/ur_cv_moveit/build\n'}
+[7.810232] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/build/ur_cv_moveit/build/lib\n'}
+[7.810361] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.810467] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/__init__.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.811375] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/button_press_action_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.811443] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/dataset_recorder.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.812186] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/camera_capture_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.813073] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/button_detection_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.813148] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.814171] (ur_cv_moveit) StdoutLine: {'line': b'copying ur_cv_moveit/servo_teleop_arm.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit\n'}
+[7.814810] (ur_cv_moveit) StdoutLine: {'line': b'running install\n'}
+[7.816017] (ur_cv_moveit) StdoutLine: {'line': b'running install_lib\n'}
+[7.816209] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.816394] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/__init__.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.816592] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_press_action_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817043] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/dataset_recorder.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817117] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/camera_capture_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817160] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_detection_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817210] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817264] (ur_cv_moveit) StdoutLine: {'line': b'copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/servo_teleop_arm.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit\n'}
+[7.817489] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/__init__.py to __init__.cpython-310.pyc\n'}
+[7.817766] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_press_action_node.py to button_press_action_node.cpython-310.pyc\n'}
+[7.820507] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/dataset_recorder.py to dataset_recorder.cpython-310.pyc\n'}
+[7.821156] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/camera_capture_node.py to camera_capture_node.cpython-310.pyc\n'}
+[7.821488] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_detection_node.py to button_detection_node.cpython-310.pyc\n'}
+[7.822357] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_detect_and_move.py to button_detect_and_move.cpython-310.pyc\n'}
+[7.824615] (ur_cv_moveit) StdoutLine: {'line': b'byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/servo_teleop_arm.py to servo_teleop_arm.cpython-310.pyc\n'}
+[7.825225] (ur_cv_moveit) StdoutLine: {'line': b'running install_data\n'}
+[7.825613] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index\n'}
+[7.825681] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index\n'}
+[7.825818] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index/packages\n'}
+[7.825924] (ur_cv_moveit) StdoutLine: {'line': b'copying resource/ur_cv_moveit -> /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index/packages\n'}
+[7.826569] (ur_cv_moveit) StdoutLine: {'line': b'copying package.xml -> /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit\n'}
+[7.826726] (ur_cv_moveit) StdoutLine: {'line': b'creating /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit/launch\n'}
+[7.826987] (ur_cv_moveit) StdoutLine: {'line': b'copying launch/detect_and_move.launch.py -> /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit/launch\n'}
+[7.828231] (ur_cv_moveit) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.830857] (ur_cv_moveit) StdoutLine: {'line': b'Copying ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info to /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit-0.0.1-py3.10.egg-info\n'}
+[7.832127] (ur_cv_moveit) StdoutLine: {'line': b'running install_scripts\n'}
+[7.854184] (ur_cv_moveit) StdoutLine: {'line': b'Installing button_detection_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit\n'}
+[7.854400] (ur_cv_moveit) StdoutLine: {'line': b'Installing button_press_action_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit\n'}
+[7.854485] (ur_cv_moveit) StdoutLine: {'line': b'Installing camera_capture_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit\n'}
+[7.854568] (ur_cv_moveit) StdoutLine: {'line': b"writing list of installed files to '/home/sunbi/ros/build/ur_cv_moveit/install.log'\n"}
+[7.881627] (-) TimerEvent: {}
+[7.890740] (ur_cv_moveit) CommandEnded: {'returncode': 0}
+[7.896843] (ur_cv_moveit) JobEnded: {'identifier': 'ur_cv_moveit', 'rc': 0}
+[7.982035] (-) TimerEvent: {}
+[8.082696] (-) TimerEvent: {}
+[8.183668] (-) TimerEvent: {}
+[8.284619] (-) TimerEvent: {}
+[8.385166] (-) TimerEvent: {}
+[8.485948] (-) TimerEvent: {}
+[8.586561] (-) TimerEvent: {}
+[8.688251] (-) TimerEvent: {}
+[8.789075] (-) TimerEvent: {}
+[8.889624] (-) TimerEvent: {}
+[8.990266] (-) TimerEvent: {}
+[9.092490] (-) TimerEvent: {}
+[9.193205] (-) TimerEvent: {}
+[9.293999] (-) TimerEvent: {}
+[9.394665] (-) TimerEvent: {}
+[9.495632] (-) TimerEvent: {}
+[9.596073] (-) TimerEvent: {}
+[9.696820] (-) TimerEvent: {}
+[9.797308] (-) TimerEvent: {}
+[9.898054] (-) TimerEvent: {}
+[9.998714] (-) TimerEvent: {}
+[10.100893] (-) TimerEvent: {}
+[10.201371] (-) TimerEvent: {}
+[10.302680] (-) TimerEvent: {}
+[10.403495] (-) TimerEvent: {}
+[10.504151] (-) TimerEvent: {}
+[10.604835] (-) TimerEvent: {}
+[10.705452] (-) TimerEvent: {}
+[10.806269] (-) TimerEvent: {}
+[10.906984] (-) TimerEvent: {}
+[11.007785] (-) TimerEvent: {}
+[11.108291] (-) TimerEvent: {}
+[11.208816] (-) TimerEvent: {}
+[11.309647] (-) TimerEvent: {}
+[11.410629] (-) TimerEvent: {}
+[11.511564] (-) TimerEvent: {}
+[11.612081] (-) TimerEvent: {}
+[11.712820] (-) TimerEvent: {}
+[11.813416] (-) TimerEvent: {}
+[11.914164] (-) TimerEvent: {}
+[12.014654] (-) TimerEvent: {}
+[12.115495] (-) TimerEvent: {}
+[12.216279] (-) TimerEvent: {}
+[12.317123] (-) TimerEvent: {}
+[12.417844] (-) TimerEvent: {}
+[12.518624] (-) TimerEvent: {}
+[12.619342] (-) TimerEvent: {}
+[12.720177] (-) TimerEvent: {}
+[12.821052] (-) TimerEvent: {}
+[12.921831] (-) TimerEvent: {}
+[13.022833] (-) TimerEvent: {}
+[13.123577] (-) TimerEvent: {}
+[13.224214] (-) TimerEvent: {}
+[13.325126] (-) TimerEvent: {}
+[13.426478] (-) TimerEvent: {}
+[13.527493] (-) TimerEvent: {}
+[13.628238] (-) TimerEvent: {}
+[13.729003] (-) TimerEvent: {}
+[13.829600] (-) TimerEvent: {}
+[13.930042] (-) TimerEvent: {}
+[14.030792] (-) TimerEvent: {}
+[14.131679] (-) TimerEvent: {}
+[14.232261] (-) TimerEvent: {}
+[14.332912] (-) TimerEvent: {}
+[14.433737] (-) TimerEvent: {}
+[14.534493] (-) TimerEvent: {}
+[14.635038] (-) TimerEvent: {}
+[14.735660] (-) TimerEvent: {}
+[14.836116] (-) TimerEvent: {}
+[14.936717] (-) TimerEvent: {}
+[15.038026] (-) TimerEvent: {}
+[15.138721] (-) TimerEvent: {}
+[15.239168] (-) TimerEvent: {}
+[15.340113] (-) TimerEvent: {}
+[15.440895] (-) TimerEvent: {}
+[15.541407] (-) TimerEvent: {}
+[15.642082] (-) TimerEvent: {}
+[15.742665] (-) TimerEvent: {}
+[15.843325] (-) TimerEvent: {}
+[15.944151] (-) TimerEvent: {}
+[16.045092] (-) TimerEvent: {}
+[16.145883] (-) TimerEvent: {}
+[16.246804] (-) TimerEvent: {}
+[16.347903] (-) TimerEvent: {}
+[16.449108] (-) TimerEvent: {}
+[16.550466] (-) TimerEvent: {}
+[16.651596] (-) TimerEvent: {}
+[16.752588] (-) TimerEvent: {}
+[16.853614] (-) TimerEvent: {}
+[16.954456] (-) TimerEvent: {}
+[17.055099] (-) TimerEvent: {}
+[17.156114] (-) TimerEvent: {}
+[17.257023] (-) TimerEvent: {}
+[17.357728] (-) TimerEvent: {}
+[17.458765] (-) TimerEvent: {}
+[17.560158] (-) TimerEvent: {}
+[17.660970] (-) TimerEvent: {}
+[17.763781] (-) TimerEvent: {}
+[17.864869] (-) TimerEvent: {}
+[17.965694] (-) TimerEvent: {}
+[18.066378] (-) TimerEvent: {}
+[18.167166] (-) TimerEvent: {}
+[18.267887] (-) TimerEvent: {}
+[18.368742] (-) TimerEvent: {}
+[18.469435] (-) TimerEvent: {}
+[18.569962] (-) TimerEvent: {}
+[18.670671] (-) TimerEvent: {}
+[18.771670] (-) TimerEvent: {}
+[18.872171] (-) TimerEvent: {}
+[18.972968] (-) TimerEvent: {}
+[19.073963] (-) TimerEvent: {}
+[19.174812] (-) TimerEvent: {}
+[19.275729] (-) TimerEvent: {}
+[19.376248] (-) TimerEvent: {}
+[19.477218] (-) TimerEvent: {}
+[19.578107] (-) TimerEvent: {}
+[19.678993] (-) TimerEvent: {}
+[19.779683] (-) TimerEvent: {}
+[19.881114] (-) TimerEvent: {}
+[19.981834] (-) TimerEvent: {}
+[20.082352] (-) TimerEvent: {}
+[20.182918] (-) TimerEvent: {}
+[20.283553] (-) TimerEvent: {}
+[20.384340] (-) TimerEvent: {}
+[20.485026] (-) TimerEvent: {}
+[20.587055] (-) TimerEvent: {}
+[20.687827] (-) TimerEvent: {}
+[20.788718] (-) TimerEvent: {}
+[20.889405] (-) TimerEvent: {}
+[20.990192] (-) TimerEvent: {}
+[21.090637] (-) TimerEvent: {}
+[21.191576] (-) TimerEvent: {}
+[21.292725] (-) TimerEvent: {}
+[21.393414] (-) TimerEvent: {}
+[21.494149] (-) TimerEvent: {}
+[21.594895] (-) TimerEvent: {}
+[21.695707] (-) TimerEvent: {}
+[21.796171] (-) TimerEvent: {}
+[21.897151] (-) TimerEvent: {}
+[21.998133] (-) TimerEvent: {}
+[22.098877] (-) TimerEvent: {}
+[22.199614] (-) TimerEvent: {}
+[22.301175] (-) TimerEvent: {}
+[22.401759] (-) TimerEvent: {}
+[22.502560] (-) TimerEvent: {}
+[22.606262] (-) TimerEvent: {}
+[22.706768] (-) TimerEvent: {}
+[22.807615] (-) TimerEvent: {}
+[22.909349] (-) TimerEvent: {}
+[23.010488] (-) TimerEvent: {}
+[23.111692] (-) TimerEvent: {}
+[23.212337] (-) TimerEvent: {}
+[23.313197] (-) TimerEvent: {}
+[23.414055] (-) TimerEvent: {}
+[23.514954] (-) TimerEvent: {}
+[23.615519] (-) TimerEvent: {}
+[23.716406] (-) TimerEvent: {}
+[23.817104] (-) TimerEvent: {}
+[23.917886] (-) TimerEvent: {}
+[24.018451] (-) TimerEvent: {}
+[24.119693] (-) TimerEvent: {}
+[24.221017] (-) TimerEvent: {}
+[24.321715] (-) TimerEvent: {}
+[24.422512] (-) TimerEvent: {}
+[24.523022] (-) TimerEvent: {}
+[24.623723] (-) TimerEvent: {}
+[24.724445] (-) TimerEvent: {}
+[24.825107] (-) TimerEvent: {}
+[24.926117] (-) TimerEvent: {}
+[25.026904] (-) TimerEvent: {}
+[25.127469] (-) TimerEvent: {}
+[25.228517] (-) TimerEvent: {}
+[25.329501] (-) TimerEvent: {}
+[25.430074] (-) TimerEvent: {}
+[25.530960] (-) TimerEvent: {}
+[25.631630] (-) TimerEvent: {}
+[25.732287] (-) TimerEvent: {}
+[25.833251] (-) TimerEvent: {}
+[25.933868] (-) TimerEvent: {}
+[26.034764] (-) TimerEvent: {}
+[26.135481] (-) TimerEvent: {}
+[26.236337] (-) TimerEvent: {}
+[26.337230] (-) TimerEvent: {}
+[26.437978] (-) TimerEvent: {}
+[26.538848] (-) TimerEvent: {}
+[26.639911] (-) TimerEvent: {}
+[26.740330] (-) TimerEvent: {}
+[26.840867] (-) TimerEvent: {}
+[26.941472] (-) TimerEvent: {}
+[27.042416] (-) TimerEvent: {}
+[27.143307] (-) TimerEvent: {}
+[27.244175] (-) TimerEvent: {}
+[27.344900] (-) TimerEvent: {}
+[27.385308] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libelevator_button_plugin.so\x1b[0m\n'}
+[27.445571] (-) TimerEvent: {}
+[27.546116] (-) TimerEvent: {}
+[27.646698] (-) TimerEvent: {}
+[27.747246] (-) TimerEvent: {}
+[27.812609] (ur_simulation_gazebo) StdoutLine: {'line': b'[100%] Built target elevator_button_plugin\n'}
+[27.828498] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[27.831155] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'install'}
+[27.831227] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sunbi/ros/build/ur_simulation_gazebo'], 'cwd': '/home/sunbi/ros/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'sunbi'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_cv_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/sunbi'), ('OLDPWD', '/home/sunbi'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('SYSTEMD_EXEC_PID', '1682'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/sunbi/ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sunbi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sunbi'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ''), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sunbi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sunbi:@/tmp/.ICE-unix/1649,unix/sunbi:/tmp/.ICE-unix/1649'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6e8a75bd_f66d_4e14_8762_be9702e57d5b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1S8UF3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_cv_moveit:/home/sunbi/ros/install/ur_cv_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials:/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds:'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/sunbi/ros/build/ur_simulation_gazebo'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/home/sunbi/ros/install/ur_simulation_gazebo/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:/home/sunbi/ros/install/ur_cv_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble')]), 'shell': False}
+[27.840423] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.840570] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config\n'}
+[27.840650] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml\n'}
+[27.847381] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e\n'}
+[27.847513] (-) TimerEvent: {}
+[27.847617] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/physical_parameters.yaml\n'}
+[27.848022] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/default_kinematics.yaml\n'}
+[27.848429] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/joint_limits.yaml\n'}
+[27.848903] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/visual_parameters.yaml\n'}
+[27.849410] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/moveit_servo.yaml\n'}
+[27.850097] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch\n'}
+[27.850169] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py\n'}
+[27.850739] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur5e_elevator.launch.py\n'}
+[27.851409] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py\n'}
+[27.852971] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf\n'}
+[27.853071] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf/ur_with_camera.urdf.xacro\n'}
+[27.853137] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds\n'}
+[27.853202] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/elevator.world\n'}
+[27.853259] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials\n'}
+[27.853314] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures\n'}
+[27.853366] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_o.png\n'}
+[27.853477] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_5.png\n'}
+[27.854342] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_3.png\n'}
+[27.854984] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_4.png\n'}
+[27.855370] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_2.png\n'}
+[27.856349] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/elv_pannel.png\n'}
+[27.886755] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_1.png\n'}
+[27.887132] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_6.png\n'}
+[27.887782] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_c.png\n'}
+[27.888671] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts\n'}
+[27.888766] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts/Elevator.material\n'}
+[27.888812] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so\n'}
+[27.893029] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Set runtime path of "/home/sunbi/ros/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so" to ""\n'}
+[27.893191] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/aaa_ur_simulation_gazebo_env.sh\n'}
+[27.895147] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo\n'}
+[27.895266] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo\n'}
+[27.895331] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh\n'}
+[27.895390] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv\n'}
+[27.895446] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh\n'}
+[27.895597] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv\n'}
+[27.895667] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash\n'}
+[27.895725] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh\n'}
+[27.895780] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh\n'}
+[27.895832] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv\n'}
+[27.896640] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv\n'}
+[27.896749] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo\n'}
+[27.896822] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake\n'}
+[27.896895] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake\n'}
+[27.896959] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml\n'}
+[27.899534] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[27.914522] (ur_simulation_gazebo) JobEnded: {'identifier': 'ur_simulation_gazebo', 'rc': 0}
+[27.916240] (-) EventReactorShutdown: {}

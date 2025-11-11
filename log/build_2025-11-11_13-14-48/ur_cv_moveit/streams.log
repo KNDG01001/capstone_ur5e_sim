@@ -1,0 +1,56 @@
+[0.619s] Invoking command in '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description LD_LIBRARY_PATH=/home/sunbi/ros/install/ur_cv_interfaces/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/sunbi/ros/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ur_cv_moveit build --build-base /home/sunbi/ros/build/ur_cv_moveit/build install --record /home/sunbi/ros/build/ur_cv_moveit/install.log --single-version-externally-managed install_data
+[0.837s] running egg_info
+[0.837s] creating ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info
+[0.837s] writing ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/PKG-INFO
+[0.837s] writing dependency_links to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/dependency_links.txt
+[0.837s] writing entry points to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/entry_points.txt
+[0.837s] writing requirements to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/requires.txt
+[0.837s] writing top-level names to ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/top_level.txt
+[0.837s] writing manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'
+[0.837s] reading manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'
+[0.838s] writing manifest file '../../../build/ur_cv_moveit/ur_cv_moveit.egg-info/SOURCES.txt'
+[0.838s] running build
+[0.838s] running build_py
+[0.839s] creating /home/sunbi/ros/build/ur_cv_moveit/build
+[0.839s] creating /home/sunbi/ros/build/ur_cv_moveit/build/lib
+[0.839s] creating /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.839s] copying ur_cv_moveit/__init__.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.840s] copying ur_cv_moveit/button_press_action_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.840s] copying ur_cv_moveit/dataset_recorder.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.841s] copying ur_cv_moveit/camera_capture_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.842s] copying ur_cv_moveit/button_detection_node.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.842s] copying ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.843s] copying ur_cv_moveit/servo_teleop_arm.py -> /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit
+[0.844s] running install
+[0.845s] running install_lib
+[0.845s] creating /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.845s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/__init__.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_press_action_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/dataset_recorder.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/camera_capture_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_detection_node.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/button_detect_and_move.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] copying /home/sunbi/ros/build/ur_cv_moveit/build/lib/ur_cv_moveit/servo_teleop_arm.py -> /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit
+[0.846s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/__init__.py to __init__.cpython-310.pyc
+[0.847s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_press_action_node.py to button_press_action_node.cpython-310.pyc
+[0.849s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/dataset_recorder.py to dataset_recorder.cpython-310.pyc
+[0.850s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/camera_capture_node.py to camera_capture_node.cpython-310.pyc
+[0.850s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_detection_node.py to button_detection_node.cpython-310.pyc
+[0.851s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/button_detect_and_move.py to button_detect_and_move.cpython-310.pyc
+[0.853s] byte-compiling /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit/servo_teleop_arm.py to servo_teleop_arm.cpython-310.pyc
+[0.854s] running install_data
+[0.854s] creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index
+[0.855s] creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index
+[0.855s] creating /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index/packages
+[0.855s] copying resource/ur_cv_moveit -> /home/sunbi/ros/install/ur_cv_moveit/share/ament_index/resource_index/packages
+[0.855s] copying package.xml -> /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit
+[0.856s] creating /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit/launch
+[0.856s] copying launch/detect_and_move.launch.py -> /home/sunbi/ros/install/ur_cv_moveit/share/ur_cv_moveit/launch
+[0.857s] running install_egg_info
+[0.860s] Copying ../../../build/ur_cv_moveit/ur_cv_moveit.egg-info to /home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages/ur_cv_moveit-0.0.1-py3.10.egg-info
+[0.861s] running install_scripts
+[0.883s] Installing button_detection_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit
+[0.883s] Installing button_press_action_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit
+[0.883s] Installing camera_capture_node script to /home/sunbi/ros/install/ur_cv_moveit/lib/ur_cv_moveit
+[0.883s] writing list of installed files to '/home/sunbi/ros/build/ur_cv_moveit/install.log'
+[0.920s] Invoked command in '/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_description LD_LIBRARY_PATH=/home/sunbi/ros/install/ur_cv_interfaces/lib:/home/sunbi/ros/install/ur_simulation_gazebo/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/sunbi/ros/build/ur_cv_moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunbi/ros/install/ur_cv_moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ur_cv_moveit build --build-base /home/sunbi/ros/build/ur_cv_moveit/build install --record /home/sunbi/ros/build/ur_cv_moveit/install.log --single-version-externally-managed install_data

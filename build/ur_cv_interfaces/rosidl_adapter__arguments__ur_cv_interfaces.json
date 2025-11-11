@@ -1,0 +1,7 @@
+{
+  "package_name": "ur_cv_interfaces",
+  "non_idl_tuples": [
+    "/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces:srv/DetectButton.srv",
+    "/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_interfaces:action/PressButton.action"
+  ]
+}

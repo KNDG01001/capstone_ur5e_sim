@@ -1,0 +1,9 @@
+# Goal: 누를 버튼 ("up", "down", 또는 층수 "0", "1", "2", ...)
+string button
+---
+# Result: 성공 여부
+bool success
+string message
+---
+# Feedback: 진행 상태
+string status

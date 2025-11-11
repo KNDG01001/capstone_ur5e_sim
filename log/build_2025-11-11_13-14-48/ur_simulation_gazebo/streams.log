@@ -1,0 +1,171 @@
+[0.010s] Invoking command in '/home/sunbi/ros/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake /home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_simulation_gazebo
+[0.116s] -- The C compiler identification is GNU 11.4.0
+[0.186s] -- The CXX compiler identification is GNU 11.4.0
+[0.194s] -- Detecting C compiler ABI info
+[0.286s] -- Detecting C compiler ABI info - done
+[0.293s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.294s] -- Detecting C compile features
+[0.294s] -- Detecting C compile features - done
+[0.298s] -- Detecting CXX compiler ABI info
+[0.413s] -- Detecting CXX compiler ABI info - done
+[0.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.420s] -- Detecting CXX compile features
+[0.420s] -- Detecting CXX compile features - done
+[0.423s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.661s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.784s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.885s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.893s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.899s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.912s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.928s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.025s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.034s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.226s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.308s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.375s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.407s] -- Looking for pthread.h
+[1.605s] -- Looking for pthread.h - found
+[1.607s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.769s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.771s] -- Found Threads: TRUE  
+[1.992s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.025s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.027s] -- Checking for module 'bullet>=2.82'
+[2.076s] --   Found bullet, version 3.05
+[2.318s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.435s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.502s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.589s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.655s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.671s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.689s] -- Searching for dependencies of ignition-math6
+[2.693s] -- Looking for OGRE...
+[2.694s] -- OGRE_PREFIX_WATCH changed.
+[2.701s] -- Checking for module 'OGRE'
+[2.726s] --   Found OGRE, version 1.9.0
+[2.786s] -- Found Ogre Ghadamon (1.9.0)
+[2.800s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.813s] -- Looking for OGRE_Paging...
+[2.823s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.823s] -- Looking for OGRE_Terrain...
+[2.829s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.830s] -- Looking for OGRE_Property...
+[2.836s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.836s] -- Looking for OGRE_RTShaderSystem...
+[2.841s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.841s] -- Looking for OGRE_Volume...
+[2.847s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.847s] -- Looking for OGRE_Overlay...
+[2.853s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.001s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.005s] -- Looking for ignition-transport8 -- found version 8.2.1
+[3.005s] -- Searching for dependencies of ignition-transport8
+[3.030s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[3.041s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.049s] -- Checking for module 'libzmq >= 4'
+[3.074s] --   Found libzmq , version 4.3.4
+[3.133s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.145s] -- Checking for module 'uuid'
+[3.173s] --   Found uuid, version 2.37.2
+[3.226s] -- Found UUID: TRUE  
+[3.231s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.231s] -- Searching for dependencies of ignition-msgs5
+[3.254s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.262s] -- Checking for module 'tinyxml2'
+[3.285s] --   Found tinyxml2, version 9.0.0
+[3.345s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.348s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.349s] -- Searching for dependencies of ignition-common3
+[3.350s] -- Looking for dlfcn.h - found
+[3.351s] -- Looking for libdl - found
+[3.352s] -- Found DL: TRUE  
+[3.368s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.369s] -- Searching for <ignition-common3> component [graphics]
+[3.373s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.374s] -- Searching for dependencies of ignition-common3-graphics
+[3.374s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.379s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.379s] -- Searching for dependencies of ignition-fuel_tools4
+[3.496s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.512s] -- Checking for module 'jsoncpp'
+[3.536s] --   Found jsoncpp, version 1.9.5
+[3.600s] -- Found JSONCPP: TRUE  
+[3.610s] -- Checking for module 'libzip'
+[3.633s] --   Found libzip, version 1.7.3
+[3.688s] -- Found ZIP: TRUE  
+[3.689s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.689s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.690s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.698s] -- Gazebo version: 11.10
+[3.700s] -- Checking for module 'tbb'
+[3.720s] --   Found tbb, version 2021.5.0
+[3.771s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[3.860s] -- Found launch_testing_ament_cmake: 1.0.10 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[3.863s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.892s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.908s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.908s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.908s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.908s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.930s] -- Found PythonExtra: .so  
+[3.938s] -- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[4.002s] -- Configuring done
+[4.037s] -- Generating done
+[4.040s] -- Build files have been written to: /home/sunbi/ros/build/ur_simulation_gazebo
+[4.056s] Invoked command in '/home/sunbi/ros/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake /home/sunbi/ros/capstone_ur5e_sim/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/sunbi/ros/install/ur_simulation_gazebo
+[4.058s] Invoking command in '/home/sunbi/ros/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_simulation_gazebo -- -j4 -l4
+[4.129s] [ 50%] [32mBuilding CXX object CMakeFiles/elevator_button_plugin.dir/plugins/elevator_button_plugin.cpp.o[0m
+[25.153s] [100%] [32m[1mLinking CXX shared library libelevator_button_plugin.so[0m
+[25.580s] [100%] Built target elevator_button_plugin
+[25.596s] Invoked command in '/home/sunbi/ros/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_simulation_gazebo -- -j4 -l4
+[25.599s] Invoking command in '/home/sunbi/ros/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_simulation_gazebo
+[25.608s] -- Install configuration: ""
+[25.608s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config
+[25.608s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+[25.615s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e
+[25.615s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/physical_parameters.yaml
+[25.615s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/default_kinematics.yaml
+[25.616s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/joint_limits.yaml
+[25.616s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/visual_parameters.yaml
+[25.617s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/moveit_servo.yaml
+[25.618s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch
+[25.618s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+[25.618s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur5e_elevator.launch.py
+[25.619s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+[25.620s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf/ur_with_camera.urdf.xacro
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/elevator.world
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_o.png
+[25.621s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_5.png
+[25.622s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_3.png
+[25.622s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_4.png
+[25.623s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_2.png
+[25.624s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/elv_pannel.png
+[25.654s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_1.png
+[25.655s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_6.png
+[25.655s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_c.png
+[25.656s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts
+[25.656s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts/Elevator.material
+[25.656s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so
+[25.661s] -- Set runtime path of "/home/sunbi/ros/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so" to ""
+[25.661s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/aaa_ur_simulation_gazebo_env.sh
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+[25.663s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+[25.664s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+[25.664s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+[25.664s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+[25.664s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+[25.664s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml
+[25.667s] Invoked command in '/home/sunbi/ros/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_simulation_gazebo
