@@ -1,0 +1,53 @@
+[0.078s] Invoking command in '/home/sunbi/ros/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_simulation_gazebo -- -j4 -l4
+[0.969s] [100%] Built target elevator_button_plugin
+[1.014s] Invoked command in '/home/sunbi/ros/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --build /home/sunbi/ros/build/ur_simulation_gazebo -- -j4 -l4
+[1.038s] Invoking command in '/home/sunbi/ros/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_simulation_gazebo
+[1.061s] -- Install configuration: ""
+[1.061s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config
+[1.062s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+[1.062s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/physical_parameters.yaml
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/default_kinematics.yaml
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/joint_limits.yaml
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur5e/visual_parameters.yaml
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/moveit_servo.yaml
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch
+[1.063s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+[1.069s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur5e_elevator.launch.py
+[1.069s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+[1.070s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf
+[1.070s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/urdf/ur_with_camera.urdf.xacro
+[1.071s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds
+[1.071s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/worlds/elevator.world
+[1.071s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials
+[1.071s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures
+[1.074s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_o.png
+[1.075s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_5.png
+[1.075s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_3.png
+[1.075s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_4.png
+[1.075s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/up_down.png
+[1.075s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_2.png
+[1.076s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/elv_pannel.png
+[1.077s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_1.png
+[1.078s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_6.png
+[1.078s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_c.png
+[1.078s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts
+[1.081s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts/Elevator.material
+[1.083s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/lib/libelevator_button_plugin.so
+[1.084s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/aaa_ur_simulation_gazebo_env.sh
+[1.084s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+[1.085s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+[1.085s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+[1.086s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+[1.086s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+[1.093s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+[1.093s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+[1.094s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+[1.095s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+[1.096s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+[1.097s] -- Installing: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+[1.097s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+[1.097s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+[1.097s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+[1.097s] -- Up-to-date: /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml
+[1.098s] Invoked command in '/home/sunbi/ros/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/sunbi/ros/install/ur_description:/home/sunbi/ros/install/ur_simulation_gazebo:/home/sunbi/ros/install/ur_cv_interfaces:/home/sunbi/ros/install/ur_cv_moveit:/opt/ros/humble /usr/bin/cmake --install /home/sunbi/ros/build/ur_simulation_gazebo

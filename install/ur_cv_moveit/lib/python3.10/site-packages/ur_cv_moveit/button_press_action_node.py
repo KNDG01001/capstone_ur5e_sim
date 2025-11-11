@@ -10,6 +10,7 @@ from rclpy.duration import Duration
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.node import Node
 from rclpy.action import ActionServer, ActionClient, GoalResponse, CancelResponse
+from rclpy.callback_groups import ReentrantCallbackGroup, MutuallyExclusiveCallbackGroup
 
 from geometry_msgs.msg import PoseStamped
 from sensor_msgs.msg import Image, CameraInfo, JointState
@@ -42,7 +43,10 @@ class ButtonPressActionNode(Node):
         self.controller_ns = "/joint_trajectory_controller"
 
         # home
+        # 교체
         self.home_positions = [0.0, -2.0, 1.7, -2.7, -1.57, 0.0]
+
+
 
         # state
         self.bridge = CvBridge()
@@ -61,22 +65,27 @@ class ButtonPressActionNode(Node):
             "wrist_3_joint",
         ]
 
-        # TF
+        # callback groups
+        self.client_cb = ReentrantCallbackGroup()
+        self.server_cb = MutuallyExclusiveCallbackGroup()
+
+        # TF (Humble은 callback_group 인자 없음)
         self.tf_buffer = Buffer()
-        self.tf_listener = TransformListener(self.tf_buffer, self)
+        self.tf_listener = TransformListener(self.tf_buffer, self, spin_thread=True)
 
         # subscribers
-        self.create_subscription(Image, self.depth_topic, self._on_depth, 10)
-        self.create_subscription(CameraInfo, self.camera_info_topic, self._on_info, 10)
-        self.create_subscription(JointState, "/joint_states", self._on_joint_state, 10)
+        self.create_subscription(Image, self.depth_topic, self._on_depth, 10, callback_group=self.client_cb)
+        self.create_subscription(CameraInfo, self.camera_info_topic, self._on_info, 10, callback_group=self.client_cb)
+        self.create_subscription(JointState, "/joint_states", self._on_joint_state, 10, callback_group=self.client_cb)
 
         # service clients
-        self.detect_cli = self.create_client(DetectButton, "/detect_button")
-        self.ik_cli = self.create_client(GetPositionIK, "/compute_ik")
+        self.detect_cli = self.create_client(DetectButton, "/detect_button", callback_group=self.client_cb)
+        self.ik_cli     = self.create_client(GetPositionIK, "/compute_ik", callback_group=self.client_cb)
 
         # joint trajectory action client
         self.traj_action = ActionClient(
-            self, FollowJointTrajectory, f"{self.controller_ns}/follow_joint_trajectory"
+            self, FollowJointTrajectory, f"{self.controller_ns}/follow_joint_trajectory",
+            callback_group=self.client_cb
         )
         self.traj_action.wait_for_server()
 
@@ -88,6 +97,7 @@ class ButtonPressActionNode(Node):
             execute_callback=self._execute_action,
             goal_callback=self._goal_cb,
             cancel_callback=self._cancel_cb,
+            callback_group=self.server_cb
         )
 
         self.get_logger().info("PressButton Action Server ready")
@@ -95,7 +105,6 @@ class ButtonPressActionNode(Node):
     # ---- small utils ----------------------------------------------------------
 
     def _wait_future(self, fut, timeout: float):
-        """spin_until_future_complete 대체. MT executor에서 안전."""
         start = time.monotonic()
         while not fut.done():
             if time.monotonic() - start > timeout:
@@ -174,7 +183,6 @@ class ButtonPressActionNode(Node):
         if not res or not getattr(res, "success", False):
             return False
 
-        # optional surface normal
         normal = None
         if hasattr(res, "normal_x") and hasattr(res, "normal_y") and hasattr(res, "normal_z"):
             n = np.array([res.normal_x, res.normal_y, res.normal_z], dtype=float)
@@ -330,11 +338,11 @@ class ButtonPressActionNode(Node):
         if normal is not None:
             pose = self._fixed_orientation(pose_in_base, normal)
             approach = self._offset_pose(pose, +self.approach_offset, ee_axis="z")
-            press = self._offset_pose(pose, -self.press_offset, ee_axis="z")
+            press    = self._offset_pose(pose, -self.press_offset, ee_axis="z")
         else:
             pose = self._fixed_orientation(pose_in_base)
             approach = self._offset_pose(pose, +self.approach_offset, ee_axis="x")
-            press = self._offset_pose(pose, -self.press_offset, ee_axis="x")
+            press    = self._offset_pose(pose, -self.press_offset, ee_axis="x")
 
         # 3) 접근 → 가압 → 이탈
         for target in [approach, press, approach]:
@@ -350,11 +358,13 @@ class ButtonPressActionNode(Node):
 def main():
     rclpy.init()
     node = ButtonPressActionNode()
-    executor = MultiThreadedExecutor()
+    executor = MultiThreadedExecutor(num_threads=4)
     executor.add_node(node)
-    executor.spin()
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        executor.spin()
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":

@@ -39,7 +39,7 @@
     <model name="pannel">
       <static>true</static>
       <!-- 벽 앞에 아주 살짝 띄워서 Z-fighting 방지: x=0.755로 5mm 전진 -->
-      <pose>0.68 0.4 0.66 0 0 1.5708</pose>
+      <pose>0.68 0.16 0.66 0 0 1.5708</pose>
 
       <link name="poster_link">
         <!-- 충돌 없음: 시뮬 물리와 상호작용 안 함 -->
@@ -47,7 +47,7 @@
           <!-- 0.3m x 0.2m 평면. 비율은 이미지에 맞춰 조절 -->
           <geometry>
             <box>
-              <size>1.0 0.001 0.575</size>
+              <size>0.85 0.001 0.575</size>
             </box>
           </geometry>
           <cast_shadows>false</cast_shadows>
@@ -66,7 +66,7 @@
     <model name="updown">
       <static>true</static>
       <!-- 벽 앞에 아주 살짝 띄워서 Z-fighting 방지: x=0.755로 5mm 전진 -->
-      <pose>0.68 -0.221358 0.66 0 0 1.5708</pose>
+      <pose>0.68 -0.391358 0.66 0 0 1.5708</pose>
 
       <link name="poster_link">
         <!-- 충돌 없음: 시뮬 물리와 상호작용 안 함 -->
@@ -98,7 +98,7 @@
     <model name="buttonL">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.606074 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.344281 0.507747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -116,7 +116,7 @@
     <model name="button1">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.446955 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.199066 0.507747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -134,7 +134,7 @@
     <model name="button2">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.292778 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.042778 0.507747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -152,7 +152,7 @@
     <model name="button3">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.133548 0.527747 0 0 1.5708</pose>
+        <pose>0.70 -0.076452 0.507747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -170,7 +170,7 @@
     <model name="button4">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.021358 0.527747 0 0 1.5708</pose>
+        <pose>0.70 -0.201358 0.507747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -188,7 +188,7 @@
     <model name="button5">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.605281 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.344281 0.650502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -206,7 +206,7 @@
     <model name="button6">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.449066 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.199066 0.650502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -224,7 +224,7 @@
     <model name="button7">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.290266 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.060266 0.650502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -242,7 +242,7 @@
     <model name="button8">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.129762 0.670502 0 0 1.5708</pose>
+        <pose>0.70 -0.099066 0.650502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -260,7 +260,7 @@
     <model name="button9">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.031069 0.670502 0 0 1.5708</pose>
+        <pose>0.70 -0.211069 0.650502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -278,7 +278,7 @@
     <model name="buttonC">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.039066 0.887947 0 0 1.5708</pose>
+        <pose>0.70 -0.200934 0.867947 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -296,7 +296,7 @@
     <model name="buttonO">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.125068 0.887947 0 0 1.5708</pose>
+        <pose>0.70 -0.064932 0.867947 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -314,7 +314,7 @@
     <model name="buttonA">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.824422 0.742291 0 0 1.5708</pose>
+        <pose>0.70 0.504422 0.742291 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -332,7 +332,7 @@
     <model name="buttonU">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.221358 0.725 0 0 1.5708</pose>
+        <pose>0.70 -0.391358 0.725 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -350,7 +350,7 @@
     <model name="buttonD">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.221358 0.53 0 0 1.5708</pose>
+        <pose>0.70 -0.391358 0.53 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
