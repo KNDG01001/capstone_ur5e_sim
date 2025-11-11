@@ -1,5 +1,0 @@
-[console_scripts]
-button_detection_node = ur_cv_moveit.button_detection_node:main
-button_press_action_node = ur_cv_moveit.button_press_action_node:main
-camera_capture_node = ur_cv_moveit.camera_capture_node:main
-

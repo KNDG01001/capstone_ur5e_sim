@@ -1,3 +1,0 @@
-source;share/ur_simulation_gazebo/environment/aaa_ur_simulation_gazebo_env.sh
-source;share/ur_simulation_gazebo/environment/ament_prefix_path.sh
-source;share/ur_simulation_gazebo/environment/path.sh
