@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="elevator_world">
+
+    <!-- Physics -->
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- 기본 환경 -->
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <!-- Elevator Wall -->
+    <model name="elevator_walls">
+      <static>true</static>
+      <pose>0.8 0 1 0 0 1.5708</pose>
+      <link name="walls_link">
+        <collision name="collision">
+          <geometry><box><size>2 0.2 2</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 2</size></box></geometry>
+          <material>
+            <script>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+              
+              <name>Gazebo/Gray</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+        <!-- Non-interactive poster image -->
+    <model name="pannel">
+      <static>true</static>
+      <!-- 벽 앞에 아주 살짝 띄워서 Z-fighting 방지: x=0.755로 5mm 전진 -->
+      <pose>0.68 0.2 0.66 0 0 1.5708</pose>
+
+      <link name="poster_link">
+        <!-- 충돌 없음: 시뮬 물리와 상호작용 안 함 -->
+        <visual name="elv_pannel">
+          <!-- 0.3m x 0.2m 평면. 비율은 이미지에 맞춰 조절 -->
+          <geometry>
+            <box>
+              <size>1.0 0.001 0.575</size>
+            </box>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <script>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+              <name>elevator/pannel</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+    <!-- size = 5cm x 5cm, depth = 1cm -->
+    <!-- pose: x=0.75 y={0.11 or 0} z varies -->
+
+    <!-- Button L -->
+    <model name="buttonL">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.406074 0.527747 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_L</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnL" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button1</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 1 -->
+    <model name="button1">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.246955 0.527747 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_1</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn1" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button2</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 2 -->
+    <model name="button2">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.092778 0.527747 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_2</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn2" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button3</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 3 -->
+    <model name="button3">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.066452 0.527747 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_3</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn3" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button4</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 4 -->
+    <model name="button4">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.221358 0.527747 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_4</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn4" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button5</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 5 -->
+    <model name="button5">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.405281 0.670502 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_5</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn5" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/button6</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 6 -->
+    <model name="button6">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.249066 0.670502 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_6</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn6" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonO</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 7 -->
+    <model name="button7">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.090266 0.670502 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_7</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn7" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 8 -->
+    <model name="button8">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.070238 0.670502 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_8</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn8" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button 9 -->
+    <model name="button9">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.231069 0.670502 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_9</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btn9" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button C -->
+    <model name="buttonC">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.239066 0.887947 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_c</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnC" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button O -->
+    <model name="buttonO">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.074932 0.887947 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_O</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnO" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button A -->
+    <model name="buttonA">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 0.624422 0.742291 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_A</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnA" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+  </world>
+</sdf>

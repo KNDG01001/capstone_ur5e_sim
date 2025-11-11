@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ur_cv_interfaces__py",
+		"source" : "/home/sunbi/ros/capstone_ur5e_sim/build/ur_cv_interfaces/ur_cv_interfaces__py"
+	}
+}

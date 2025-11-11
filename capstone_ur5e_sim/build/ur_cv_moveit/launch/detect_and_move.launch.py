@@ -1,0 +1,1 @@
+/home/sunbi/ros/capstone_ur5e_sim/src/ur_cv_moveit/launch/detect_and_move.launch.py

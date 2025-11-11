@@ -1,0 +1,1 @@
+/home/sunbi/ros/capstone_ur5e_sim/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.sh
