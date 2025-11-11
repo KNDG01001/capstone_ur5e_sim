@@ -39,7 +39,7 @@
     <model name="pannel">
       <static>true</static>
       <!-- 벽 앞에 아주 살짝 띄워서 Z-fighting 방지: x=0.755로 5mm 전진 -->
-      <pose>0.68 0.2 0.66 0 0 1.5708</pose>
+      <pose>0.68 0.4 0.66 0 0 1.5708</pose>
 
       <link name="poster_link">
         <!-- 충돌 없음: 시뮬 물리와 상호작용 안 함 -->
@@ -62,6 +62,34 @@
       </link>
     </model>
 
+        <!-- Non-interactive poster image -->
+    <model name="updown">
+      <static>true</static>
+      <!-- 벽 앞에 아주 살짝 띄워서 Z-fighting 방지: x=0.755로 5mm 전진 -->
+      <pose>0.68 -0.221358 0.66 0 0 1.5708</pose>
+
+      <link name="poster_link">
+        <!-- 충돌 없음: 시뮬 물리와 상호작용 안 함 -->
+        <visual name="elv_up_down">
+          <!-- 0.3m x 0.2m 평면. 비율은 이미지에 맞춰 조절 -->
+          <geometry>
+            <box>
+              <size>0.25 0.001 0.575</size>
+            </box>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+          <material>
+            <script>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+              <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+              <name>elevator/up_down</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
 
     <!-- size = 5cm x 5cm, depth = 1cm -->
     <!-- pose: x=0.75 y={0.11 or 0} z varies -->
@@ -70,7 +98,7 @@
     <model name="buttonL">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.406074 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.606074 0.527747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -88,7 +116,7 @@
     <model name="button1">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.246955 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.446955 0.527747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -106,7 +134,7 @@
     <model name="button2">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.092778 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.292778 0.527747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -124,7 +152,7 @@
     <model name="button3">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.066452 0.527747 0 0 1.5708</pose>
+        <pose>0.70 0.133548 0.527747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -142,7 +170,7 @@
     <model name="button4">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.221358 0.527747 0 0 1.5708</pose>
+        <pose>0.70 -0.021358 0.527747 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -160,7 +188,7 @@
     <model name="button5">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.405281 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.605281 0.670502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -178,7 +206,7 @@
     <model name="button6">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.249066 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.449066 0.670502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -196,7 +224,7 @@
     <model name="button7">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.090266 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.290266 0.670502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -214,7 +242,7 @@
     <model name="button8">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.070238 0.670502 0 0 1.5708</pose>
+        <pose>0.70 0.129762 0.670502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -232,7 +260,7 @@
     <model name="button9">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.231069 0.670502 0 0 1.5708</pose>
+        <pose>0.70 -0.031069 0.670502 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -250,7 +278,7 @@
     <model name="buttonC">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.239066 0.887947 0 0 1.5708</pose>
+        <pose>0.70 -0.039066 0.887947 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -268,7 +296,7 @@
     <model name="buttonO">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 -0.074932 0.887947 0 0 1.5708</pose>
+        <pose>0.70 0.125068 0.887947 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -286,7 +314,7 @@
     <model name="buttonA">
       <static>true</static>
       <link name="button_link">
-        <pose>0.70 0.624422 0.742291 0 0 1.5708</pose>
+        <pose>0.70 0.824422 0.742291 0 0 1.5708</pose>
         <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
         <visual name="visual">
           <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
@@ -298,6 +326,42 @@
         </visual>
       </link>
       <plugin name="plugin_btnA" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button U -->
+    <model name="buttonU">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.221358 0.725 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_A</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnU" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
+    </model>
+
+    <!-- Button D -->
+    <model name="buttonD">
+      <static>true</static>
+      <link name="button_link">
+        <pose>0.70 -0.221358 0.53 0 0 1.5708</pose>
+        <collision name="collision"><geometry><box><size>0.05 0.01 0.05</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 0.01 0.05</size></box></geometry>
+          <material><script>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/scripts</uri>
+            <uri>file:///home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures</uri>
+            <name>elevator/button_A</name>
+          </script></material>
+        </visual>
+      </link>
+      <plugin name="plugin_btnD" filename="libelevator_button_plugin.so"><ros><namespace>/elevator/buttonC</namespace></ros></plugin>
     </model>
 
   </world>

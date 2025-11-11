@@ -4,3 +4,7 @@ ur_cv_interfaces.egg-info/PKG-INFO
 ur_cv_interfaces.egg-info/SOURCES.txt
 ur_cv_interfaces.egg-info/dependency_links.txt
 ur_cv_interfaces.egg-info/top_level.txt
+ur_cv_interfaces/action/__init__.py
+ur_cv_interfaces/action/_press_button.py
+ur_cv_interfaces/srv/__init__.py
+ur_cv_interfaces/srv/_detect_button.py

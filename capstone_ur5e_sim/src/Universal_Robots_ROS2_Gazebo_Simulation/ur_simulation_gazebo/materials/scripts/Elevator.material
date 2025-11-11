@@ -118,7 +118,22 @@ material elevator/pannel
     scene_blend alpha_blend
     texture_unit {
       texture elv_pannel.png
-      colour_op_ex add src_texture src_manual 0.35 0.35 0.35  // +밝기
+      colour_op_ex add src_texture src_manual 0.15 0.15 0.15  // +밝기
+      filtering none
+      tex_address_mode clamp
+    }
+  } }
+}
+
+material elevator/up_down
+{
+  technique { pass {
+    lighting off
+    emissive 1 1 1        // 자체발광
+    scene_blend alpha_blend
+    texture_unit {
+      texture up_down.png
+      colour_op_ex add src_texture src_manual 0.15 0.15 0.15  // +밝기
       filtering none
       tex_address_mode clamp
     }

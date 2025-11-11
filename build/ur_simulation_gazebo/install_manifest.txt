@@ -13,6 +13,7 @@
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_5.png
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_3.png
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_4.png
+/home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/up_down.png
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_2.png
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/elv_pannel.png
 /home/sunbi/ros/install/ur_simulation_gazebo/share/ur_simulation_gazebo/materials/textures/button_1.png
